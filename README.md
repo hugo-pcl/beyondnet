@@ -38,6 +38,9 @@ The generated C# code can then be compiled with .NET NativeAOT which allows the 
 - Since you've provided no arguments, the generator should show its usage screen.
 - Optionally, symlink the generator executable to be somewhere on your path (ie. `ln -s ~/Path/To/beyondnetgen /usr/local/bin/beyondnetgen`) if you're not using a pre-built executable.
 
+#### Windows build
+
+- On Windows, you can build the generator by running `powershell -executionpolicy bypass -File .\publish_windows.ps1` in the `Generator/Beyond.NET.CodeGenerator.CLI` directory.
 
 ### Configuring the Generator
 
