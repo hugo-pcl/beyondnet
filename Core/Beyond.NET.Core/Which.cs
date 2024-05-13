@@ -1,10 +1,12 @@
 using System.Collections.Concurrent;
+using System.Runtime.InteropServices;
 
 namespace Beyond.NET.Core;
 
 public class Which
 {
     private static readonly CLIApp WhichApp = new("which");
+    private static readonly CLIApp WhereApp = new("where.exe");
 
     private static ConcurrentDictionary<string, string> m_cache = new(); 
 
@@ -13,11 +15,21 @@ public class Which
         if (m_cache.TryGetValue(command, out string? cachedResult)) {
             return cachedResult;
         }
-        
-        var result = WhichApp.Launch(new[] {
-            command
-        });
-        
+
+        CLIApp.Result? result = null;
+
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) 
+        {
+            result = WhereApp.Launch(new[] {
+                command
+            });
+        } else
+        {
+            result = WhichApp.Launch(new[] {
+                command
+            });
+        }
+
         Exception? failure = result.FailureAsException;
 
         if (failure is not null) {
