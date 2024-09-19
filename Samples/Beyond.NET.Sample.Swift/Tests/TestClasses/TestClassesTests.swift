@@ -2,12 +2,10 @@ import XCTest
 import BeyondDotNETSampleKit
 
 final class TestClassesTests: XCTestCase {
-    @MainActor
     override class func setUp() {
         Self.sharedSetUp()
     }
     
-    @MainActor
     override class func tearDown() {
         Self.sharedTearDown()
     }
@@ -107,7 +105,7 @@ final class TestClassesTests: XCTestCase {
         let targetBook = Beyond_NET_Sample_Book.theLordOfTheRings
         
         var bookToModify = originalBook
-        var originalBookRet = try Beyond_NET_Sample_Book()
+        var originalBookRet = Beyond_NET_Sample_Book.outParameterPlaceholder
         
         try testClass.modifyByRefBookAndReturnOriginalBookAsOutParameter(&bookToModify,
                                                                          targetBook,

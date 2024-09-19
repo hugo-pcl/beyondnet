@@ -1,5 +1,4 @@
 using System.Reflection;
-using System.Text;
 
 using Beyond.NET.CodeGenerator.Extensions;
 using Beyond.NET.CodeGenerator.SourceCode;
@@ -34,7 +33,7 @@ public class SwiftCodeGenerator: ICodeGenerator
         SourceCodeWriter writer
     )
     {
-        SwiftSyntaxWriterConfiguration syntaxWriterConfiguration = new();
+        SwiftSyntaxWriterConfiguration defaultSyntaxWriterConfiguration = new();
         
         SourceCodeSection headerSection = writer.AddSection("Header");
         SourceCodeSection utilsSection = writer.AddSection("Utils");
@@ -78,18 +77,41 @@ public class SwiftCodeGenerator: ICodeGenerator
         Dictionary<Type, List<GeneratedMember>> typeExtensionMembers = new();
 
         foreach (Type type in orderedTypes) {
-            // bool isInterface = type.IsInterface;
-            // syntaxWriterConfiguration.OnlyWriteSignatureForProtocol = isInterface;
+            bool isInterface = type.IsInterface;
             
             Syntax.State state = new(CSharpUnmanagedResult, CResult);
             
             string typeCode = typeSyntaxWriter.Write(
                 type,
                 state,
-                syntaxWriterConfiguration
+                isInterface ? new SwiftSyntaxWriterConfiguration {
+                    InterfaceGenerationPhase = SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.Protocol
+                } : defaultSyntaxWriterConfiguration
             );
             
             apisSection.Code.AppendLine(typeCode);
+            
+            if (isInterface) {
+                string protocolExtensionCode = typeSyntaxWriter.Write(
+                    type,
+                    state,
+                    new SwiftSyntaxWriterConfiguration {
+                        InterfaceGenerationPhase = SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ProtocolExtensionForDefaultImplementations
+                    }
+                );
+                
+                apisSection.Code.AppendLine(protocolExtensionCode);
+                
+                string implementationClassCode = typeSyntaxWriter.Write(
+                    type,
+                    state,
+                    new SwiftSyntaxWriterConfiguration {
+                        InterfaceGenerationPhase = SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ImplementationClass
+                    }
+                );
+                
+                apisSection.Code.AppendLine(implementationClassCode);
+            }
 
             if (state.SkippedTypes.Contains(type)) {
                 continue;
@@ -177,7 +199,7 @@ public class SwiftCodeGenerator: ICodeGenerator
         TypeDescriptorRegistry typeDescriptorRegistry
     )
     {
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
         
         var namespaceTree = result.GetNamespaceTreeOfGeneratedTypes();
         
@@ -206,7 +228,7 @@ public class SwiftCodeGenerator: ICodeGenerator
             return string.Empty;
         }
 
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
         
         string name = namespaceNode.Name;
         
@@ -267,7 +289,7 @@ public class SwiftCodeGenerator: ICodeGenerator
             typeAliases[swiftTypeName] = new(nonByRefType, swiftTypeNameWithoutNamespace);
         }
 
-        StringBuilder sbTypeAliases = new();
+        SwiftCodeBuilder sbTypeAliases = new();
 
         foreach (var kvp in typeAliases) {
             var swiftTypeName = kvp.Key;
@@ -284,6 +306,16 @@ public class SwiftCodeGenerator: ICodeGenerator
 
             sbTypeAliases.AppendLine(typeDocumentationComment);
             sbTypeAliases.AppendLine(typeAlias);
+
+            if (type.IsInterface) {
+                var interfaceImplTypeAlias = Builder.TypeAlias($"{swiftTypeNameWithoutNamespace}{TypeDescriptor.SwiftDotNETInterfaceImplementationSuffix}", $"{swiftTypeName}{TypeDescriptor.SwiftDotNETInterfaceImplementationSuffix}")
+                    .Public()
+                    .Build()
+                    .ToString();
+            
+                sbTypeAliases.AppendLine(typeDocumentationComment);
+                sbTypeAliases.AppendLine(interfaceImplTypeAlias);
+            }
         }
 
         string typeAliasesCode = sbTypeAliases.ToString();
@@ -325,14 +357,14 @@ public extension {parentNames} {{
 
     private string GetHeaderCode()
     {
-        return """
+        return /*lang=Swift*/"""
 import Foundation
 """;
     }
     
     private string GetUtilsCode(Type[] types)
     {
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
         
         sb.AppendLine(SwiftSharedCode.SharedCode);
         sb.AppendLine();

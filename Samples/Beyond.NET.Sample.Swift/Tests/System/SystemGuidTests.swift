@@ -2,12 +2,10 @@ import XCTest
 import BeyondDotNETSampleKit
 
 final class SystemGuidTests: XCTestCase {
-    @MainActor
     override class func setUp() {
         Self.sharedSetUp()
     }
     
-    @MainActor
     override class func tearDown() {
         Self.sharedTearDown()
     }
@@ -152,4 +150,77 @@ final class SystemGuidTests: XCTestCase {
 			XCTAssertEqual(newUUIDString.lowercased(), guidRetString.lowercased())
 		}
 	}
+    
+    // MARK: - Performance Tests
+//    private let numberOfIDs = 100_000
+//
+//    private func makeGuidString() throws -> String {
+//        let guid = try System.Guid.newGuid()
+//        let guidStrDN = try guid.toString()
+//        let guidStr = guidStrDN.string()
+//        
+//        return guidStr
+//    }
+//    
+//    private func makeUUIDString() -> String {
+//        let uuid = UUID()
+//        let uuidStr = uuid.uuidString
+//        
+//        return uuidStr
+//    }
+//
+//
+//    func testSystemGuidPerformance() throws {
+//        let numberOfIDs = self.numberOfIDs
+//        
+//        measure {
+//            for _ in 0..<numberOfIDs {
+//                _ = try? makeGuidString()
+//            }
+//        }
+//    }
+//    
+//    func testUUIDPerformance() throws {
+//        let numberOfIDs = self.numberOfIDs
+//        
+//        measure {
+//            for _ in 0..<numberOfIDs {
+//                _ = makeUUIDString()
+//            }
+//        }
+//    }
+//    
+//    func testGuidToUUIDPerformance() throws {
+//        let numberOfIDs = self.numberOfIDs
+//        
+//        var guids = [System.Guid]()
+//        
+//        for _ in 0..<numberOfIDs {
+//            let newGuid = try System.Guid.newGuid()
+//            guids.append(newGuid)
+//        }
+//        
+//        measure {
+//            for guid in guids {
+//                _ = guid.uuid()
+//            }
+//        }
+//    }
+//    
+//    func testUUIDToGuidPerformance() throws {
+//        let numberOfIDs = self.numberOfIDs
+//        
+//        var uuids = [UUID]()
+//        
+//        for _ in 0..<numberOfIDs {
+//            let newUUID = UUID()
+//            uuids.append(newUUID)
+//        }
+//        
+//        measure {
+//            for uuid in uuids {
+//                _ = uuid.dotNETGuid()
+//            }
+//        }
+//    }
 }

@@ -59,13 +59,13 @@ public struct SwiftVariableDeclaration
             ? $"= {Value}"
             : string.Empty;
         
-        string[] signatureComponents = new[] {
+        string[] signatureComponents = [
             visibilityString,
             typeAttachmentKindString,
             variableKindString,
             nameAndTypeName,
             valueAssignment
-        };
+        ];
 
         string decl = SwiftFuncSignatureComponents.ComponentsToString(signatureComponents);
         

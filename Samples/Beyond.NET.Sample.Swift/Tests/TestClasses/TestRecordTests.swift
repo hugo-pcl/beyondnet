@@ -2,12 +2,10 @@ import XCTest
 import BeyondDotNETSampleKit
 
 final class TestRecordTests: XCTestCase {
-    @MainActor
     override class func setUp() {
         Self.sharedSetUp()
     }
     
-    @MainActor
     override class func tearDown() {
         Self.sharedTearDown()
     }
@@ -20,9 +18,7 @@ final class TestRecordTests: XCTestCase {
         let retString = try aRecord.aString.string()
         XCTAssertEqual(expectedString, retString)
         
-        let emptyStringDN = System.String.empty
-        
-        var deconstructedStringDN = emptyStringDN
+        var deconstructedStringDN = System.String.outParameterPlaceholder
         
         try aRecord.deconstruct(&deconstructedStringDN)
         

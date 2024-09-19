@@ -1,7 +1,7 @@
 using System.Reflection;
-using System.Text;
 
 using Beyond.NET.CodeGenerator.Extensions;
+using Beyond.NET.CodeGenerator.Generator.CSharpUnmanaged;
 using Beyond.NET.CodeGenerator.Types;
 using Beyond.NET.Core;
 
@@ -15,7 +15,33 @@ public partial class CSharpUnmanagedTypeSyntaxWriter
         string fullTypeName,
         string cTypeName,
         MethodInfo? invokeMethod,
-        StringBuilder sb,
+        CSharpCodeBuilder sb,
+        State state
+    )
+    {
+        var parameterInfos = invokeMethod?.GetParameters() ?? Array.Empty<ParameterInfo>();
+        var returnType = invokeMethod?.ReturnType ?? typeof(void);
+        
+        WriteDelegateType(
+            configuration,
+            type,
+            fullTypeName,
+            cTypeName,
+            parameterInfos,
+            returnType,
+            sb,
+            state
+        );
+    }
+    
+    private void WriteDelegateType(
+        ISyntaxWriterConfiguration? configuration,
+        Type type,
+        string fullTypeName,
+        string cTypeName,
+        ParameterInfo[] parameterInfos,
+        Type returnType,
+        CSharpCodeBuilder sb,
         State state
     )
     {
@@ -23,9 +49,7 @@ public partial class CSharpUnmanagedTypeSyntaxWriter
 
         // TODO: Duh...
         fullTypeName = fullTypeName.Replace("+", ".");
-
-        var parameterInfos = invokeMethod?.GetParameters() ?? Array.Empty<ParameterInfo>();
-
+        
         foreach (var parameter in parameterInfos) {
             if (parameter.IsOut) {
                 sb.AppendLine("\t// TODO: Unsupported delegate type. Reason: Has out parameters");
@@ -108,8 +132,6 @@ public partial class CSharpUnmanagedTypeSyntaxWriter
         if (!string.IsNullOrEmpty(unmanagedParametersForInvocation)) {
             unmanagedParametersForInvocation = ", " + unmanagedParametersForInvocation;
         }
-
-        var returnType = invokeMethod?.ReturnType ?? typeof(void);
         
         if (returnType.IsByRef) {
             sb.AppendLine("\t// TODO: Unsupported delegate type. Reason: Has by ref return type");

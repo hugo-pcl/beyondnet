@@ -36,16 +36,30 @@ public static class Nullability_Extensions
                 return string.Empty; 
         }
     }
+    
+    public static string GetKotlinOptionalitySpecifier(this Nullability nullability)
+    {
+        switch (nullability) {
+            case Nullability.Nullable:
+                return "?";
+            default:
+                return string.Empty; 
+        }
+    }
 }
 
 public class TypeDescriptor
 {
+    public static string SwiftDotNETInterfaceImplementationSuffix = "_DNInterface";
+    public static string KotlinDotNETInterfaceImplementationSuffix = "_DNInterface";
+    
     public Type ManagedType { get; }
 
     public bool IsPrimitive => ManagedType.IsPrimitive;
     public bool IsReferenceType => ManagedType.IsReferenceType() && !IsReadOnlyStructOfByte;
     public bool IsStruct => ManagedType.IsStruct() || IsReadOnlyStructOfByte;
     public bool IsValueType => ManagedType.IsValueType || IsReadOnlyStructOfByte;
+    public bool IsInterface => ManagedType.IsInterface;
     public bool IsEnum => ManagedType.IsEnum;
     public bool IsBool => ManagedType.IsBoolean();
     public bool IsArray => ManagedType.IsArray;
@@ -133,7 +147,10 @@ public class TypeDescriptor
     {
         string typeName;
 
-        bool isAllowedToCache = !(language == CodeLanguage.Swift &&
+        bool isSwift = language == CodeLanguage.Swift;
+        bool isKotlin = language == CodeLanguage.Kotlin;
+
+        bool isAllowedToCache = !((isSwift || isKotlin) &&
                                   IsArray);
         
         // Cannot cache array types because of element nullability
@@ -189,6 +206,7 @@ public class TypeDescriptor
 
         switch (language) {
             case CodeLanguage.CSharp:
+            {
                 if (isOutParameter) {
                     return $"out {typeName}";
                 } else if (isInParameter) {
@@ -198,37 +216,43 @@ public class TypeDescriptor
                 } else {
                     return typeName;
                 }
+            }
             case CodeLanguage.CSharpUnmanaged:
-                if (RequiresNativePointer && 
+            {
+                if (RequiresNativePointer &&
                     (isOutParameter || isByRefParameter || isInParameter)) {
                     typeNameWithModifiers = $"{typeName}**";
                 } else {
                     typeNameWithModifiers = $"{typeName}*";
                 }
-                
+
                 break;
+            }
             case CodeLanguage.C:
+            {
                 string cNullabilitySpecifier = nullability.GetClangAttribute();
-                
+
                 if (isOutParameter || isByRefParameter || isInParameter) {
                     string innerTypeName = typeName;
-                    
+
                     if (!string.IsNullOrEmpty(cNullabilitySpecifier) &&
                         !IsReadOnlyStructOfByte) {
                         innerTypeName += " " + cNullabilitySpecifier;
                     }
-                    
+
                     typeNameWithModifiers = $"{innerTypeName}*";
                 } else {
                     typeNameWithModifiers = $"{typeName}";
                 }
-                
+
                 if (!string.IsNullOrEmpty(cNullabilitySpecifier)) {
                     typeNameWithModifiers += " " + cNullabilitySpecifier;
                 }
-                
+
                 break;
+            }
             case CodeLanguage.Swift:
+            {
                 if (isOutParameter || isByRefParameter || isInParameter) {
                     typeNameWithModifiers = $"inout {typeName}";
                 } else {
@@ -240,8 +264,66 @@ public class TypeDescriptor
                 if (!string.IsNullOrEmpty(swiftNullabilitySpecifier)) {
                     typeNameWithModifiers += swiftNullabilitySpecifier;
                 }
-                
+
                 break;
+            }
+            case CodeLanguage.KotlinJNA:
+            {
+                if (isOutParameter || isByRefParameter || isInParameter) {
+                    string nonByRefTypeName;
+
+                    var nonByRefTypeDescriptor = ManagedType.GetNonByRefType().GetTypeDescriptor();
+
+                    if (nonByRefTypeDescriptor.IsPrimitive) {
+                        nonByRefTypeName = nonByRefTypeDescriptor.GetTypeName(CodeLanguage.Kotlin, false);                        
+                    } else {
+                        nonByRefTypeName = typeName;
+                    }
+                    
+                    typeNameWithModifiers = $"{nonByRefTypeName}ByReference";
+                } else {
+                    typeNameWithModifiers = $"{typeName}";
+                }
+
+                string kotlinNullabilitySpecifier;
+
+                // if (RequiresNativePointer || IsReadOnlyStructOfByte) {
+                //     kotlinNullabilitySpecifier = string.Empty;
+                // } else {
+                    kotlinNullabilitySpecifier = nullability.GetKotlinOptionalitySpecifier();
+                // }
+
+                if (!string.IsNullOrEmpty(kotlinNullabilitySpecifier)) {
+                    typeNameWithModifiers += kotlinNullabilitySpecifier;
+                }
+
+                break;
+            }
+            case CodeLanguage.Kotlin:
+            {
+                string kotlinNullabilitySpecifier = nullability.GetKotlinOptionalitySpecifier();
+                
+                if (isOutParameter || isByRefParameter || isInParameter) {
+                    var kotlinTypeName = GetTypeName(CodeLanguage.Kotlin, false);
+                    string refTypeName;
+
+                    if (IsPrimitive) {
+                        if (IsEnum) {
+                            throw new NotSupportedException("By ref enums are currently not supported when generating Kotlin code");
+                        } else {
+                            refTypeName = $"{kotlinTypeName}Ref";
+                        }
+                    } else {
+                        refTypeName = $"ObjectRef<{kotlinTypeName}{kotlinNullabilitySpecifier}>";
+                    }
+
+                    typeNameWithModifiers = refTypeName;
+                } else {
+                    typeNameWithModifiers = $"{typeName}{kotlinNullabilitySpecifier}";
+                }
+
+                break;
+            }
             default:
                 throw new NotImplementedException();
         }
@@ -275,45 +357,129 @@ public class TypeDescriptor
                 }
 
                 return constructedCTypeName;
-            case CodeLanguage.Swift:
+            case CodeLanguage.Swift: {
                 bool isArray = ManagedType.IsArray;
-                
+
                 Type? elementType = isArray
                     ? ManagedType.GetElementType()
                     : null;
 
                 string swiftTypeName;
-                
+
                 if (isArray &&
-                    elementType is not null) {
+                    elementType is not null)
+                {
                     // TODO: Shouldn't this go through TypeDescriptor?
                     var swiftElementTypeName = elementType.CTypeName();
                     var rank = ManagedType.GetArrayRank();
-                    
-                    if (arrayElementNullability == Nullability.NotSpecified) {
+
+                    if (arrayElementNullability == Nullability.NotSpecified)
+                    {
                         arrayElementNullability = Nullability.Nullable;
                     }
 
                     string arrayTypeName;
 
-                    if (rank == 1) { // Single-dimensional array
+                    if (rank == 1)
+                    {
+                        // Single-dimensional array
                         arrayTypeName = arrayElementNullability == Nullability.NonNullable
                             ? "DNArray"
                             : "DNNullableArray";
-                    } else if (rank > 1) { // Multidimensional array
+                    }
+                    else if (rank > 1)
+                    {
+                        // Multidimensional array
                         arrayTypeName = arrayElementNullability == Nullability.NonNullable
                             ? "DNMultidimensionalArray"
                             : "DNNullableMultidimensionalArray";
-                    } else {
+                    }
+                    else
+                    {
                         throw new Exception($"An array rank of {rank} doesn't really make sense, right?");
                     }
 
                     swiftTypeName = $"{arrayTypeName}<{swiftElementTypeName}>";
-                } else {
+                }
+                else
+                {
                     swiftTypeName = ManagedType.CTypeName();
                 }
-                
+
                 return swiftTypeName;
+            }
+            case CodeLanguage.KotlinJNA: {
+                if (RequiresNativePointer || IsReadOnlyStructOfByte)
+                {
+                    return "Pointer";
+                }
+                else if (IsEnum)
+                {
+                    var enumUnderlyingType = ManagedType.GetEnumUnderlyingType();
+                    var enumUnderlyingTypeDescriptor = enumUnderlyingType.GetTypeDescriptor(TypeDescriptorRegistry.Shared);
+                    var enumUnderlyingTypeName = enumUnderlyingTypeDescriptor.GetTypeName(CodeLanguage.KotlinJNA, false);
+
+                    return enumUnderlyingTypeName;
+                }
+                else
+                {
+                    return ManagedType.CTypeName();
+                }
+            }
+            case CodeLanguage.Kotlin: {
+                bool isArray = ManagedType.IsArray;
+
+                Type? elementType = isArray
+                    ? ManagedType.GetElementType()
+                    : null;
+                
+                string kotlinTypeName;
+
+                if (isArray &&
+                    elementType is not null)
+                {
+                    // TODO: Shouldn't this go through TypeDescriptor?
+                    var kotlinElementTypeName = elementType.CTypeName();
+                    var rank = ManagedType.GetArrayRank();
+
+                    if (arrayElementNullability == Nullability.NotSpecified)
+                    {
+                        arrayElementNullability = Nullability.Nullable;
+                    }
+
+                    string arrayTypeName;
+
+                    if (rank == 1)
+                    {
+                        // Single-dimensional array
+                        arrayTypeName = arrayElementNullability == Nullability.NonNullable
+                            ? "DNArray"
+                            : "DNNullableArray";
+                    }
+                    else if (rank > 1)
+                    {
+                        // Multidimensional array
+                        // TODO: Support multi-dimensional arrays
+                        return ManagedType.CTypeName();
+                        
+                        // arrayTypeName = arrayElementNullability == Nullability.NonNullable
+                        //     ? "DNMultidimensionalArray"
+                        //     : "DNNullableMultidimensionalArray";
+                    }
+                    else
+                    {
+                        throw new Exception($"An array rank of {rank} doesn't really make sense, right?");
+                    }
+
+                    kotlinTypeName = $"{arrayTypeName}<{kotlinElementTypeName}>";
+                }
+                else
+                {
+                    kotlinTypeName = ManagedType.CTypeName();
+                }
+
+                return kotlinTypeName;
+            }
             default:
                 throw new NotImplementedException();
         }
@@ -327,7 +493,10 @@ public class TypeDescriptor
     {
         LanguagePair languagePair = new(sourceLanguage, targetLanguage);
         
-        bool isAllowedToCache = !((sourceLanguage == CodeLanguage.Swift || targetLanguage == CodeLanguage.Swift) &&
+        bool isSwift = sourceLanguage == CodeLanguage.Swift || targetLanguage == CodeLanguage.Swift;
+        bool isKotlin = sourceLanguage == CodeLanguage.Kotlin || targetLanguage == CodeLanguage.Kotlin;
+        
+        bool isAllowedToCache = !((isSwift || isKotlin) &&
                                   IsArray);
 
         string? typeConversion;
@@ -417,7 +586,11 @@ public class TypeDescriptor
             if (IsEnum) {
                 return $"{swiftTypeName}(cValue: {{0}})";
             } else if (RequiresNativePointer) {
-                return $"{swiftTypeName}(handle: {{0}})";
+                var suffix = IsInterface 
+                    ? SwiftDotNETInterfaceImplementationSuffix
+                    : string.Empty;
+                
+                return $"{swiftTypeName}{suffix}(handle: {{0}})";
             } else {
                 return null;
             }
@@ -427,6 +600,73 @@ public class TypeDescriptor
                 return "{0}.cValue";
             } else if (RequiresNativePointer) {
                 return "{0}.__handle";
+            } else {
+                return null;
+            }
+        } else if (sourceLanguage == CodeLanguage.C &&
+                   targetLanguage == CodeLanguage.KotlinJNA) {
+            string kotlinTypeName = GetTypeName(
+                CodeLanguage.KotlinJNA,
+                false,
+                Nullability.NotSpecified,
+                arrayElementNullability
+            );
+
+            if (IsEnum) {
+                return $"{kotlinTypeName}({{0}})";
+            } else if (RequiresNativePointer) {
+                var suffix = IsInterface 
+                    ? KotlinDotNETInterfaceImplementationSuffix
+                    : string.Empty;
+                
+                return $"{kotlinTypeName}{suffix}({{0}})";
+            } else {
+                return null;
+            }
+        } else if (sourceLanguage == CodeLanguage.KotlinJNA &&
+                   targetLanguage == CodeLanguage.Kotlin) {
+            string kotlinTypeName = GetTypeName(
+                CodeLanguage.Kotlin,
+                false,
+                Nullability.NotSpecified,
+                arrayElementNullability
+            );
+            
+            bool isArray = ManagedType.IsArray;
+
+            Type? elementType = isArray
+                ? ManagedType.GetElementType()
+                : null;
+
+            int arrayRank = isArray
+                ? ManagedType.GetArrayRank() 
+                : 0;
+
+            if (IsEnum) {
+                return kotlinTypeName + "({0})";
+            } else if (isArray &&
+                       elementType is not null &&
+                       arrayRank == 1 /* Single dimensional array */) {
+                // TODO: Support multi-dimensional arrays
+                // TODO: Shouldn't this go through TypeDescriptor?
+                var kotlinElementTypeName = elementType.CTypeName();
+                
+                return $"{kotlinTypeName}({{0}}, {kotlinElementTypeName}::class.java)";
+            } else if (RequiresNativePointer) {
+                var suffix = IsInterface 
+                    ? KotlinDotNETInterfaceImplementationSuffix
+                    : string.Empty;
+                
+                return $"{kotlinTypeName}{suffix}({{0}})";
+            } else {
+                return null;
+            }
+        } else if (sourceLanguage == CodeLanguage.Kotlin &&
+                   targetLanguage == CodeLanguage.KotlinJNA) {
+            if (IsEnum) {
+                return "{0}.value";
+            } else if (RequiresNativePointer) {
+                return "{0}.getHandleOrNull()";
             } else {
                 return null;
             }

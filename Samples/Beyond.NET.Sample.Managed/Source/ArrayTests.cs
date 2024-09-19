@@ -67,8 +67,18 @@ public class ArrayTests
     #endregion ArrayOfGuids
 
     #region ArrayOfCharacters
-    public char[] ArrayOfCharacters { get; set; } = {
+    public char[] ArrayOfCharacters { get; set; } = [
         'a', 'b', 'c'
-    };
+    ];
     #endregion ArrayOfCharacters
+
+    #region ArrayOfBytes
+    public byte[] ArrayOfBytes { get; set; } = [
+        byte.MinValue, 1, 2, byte.MaxValue
+    ];
+    
+    public sbyte[] ArrayOfSBytes { get; set; } = [
+        SByte.MinValue, 1, 2, sbyte.MaxValue
+    ];
+    #endregion ArrayOfBytes
 }

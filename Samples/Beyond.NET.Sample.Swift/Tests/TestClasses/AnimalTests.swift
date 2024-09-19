@@ -2,12 +2,10 @@ import XCTest
 import BeyondDotNETSampleKit
 
 final class AnimalTests: XCTestCase {
-	@MainActor
 	override class func setUp() {
 		Self.sharedSetUp()
 	}
 	
-	@MainActor
 	override class func tearDown() {
 		Self.sharedTearDown()
 	}
@@ -56,14 +54,13 @@ final class AnimalTests: XCTestCase {
 	
 	func testCustomAnimalCreator() throws {
 		let creatorFunc: Beyond_NET_Sample_AnimalCreatorDelegate.ClosureType = { innerAnimalName in
-			guard let animal = try? Beyond_NET_Sample_GenericAnimal(innerAnimalName),
-				  let animalAsIAnimal = try? animal.castTo(Beyond_NET_Sample_IAnimal.self) else {
+			guard let animal = try? Beyond_NET_Sample_GenericAnimal(innerAnimalName) else {
 				XCTFail("GenericAnimal ctor should not throw and return an instance")
 
 				return nil
 			}
 			
-			return animalAsIAnimal
+			return animal
 		}
 
 		let creatorDelegate = Beyond_NET_Sample_AnimalCreatorDelegate(creatorFunc)
@@ -139,4 +136,17 @@ final class AnimalTests: XCTestCase {
 			XCTAssertTrue(error.localizedDescription.contains("violates the constraint"))
 		}
 	}
+    
+    func testStaticMemberShadowing() {
+        let dogNameDN = Beyond_NET_Sample_Dog.staticName
+        let dogName = dogNameDN.string()
+
+        let labradorNameDN = Beyond_NET_Sample_Labrador.staticName
+        let labradorName = labradorNameDN.string()
+
+        XCTAssertEqual(dogName, "Dog")
+        XCTAssertEqual(labradorName, "Labrador")
+        
+        XCTAssertNotEqual(dogName, labradorName)
+    }
 }

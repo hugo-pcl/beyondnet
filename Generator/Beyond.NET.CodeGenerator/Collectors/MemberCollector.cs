@@ -12,9 +12,17 @@ public class MemberCollector
     private readonly bool m_enableGenericsSupport;
 
     private static readonly Dictionary<Type, string[]> TYPES_TO_UNSUPPORTED_MEMBER_NAMES_MAPPING = new() {
-        { typeof(System.Runtime.InteropServices.Marshal), new [] {
-            "WriteInt16"
-        } }
+        {
+            typeof(System.Runtime.InteropServices.Marshal), [
+                "WriteInt16"
+            ]
+        },
+        {
+            typeof(System.Reflection.Assembly), [
+                // TODO: There's a bug in .NET 8.0.400 where Assembly.SetEntryAssembly seems to be exposed in the reference assemblies but not in the implementation assemblies. For now, we just exclude that method. 
+                "SetEntryAssembly"
+            ]
+        }
     };
 
     private readonly string[]? m_excludedMemberNames;
@@ -45,6 +53,7 @@ public class MemberCollector
 
         if (m_typeCollector.IsSupportedType(m_type)) {
             bool isStruct = m_type.IsStruct();
+            bool isInterface = m_type.IsInterface;
             bool foundParameterlessStructConstructor = false;
             
             BindingFlags flags = BindingFlags.Public | 
@@ -74,6 +83,25 @@ public class MemberCollector
                     unsupportedMembers[memberInfo] = "Virtual Record Clone Method";
                     
                     continue;
+                }
+
+                if (isInterface)
+                {
+                    if (memberInfo is MethodInfo { IsAbstract: true, IsStatic: true })
+                    {
+                        unsupportedMembers[memberInfo] = "Static abstract method in interface";
+                        
+                        continue;
+                    }
+
+                    if (memberInfo is PropertyInfo propertyInfo &&
+                        (propertyInfo.GetMethod is { IsAbstract: true, IsStatic: true } ||
+                         propertyInfo.SetMethod is { IsAbstract: true, IsStatic: true }))
+                    {
+                        unsupportedMembers[memberInfo] = "Static abstract property in interface";
+
+                        continue;
+                    }
                 }
                 
                 CollectMember(

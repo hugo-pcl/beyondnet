@@ -72,6 +72,11 @@ internal static class StringExtensions
         "willSet",
         "unowned"
     };
+    
+    private static readonly string[] KOTLIN_KEYWORDS = new[] {
+        "val",
+        "do"
+    };
 
     private static readonly string[] SWIFT_RESERVED_TYPE_NAMES = new[] {
         "Type"
@@ -131,6 +136,22 @@ internal static class StringExtensions
     internal static string EscapedSwiftTypeAliasTypeName(this string input)
     {
         if (!input.IsReservedSwiftTypeName()) {
+            return input;
+        }
+        
+        string output = $"`{input}`";
+
+        return output;
+    }
+
+    internal static bool IsKotlinKeyword(this string input)
+    {
+        return KOTLIN_KEYWORDS.Contains(input);
+    }
+    
+    internal static string EscapedKotlinName(this string input)
+    {
+        if (!input.IsKotlinKeyword()) {
             return input;
         }
         

@@ -1,7 +1,7 @@
 using System.Reflection;
-using System.Text;
 
 using Beyond.NET.CodeGenerator.Extensions;
+using Beyond.NET.CodeGenerator.Generator.Swift;
 using Beyond.NET.Core;
 using Beyond.NET.CodeGenerator.Types;
 
@@ -38,6 +38,22 @@ public partial class SwiftTypeSyntaxWriter
             Type type,
             MethodInfo? delegateInvokeMethod,
             TypeDescriptorRegistry typeDescriptorRegistry
+        ) : this(
+            type,
+            delegateInvokeMethod,
+            delegateInvokeMethod?.GetParameters() ?? Array.Empty<ParameterInfo>(),
+            delegateInvokeMethod?.ReturnType ?? typeof(void),
+            typeDescriptorRegistry
+        )
+        {
+        }
+        
+        internal DelegateTypeInfo(
+            Type type,
+            MethodInfo? delegateInvokeMethod,
+            ParameterInfo[] parameterInfos,
+            Type returnType,
+            TypeDescriptorRegistry typeDescriptorRegistry
         )
         {
             DelegateInvokeMethod = delegateInvokeMethod;
@@ -56,7 +72,7 @@ public partial class SwiftTypeSyntaxWriter
             CTypeName = type.CTypeName();
             SwiftTypeName = TypeDescriptor.GetTypeName(CodeLanguage.Swift, false);
             
-            ReturnType = delegateInvokeMethod?.ReturnType ?? typeof(void);
+            ReturnType = returnType;
     
             if (ReturnType.IsByRef) {
                 throw new Exception($"// TODO: ({SwiftTypeName}) Unsupported delegate type. Reason: Has by ref return type");
@@ -80,8 +96,6 @@ public partial class SwiftTypeSyntaxWriter
                 false,
                 false
             );
-            
-            var parameterInfos = delegateInvokeMethod?.GetParameters() ?? Array.Empty<ParameterInfo>();
             
             foreach (var parameter in parameterInfos) {
                 if (parameter.IsOut) {
@@ -144,10 +158,11 @@ public partial class SwiftTypeSyntaxWriter
     private string WriteDelegateTypeDefs(
         ISyntaxWriterConfiguration? configuration,
         Type type,
-        MethodInfo? delegateInvokeMethod,
         State state
     )
     {
+        var delegateInvokeMethod = type.GetDelegateInvokeMethod();
+        
         TypeDescriptorRegistry typeDescriptorRegistry = TypeDescriptorRegistry.Shared;
 
         if (state.CSharpUnmanagedResult is null) {
@@ -258,7 +273,7 @@ public partial class SwiftTypeSyntaxWriter
 
         string memberPartsCode = string.Join("\n\n", memberParts);
         
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
         
         sb.AppendLine(memberPartsCode);
 
@@ -282,7 +297,7 @@ public partial class SwiftTypeSyntaxWriter
         var typeDocumentationComment = type.GetDocumentation()
             ?.GetFormattedDocumentationComment();
 
-        StringBuilder sbFinal;
+        SwiftCodeBuilder sbFinal;
         
         if (!string.IsNullOrEmpty(typeDocumentationComment)) {
             sbFinal = new(typeDocumentationComment + "\n");
@@ -328,7 +343,7 @@ public partial class SwiftTypeSyntaxWriter
         out string closureTypeTypeAliasName
     )
     {
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
         
         string swiftFuncParameters = SwiftMethodSyntaxWriter.WriteParameters(
             MemberKind.Method,
@@ -406,7 +421,7 @@ public partial class SwiftTypeSyntaxWriter
         createCFunctionFuncName = "__createCFunction";
         string innerClosureVarName = "__innerClosure";
 
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
         
         sb.AppendLine($"return {{ {cFunctionParameters} in");
         sb.AppendLine($"\tguard let {innerContextParameterName} else {{ fatalError(\"{fatalErrorMessageIfNoContext}\") }}");
@@ -495,7 +510,7 @@ public partial class SwiftTypeSyntaxWriter
                         ? "?"
                         : string.Empty;
                     
-                    sb.AppendLine($"\t{returnValueName}{nullabilitySpecifier}.__skipDestroy = true // Will be destroyed by .NET");
+                    sb.AppendLine($"\t{returnValueName}{nullabilitySpecifier}.__destroyMode = .skip // Will be destroyed by .NET");
                 }
                 
                 sb.AppendLine();
@@ -528,7 +543,7 @@ public partial class SwiftTypeSyntaxWriter
         out string createCDestructorFunctionFuncName
     )
     {
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
 
         string innerContextParameterName = "__innerContext";
         string fatalErrorMessageIfNoContext = "Context is nil";
@@ -558,7 +573,7 @@ public partial class SwiftTypeSyntaxWriter
         string createCDestructorFunctionFuncName
     )
     {
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
 
         sb.AppendLine(Builder.Let("__cFunction")
             .Value($"Self.{createCFunctionFuncName}()").ToString());
@@ -602,7 +617,7 @@ public partial class SwiftTypeSyntaxWriter
         TypeDescriptorRegistry typeDescriptorRegistry
     )
     {
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
         
         string swiftFuncParameters = SwiftMethodSyntaxWriter.WriteParameters(
             MemberKind.Method,

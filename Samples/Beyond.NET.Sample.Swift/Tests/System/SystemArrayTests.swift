@@ -2,12 +2,10 @@ import XCTest
 import BeyondDotNETSampleKit
 
 final class SystemArrayTests: XCTestCase {
-    @MainActor
     override class func setUp() {
         Self.sharedSetUp()
     }
     
-    @MainActor
     override class func tearDown() {
         Self.sharedTearDown()
     }
@@ -72,13 +70,11 @@ final class SystemArrayTests: XCTestCase {
         let arrayOfDateTime = try System_Array.createInstance(dateTimeType,
                                                               arrayLength)
 		
-		let iList = try arrayOfDateTime.castTo(System_Collections_IList.self)
-		
 		let index: Int32 = 0
 		
-		try iList.item_set(index, now)
+		try arrayOfDateTime.item_set(index, now)
 		
-		let retrievedNow = try iList.item(index)
+		let retrievedNow = try arrayOfDateTime.item(index)
 		
 		let equals = now == retrievedNow
 		XCTAssertTrue(equals)

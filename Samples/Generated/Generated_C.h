@@ -1,5 +1,5 @@
-// Number of generated types: 1808
-// Number of generated members: 6072
+// Number of generated types: 1418
+// Number of generated members: 6144
 
 #pragma mark - BEGIN Header
 #ifndef TypeDefinitions_h
@@ -27,9 +27,9 @@ typedef struct DNReadOnlySpanOfByte {
 
 #pragma mark - BEGIN Unsupported Types
 // Unsupported Type "IEnumerator`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
 // Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
@@ -48,19 +48,35 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Span`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IModulusOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
@@ -70,29 +86,9 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "System.IUtfChar`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
 // Unsupported Type "System.Char&": Excluded
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.IUtfChar`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
 // Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
@@ -102,34 +98,57 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IReadOnlyCollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.SByte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.SByte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.SByte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.SByte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.Span`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.Span`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "System.ReadOnlySpan`1": Excluded
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtfChar`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.ValueTuple`2[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtfChar`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.ValueTuple`2[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
@@ -178,10 +197,11 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.ArraySegment`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1+Enumerator[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.ArraySegment`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "ReadOnlySpan`1": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1+Enumerator[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
 // Unsupported Type "System.Void*": Is Managed Pointer Type
-// Unsupported Type "System.ValueTuple`2[[System.SByte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ValueTuple`2[[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.SByte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
@@ -230,11 +250,31 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Int16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Int16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Int16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Int16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.ValueTuple`2[[System.Int16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.ValueTuple`2[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
@@ -283,11 +323,30 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UInt16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.UInt16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.UInt16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.UInt16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.ValueTuple`2[[System.UInt16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.ValueTuple`2[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
@@ -336,165 +395,144 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UInt32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.UInt32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.UInt32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.UInt32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.ValueTuple`2[[System.UInt32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.ValueTuple`2[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.ValueTuple`2[[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.Numerics.IFloatingPoint`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IFloatingPointConstants`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
 // Unsupported Type "IBinaryNumber`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
@@ -527,45 +565,51 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IPowerFunctions`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IRootFunctions`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ITrigonometricFunctions`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Single, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Single, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "IExponentialFunctions`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IFloatingPointConstants`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "IFloatingPoint`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IFloatingPointIeee754`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IExponentialFunctions`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IFloatingPointConstants`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IFloatingPoint`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IHyperbolicFunctions`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ILogarithmicFunctions`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IPowerFunctions`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IRootFunctions`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ITrigonometricFunctions`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryFloatParseAndFormatInfo`1[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "IBinaryInteger`1": Is unsupported Type
+// Unsupported Type "IBinaryNumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IModulusOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISignedNumber`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IHyperbolicFunctions`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ILogarithmicFunctions`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IPowerFunctions`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IRootFunctions`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ITrigonometricFunctions`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IFloatingPointConstants`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
@@ -575,52 +619,21 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "IFloatingPointConstants`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "IShiftOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBinaryInteger`1": Is unsupported Type
+// Unsupported Type "IBinaryNumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IModulusOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISignedNumber`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IFloatingPointConstants`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
@@ -630,76 +643,7 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "IFloatingPointConstants`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "IFloatingPointConstants`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "IFloatingPointConstants`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "ValueTuple`2": Is unsupported Type
-// Unsupported Type "System.ValueTuple`2[[System.Single, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryFloatParseAndFormatInfo`1[[System.Single, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "IShiftOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
@@ -748,10 +692,62 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ValueTuple`2[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryFloatParseAndFormatInfo`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.ValueTuple`2[[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IFloatingPointIeee754`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IExponentialFunctions`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IFloatingPointConstants`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IFloatingPoint`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IHyperbolicFunctions`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ILogarithmicFunctions`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IPowerFunctions`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IRootFunctions`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ITrigonometricFunctions`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryFloatParseAndFormatInfo`1[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ValueTuple`2[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
@@ -800,9 +796,85 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IFloatingPointIeee754`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IExponentialFunctions`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IFloatingPointConstants`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IFloatingPoint`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IHyperbolicFunctions`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ILogarithmicFunctions`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IPowerFunctions`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IRootFunctions`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ITrigonometricFunctions`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryFloatParseAndFormatInfo`1[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "IBinaryInteger`1": Is unsupported Type
+// Unsupported Type "IBinaryNumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IModulusOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "IShiftOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBinaryInteger`1": Is unsupported Type
+// Unsupported Type "IBinaryNumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IModulusOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "IShiftOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
@@ -851,75 +923,546 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ValueTuple`2[[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ValueTuple`2[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "IBinaryInteger`1": Is unsupported Type
+// Unsupported Type "IBinaryNumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IModulusOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "IShiftOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBinaryInteger`1": Is unsupported Type
+// Unsupported Type "IBinaryNumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IModulusOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "IShiftOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "System.ValueTuple`2[[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ValueTuple`2[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "System.ValueTuple`2[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "IBinaryInteger`1": Is unsupported Type
+// Unsupported Type "IBinaryNumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IModulusOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "IShiftOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBinaryInteger`1": Is unsupported Type
+// Unsupported Type "IBinaryNumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IBitwiseOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumber`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IComparisonOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IModulusOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "IShiftOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ValueTuple`2[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "System.ValueTuple`2[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "System.ValueTuple`2[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "INumberBase`1": Is unsupported Type
+// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "System.ISpanParsable`1[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.TimeSpan, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.TimeSpan, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.DateOnly, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.DateOnly, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.TimeOnly, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.TimeOnly, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
 // Unsupported Type "System.Runtime.Serialization.DeserializationToken": Excluded
 // Unsupported Type "ValueTask`1": Is unsupported Type
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.IntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.IntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.IntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ValueTuple`2[[System.IntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.Action`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Action`2[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.CancellationToken, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`2[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.CancellationToken, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "ValueTask`1": Is unsupported Type
+// Unsupported Type "System.ISpanParsable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.DateTimeOffset, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.DateTimeOffset, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
 // Unsupported Type "System.TypedReference": Excluded
 // Unsupported Type "ValueTask`1": Is unsupported Type
-// Unsupported Type "System.EventHandler`1[[System.Threading.Tasks.UnobservedTaskExceptionEventArgs, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Nullable Value Type, but not a struct (System.Int32?)
+// Unsupported Type "System.EventHandler`1[[System.Threading.Tasks.UnobservedTaskExceptionEventArgs, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Nullable Value Type, but not a struct (System.Int32?)
 // Unsupported Type "IList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IReadOnlyList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IReadOnlyCollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerator`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Func`2[[System.Exception, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Exception, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Func`1": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
@@ -936,8 +1479,8 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Action`1[[System.IAsyncResult, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`3[[System.AsyncCallback, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IAsyncResult, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`1[[System.IAsyncResult, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`3[[System.AsyncCallback, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IAsyncResult, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`4": Is Generic Delegate Type
 // Unsupported Type "Func`4": Is Generic Delegate Type
 // Unsupported Type "Func`5": Is Generic Delegate Type
@@ -972,7 +1515,7 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Func`6": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Task`1[]": Is Array of Generic Type
 // Unsupported Type "Action`1": Is Generic Delegate Type
 // Unsupported Type "Task`1[]": Is Array of Generic Type
@@ -1001,7 +1544,7 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Task`1[]": Is Array of Generic Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
@@ -1033,7 +1576,7 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "System.Runtime.CompilerServices.ITaskAwaiter": Is Not Visible (public)
 // Unsupported Type "System.Runtime.CompilerServices.IConfiguredTaskAwaiter": Is Not Visible (public)
 // Unsupported Type "System.Runtime.CompilerServices.IStateMachineBoxAwareAwaiter": Is Not Visible (public)
-// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
@@ -1054,6 +1597,7 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Func`3": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
@@ -1061,7 +1605,7 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Func`1": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Func`1": Is Generic Delegate Type
-// Unsupported Type "System.Func`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Func`1": Is Generic Delegate Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
@@ -1186,21 +1730,53 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Func`3": Is Generic Delegate Type
 // Unsupported Type "Func`3": Is Generic Delegate Type
 // Unsupported Type "Task`1[]": Is Array of Generic Type
-// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "IList`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IReadOnlyList`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IReadOnlyCollection`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "Func`1": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
-// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "ConfiguredTaskAwaiter": Is nested type inside generic type
+// Unsupported Type "Action`1": Is Generic Delegate Type
+// Unsupported Type "Action`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "ReadOnlySpan`1": Is unsupported Type
+// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
@@ -1214,25 +1790,35 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Task`1[]": Is Array of Generic Type
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ReadOnlySpan`1": Is unsupported Type
+// Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Task`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Func`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "IAsyncEnumerator`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "System.Threading.Tasks.ValueTask`1[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "IAsyncEnumerable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "Task`1[]": Is Array of Generic Type
+// Unsupported Type "IAsyncEnumerable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "ReadOnlySpan`1": Is unsupported Type
+// Unsupported Type "IAsyncEnumerable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "System.Func`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
-// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
@@ -1243,14 +1829,17 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Func`3": Is Generic Delegate Type
 // Unsupported Type "Func`3": Is Generic Delegate Type
 // Unsupported Type "Func`3": Is Generic Delegate Type
-// Unsupported Type "System.Threading.Tasks.ValueTask`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Memory`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlyMemory`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Nullable`1[[System.IO.UnixFileMode, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Nullable Value Type, but not a struct (System.IO.UnixFileMode?)
+// Unsupported Type "System.Threading.Tasks.ValueTask`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Memory`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlyMemory`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Nullable`1[[System.IO.UnixFileMode, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Nullable Value Type, but not a struct (System.IO.UnixFileMode?)
+// Unsupported Type "System.ISpanParsable`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
 // Unsupported Type "SpanAction`2": Is Generic Delegate Type
 // Unsupported Type "System.Runtime.CompilerServices.DefaultInterpolatedStringHandler&": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.ReadOnlySpan`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "System.Char*": Is Managed Pointer Type
@@ -1261,11 +1850,31 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IReadOnlyList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IReadOnlyCollection`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.ValueTuple`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IBinaryNumber`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IBitwiseOperators`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IComparisonOperators`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IEqualityOperators`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IModulusOperators`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.INumberBase`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IAdditionOperators`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IAdditiveIdentity`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDecrementOperators`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IDivisionOperators`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IIncrementOperators`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplicativeIdentity`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMultiplyOperators`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.ISpanParsable`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISubtractionOperators`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryPlusOperators`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IUnaryNegationOperators`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IUtf8SpanParsable`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Numerics.IShiftOperators`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.IMinMaxValue`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.Numerics.ISignedNumber`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
+// Unsupported Type "System.ValueTuple`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "INumberBase`1": Is unsupported Type
 // Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
@@ -1314,6 +1923,8 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
+// Unsupported Type "System.ISpanParsable`1[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
+// Unsupported Type "System.IParsable`1[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Static abstract members in interface
 // Unsupported Type "ReadOnlyCollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
@@ -1555,8 +2166,8 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IReadOnlyList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IReadOnlyCollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Predicate`1": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Reflection.AssemblyName, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Reflection.Assembly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`4[[System.Reflection.Assembly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Type, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Reflection.AssemblyName, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Reflection.Assembly, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`4[[System.Reflection.Assembly, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Type, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "IList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
@@ -1568,60 +2179,8 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IReadOnlyList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IReadOnlyCollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "System.Runtime.InteropServices.ComTypes.ITypeInfo": Excluded
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UIntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.UIntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.UIntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ValueTuple`2[[System.UIntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UIntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.TimeSpan, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.GCGenerationInfo, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.TimeSpan, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.GCGenerationInfo, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "IList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
@@ -1636,8 +2195,9 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.EventHandler`1[[System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Nullable`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Nullable Value Type, but not a struct (System.Boolean?)
+// Unsupported Type "System.EventHandler`1[[System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Nullable`1[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Nullable Value Type, but not a struct (System.Boolean?)
+// Unsupported Type "System.ReadOnlySpan`1[[System.Threading.CancellationToken, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "ReadOnlySpan`1": Is unsupported Type
 // Unsupported Type "Span`1": Is unsupported Type
 // Unsupported Type "IList`1": Is Constructed Generic Type with non-constructed generic types
@@ -1657,55 +2217,25 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IReadOnlyList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IReadOnlyCollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Span`1": Is unsupported Type
-// Unsupported Type "System.ReadOnlyMemory`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlyMemory`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Func`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
-// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`3": Is Generic Delegate Type
-// Unsupported Type "Func`3": Is Generic Delegate Type
-// Unsupported Type "Func`3": Is Generic Delegate Type
-// Unsupported Type "Func`3": Is Generic Delegate Type
-// Unsupported Type "Func`3": Is Generic Delegate Type
-// Unsupported Type "System.Threading.Tasks.ValueTask`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Memory`1[[System.Char, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "IAsyncEnumerator`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Threading.Tasks.ValueTask`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Func`1[[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
-// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
@@ -1716,22 +2246,24 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Func`3": Is Generic Delegate Type
 // Unsupported Type "Func`3": Is Generic Delegate Type
 // Unsupported Type "Func`3": Is Generic Delegate Type
-// Unsupported Type "System.Func`1[[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Threading.Tasks.ValueTask`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Memory`1[[System.Char, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Func`1[[System.Byte[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
-// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
-// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.Byte[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.Byte[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.Byte[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
 // Unsupported Type "Func`2": Is Generic Delegate Type
@@ -1742,182 +2274,50 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "Func`3": Is Generic Delegate Type
 // Unsupported Type "Func`3": Is Generic Delegate Type
 // Unsupported Type "Func`3": Is Generic Delegate Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Half, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Half, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ValueTuple`2[[System.Half, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Half, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryFloatParseAndFormatInfo`1[[System.Half, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.Int128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.Int128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.Int128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.Int128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.Numerics.IBinaryInteger`1[[System.UInt128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Numerics.INumberBase`1[[System.UInt128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IUtf8SpanParsable`1[[System.UInt128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.IBinaryIntegerParseAndFormatInfo`1[[System.UInt128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Not Visible (public)
-// Unsupported Type "System.ValueTuple`2[[System.UInt128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.UInt128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.ValueTuple`2[[System.Int128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "INumberBase`1": Is unsupported Type
-// Unsupported Type "IAdditionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IAdditiveIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDecrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IDivisionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEquatable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IEqualityOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IIncrementOperators`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplicativeIdentity`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IMultiplyOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISpanParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IParsable`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "ISubtractionOperators`3": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryPlusOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUnaryNegationOperators`2": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "IUtf8SpanParsable`1": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.UInt16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.UInt16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.Int16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.Int16, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.UInt32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.UInt32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.UIntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.UIntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.IntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.IntPtr, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.UInt128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.UInt128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.ReadOnlySpan`1[[System.Int128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
-// Unsupported Type "System.Span`1[[System.Int128, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Func`1[[System.String[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.IAsyncResult, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "System.Func`2[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.String[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.Action`1[[System.Threading.Tasks.Task`1[[System.String[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`2[[System.Threading.Tasks.Task`1[[System.String[], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`2": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "Func`3": Is Generic Delegate Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.UInt16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.UInt32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.UInt64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.UIntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.IntPtr, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.UInt128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.ReadOnlySpan`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
+// Unsupported Type "System.Span`1[[System.Int128, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is unsupported Type
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "CreateValueCallback": Is Generic Delegate Type
 // Unsupported Type "IList`1": Is Constructed Generic Type with non-constructed generic types
@@ -1942,22 +2342,26 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "KeyCollection": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ValueCollection": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "Enumerator": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "AlternateLookup`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "AlternateLookup`1&": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "System.ITupleInternal": Is Not Visible (public)
-// Unsupported Type "System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]": Is Array of Generic Type
-// Unsupported Type "System.Nullable`1[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]": Is Array of Generic Type
+// Unsupported Type "System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]": Is Array of Generic Type
+// Unsupported Type "System.Nullable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]": Is Array of Generic Type
 // Unsupported Type "Converter`2": Is Generic Delegate Type
-// Unsupported Type "System.Predicate`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Action`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Collections.Generic.List`1+Enumerator[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
-// Unsupported Type "System.Comparison`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
-// Unsupported Type "System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Exception, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]": Is Array of Generic Type
-// Unsupported Type "System.Collections.Generic.Dictionary`2+KeyCollection[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Exception, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
-// Unsupported Type "System.Collections.Generic.Dictionary`2+ValueCollection[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Exception, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
-// Unsupported Type "System.Collections.Generic.Dictionary`2+Enumerator[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Exception, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.Predicate`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Action`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Collections.Generic.List`1+Enumerator[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.Comparison`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is Generic Delegate Type
+// Unsupported Type "System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Exception, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]": Is Array of Generic Type
+// Unsupported Type "System.Collections.Generic.Dictionary`2+KeyCollection[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Exception, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.Collections.Generic.Dictionary`2+ValueCollection[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Exception, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "System.Collections.Generic.Dictionary`2+Enumerator[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Exception, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": Is nested type inside generic type
+// Unsupported Type "AlternateLookup`1": Is Constructed Generic Type with non-constructed generic types
+// Unsupported Type "AlternateLookup`1&": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "ICollection`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
@@ -1973,9 +2377,13 @@ typedef struct DNReadOnlySpanOfByte {
 // Unsupported Type "IEnumerable`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IReadOnlyList`1": Is Constructed Generic Type with non-constructed generic types
 // Unsupported Type "IReadOnlyCollection`1": Is Constructed Generic Type with non-constructed generic types
-// Unsupported Type "System.Span`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&": Is unsupported Type
+// Unsupported Type "Beyond.NET.Sample.IRegistrationData": Static abstract members in interface
+// Unsupported Type "Beyond.NET.Sample.INotImplementedInterfaceWithStaticAbstractMembers": Static abstract members in interface
+// Unsupported Type "System.Span`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&": Is unsupported Type
 // Unsupported Type "System.Nullable`1": Excluded
-// Unsupported Type "System.ArraySegment`1[[System.Byte, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&": Is unsupported Type
+// Unsupported Type "System.ArraySegment`1[[System.Byte, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&": Is unsupported Type
+// Unsupported Type "System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&": Is Nullable Value Type, but not a struct (System.Int32?)
+// Unsupported Type "System.Nullable`1[[System.DateTimeKind, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]&": Is Nullable Value Type, but not a struct (System.DateTimeKind?)
 
 #pragma mark - END Unsupported Types
 
@@ -2553,7 +2961,8 @@ typedef enum __attribute__((enum_extensibility(open))) __attribute__((flag_enum)
 	System_Reflection_GenericParameterAttributes_ReferenceTypeConstraint = 4,
 	System_Reflection_GenericParameterAttributes_NotNullableValueTypeConstraint = 8,
 	System_Reflection_GenericParameterAttributes_DefaultConstructorConstraint = 16,
-	System_Reflection_GenericParameterAttributes_SpecialConstraintMask = 28
+	System_Reflection_GenericParameterAttributes_SpecialConstraintMask = 28,
+	System_Reflection_GenericParameterAttributes_AllowByRefLike = 32
 } System_Reflection_GenericParameterAttributes_t;
 
 
@@ -2883,6 +3292,14 @@ typedef enum __attribute__((enum_extensibility(open))): int32_t {
 } System_Security_Cryptography_ECCurve_ECCurveType_t;
 
 
+typedef enum __attribute__((enum_extensibility(open))): int32_t {
+	Beyond_NET_Sample_Source_EnumWithUnfavorableNames_Int = 0,
+	Beyond_NET_Sample_Source_EnumWithUnfavorableNames_UInt = 1,
+	Beyond_NET_Sample_Source_EnumWithUnfavorableNames_String = 2,
+	Beyond_NET_Sample_Source_EnumWithUnfavorableNames_System = 3
+} Beyond_NET_Sample_Source_EnumWithUnfavorableNames_t;
+
+
 typedef void* System_Object_t;
 
 typedef void* System_Type_t;
@@ -2946,7 +3363,7 @@ typedef void* System_IEquatable_A1_t;
 // Type "T" was skipped. Reason: It has no full name.
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_Numerics_IBinaryNumber_A1_t;
+typedef void* System_Numerics_INumber_A1_t;
 
 typedef void* System_IUtf8SpanFormattable_t;
 
@@ -2954,124 +3371,7 @@ typedef void* System_IUtf8SpanFormattable_t;
 typedef void* System_IFormatProvider_t;
 
 // Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
 typedef void* System_Numerics_INumber_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-
-typedef void* System_IParsable_A1_t;
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-// Type "TResult" was skipped. Reason: It has no full name.
-// Type "TSelf" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IMinMaxValue_A1_t;
 
 typedef void* System_Numerics_IUnsignedNumber_A1_t;
 
@@ -3135,51 +3435,8 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
 typedef void* System_Numerics_INumber_A1_t;
 
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-typedef void* System_Numerics_ISignedNumber_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_ISignedNumber_A1_t;
 
 typedef void* System_ReadOnlySpan_A1_t;
 
@@ -3189,48 +3446,10 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
 typedef void* System_Numerics_INumber_A1_t;
 
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
 typedef void* System_Numerics_IUnsignedNumber_A1_t;
+
 
 // Type "TOther" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
@@ -3258,48 +3477,8 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
 typedef void* System_Numerics_INumber_A1_t;
 
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-typedef void* System_Numerics_ISignedNumber_A1_t;
 
 // Type "TOther" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
@@ -3310,48 +3489,10 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
 typedef void* System_Numerics_INumber_A1_t;
 
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
 typedef void* System_Numerics_IUnsignedNumber_A1_t;
+
 
 // Type "TOther" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
@@ -3362,152 +3503,93 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
 typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
 
 typedef void* System_Numerics_IUnsignedNumber_A1_t;
 
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Int64_t;
-
-typedef void* System_IComparable_A1_t;
-
-typedef void* System_IEquatable_A1_t;
-
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
-typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-typedef void* System_Numerics_ISignedNumber_A1_t;
-
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
 typedef void* System_UInt64_t;
 
 typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_Numerics_IBinaryNumber_A1_t;
+typedef void* System_Numerics_INumber_A1_t;
 
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
+typedef void* System_Numerics_IUnsignedNumber_A1_t;
+
+typedef void* System_UInt128_t;
 
 typedef void* System_Numerics_INumber_A1_t;
 
-typedef void* System_Numerics_IComparisonOperators_A3_t;
+typedef void* System_IComparable_A1_t;
 
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
+typedef void* System_IEquatable_A1_t;
 
 typedef void* System_Numerics_IUnsignedNumber_A1_t;
+
+
+typedef void* System_Decimal_t;
+
+typedef void* System_IComparable_A1_t;
+
+typedef void* System_IEquatable_A1_t;
+
+typedef void* System_Numerics_INumber_A1_t;
+
+typedef void* System_Int64_t;
+
+typedef void* System_IComparable_A1_t;
+
+typedef void* System_IEquatable_A1_t;
+
+typedef void* System_Numerics_INumber_A1_t;
+
+typedef void* System_Int128_t;
+
+typedef void* System_Numerics_INumber_A1_t;
+
+typedef void* System_IComparable_A1_t;
+
+typedef void* System_IEquatable_A1_t;
+
+
+typedef void* System_Double_t;
+
+typedef void* System_IComparable_A1_t;
+
+typedef void* System_IEquatable_A1_t;
+
+typedef void* System_Numerics_IBinaryFloatingPointIeee754_A1_t;
+
+typedef void* System_Numerics_IBinaryFloatingPointIeee754_A1_t;
+
+typedef void* System_Numerics_INumber_A1_t;
+
+
+// Type "TInteger" was skipped. Reason: It has no full name.
+// Type "TInteger" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+typedef void* System_Half_t;
+
+typedef void* System_IComparable_A1_t;
+
+typedef void* System_IEquatable_A1_t;
+
+typedef void* System_Numerics_IBinaryFloatingPointIeee754_A1_t;
+
+typedef void* System_Numerics_INumber_A1_t;
+
+
+typedef void* System_IntPtr_t;
+
+typedef void* System_IEquatable_A1_t;
+
+typedef void* System_IComparable_A1_t;
+
+typedef void* System_Numerics_INumber_A1_t;
+
 
 // Type "TOther" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
@@ -3520,213 +3602,40 @@ typedef void* System_IEquatable_A1_t;
 
 typedef void* System_Numerics_IBinaryFloatingPointIeee754_A1_t;
 
-typedef void* System_Numerics_IBinaryFloatingPointIeee754_A1_t;
-
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
 typedef void* System_Numerics_INumber_A1_t;
 
-typedef void* System_Numerics_IComparisonOperators_A3_t;
 
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IFloatingPointIeee754_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IFloatingPointIeee754_A1_t;
-
-typedef void* System_Numerics_IExponentialFunctions_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IExponentialFunctions_A1_t;
-
-typedef void* System_Numerics_IFloatingPointConstants_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IFloatingPointConstants_A1_t;
-
-typedef void* System_Numerics_IFloatingPoint_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IFloatingPoint_A1_t;
-
-typedef void* System_Numerics_ISignedNumber_A1_t;
-
-typedef void* System_Numerics_IHyperbolicFunctions_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IHyperbolicFunctions_A1_t;
-
-typedef void* System_Numerics_ILogarithmicFunctions_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_ILogarithmicFunctions_A1_t;
-
-typedef void* System_Numerics_IPowerFunctions_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IPowerFunctions_A1_t;
-
-typedef void* System_Numerics_IRootFunctions_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_IRootFunctions_A1_t;
-
-typedef void* System_Numerics_ITrigonometricFunctions_A1_t;
-
-// Type "TSelf" was skipped. Reason: It has no full name.
-typedef void* System_Numerics_ITrigonometricFunctions_A1_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
+// Type "TInteger" was skipped. Reason: It has no full name.
+// Type "TInteger" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Double_t;
-
-typedef void* System_IComparable_A1_t;
+typedef void* System_UIntPtr_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_Numerics_IBinaryFloatingPointIeee754_A1_t;
-
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
-typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IFloatingPointIeee754_A1_t;
-
-typedef void* System_Numerics_IExponentialFunctions_A1_t;
-
-typedef void* System_Numerics_IFloatingPointConstants_A1_t;
-
-typedef void* System_Numerics_IFloatingPoint_A1_t;
-
-typedef void* System_Numerics_ISignedNumber_A1_t;
-
-typedef void* System_Numerics_IHyperbolicFunctions_A1_t;
-
-typedef void* System_Numerics_ILogarithmicFunctions_A1_t;
-
-typedef void* System_Numerics_IPowerFunctions_A1_t;
-
-typedef void* System_Numerics_IRootFunctions_A1_t;
-
-typedef void* System_Numerics_ITrigonometricFunctions_A1_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-typedef void* System_Decimal_t;
-
 typedef void* System_IComparable_A1_t;
 
-typedef void* System_IEquatable_A1_t;
-
-typedef void* System_Numerics_IFloatingPoint_A1_t;
-
-typedef void* System_Numerics_IFloatingPointConstants_A1_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
 typedef void* System_Numerics_INumber_A1_t;
 
-typedef void* System_Numerics_IComparisonOperators_A3_t;
+typedef void* System_Numerics_IUnsignedNumber_A1_t;
 
-typedef void* System_Numerics_IModulusOperators_A3_t;
 
-typedef void* System_Numerics_ISignedNumber_A1_t;
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TInteger" was skipped. Reason: It has no full name.
+// Type "TInteger" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
 
-typedef void* System_Numerics_IMinMaxValue_A1_t;
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
 
 typedef void* System_Int32_Array_t;
 
@@ -3742,6 +3651,19 @@ typedef void* System_Collections_Generic_IReadOnlyList_A1_t;
 
 typedef void* System_Collections_Generic_IReadOnlyCollection_A1_t;
 
+// Type "TInteger" was skipped. Reason: It has no full name.
+// Type "TInteger" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+// Type "TOther" was skipped. Reason: It has no full name.
+
 // Type "TOther" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
@@ -3751,21 +3673,11 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
 typedef void* System_TimeSpan_t;
 
 typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
 
 typedef void* System_String_Array_t;
 
@@ -3782,16 +3694,13 @@ typedef void* System_Collections_Generic_IReadOnlyList_A1_t;
 typedef void* System_Collections_Generic_IReadOnlyCollection_A1_t;
 
 
+
+
 typedef void* System_DateOnly_t;
 
 typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
 
 typedef void* System_TimeOnly_t;
 
@@ -3799,9 +3708,6 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
 
 
 typedef void* System_Globalization_Calendar_t;
@@ -3840,58 +3746,6 @@ typedef void* System_IEquatable_A1_t;
 
 typedef void* System_Threading_WaitHandle_t;
 
-typedef void* System_IntPtr_t;
-
-typedef void* System_IEquatable_A1_t;
-
-typedef void* System_IComparable_A1_t;
-
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
-typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-typedef void* System_Numerics_ISignedNumber_A1_t;
-
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
 typedef void* Microsoft_Win32_SafeHandles_SafeWaitHandle_t;
 
 typedef void* Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid_t;
@@ -3994,9 +3848,12 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_ISpanParsable_A1_t;
+typedef void* System_DateTimeOffset_t;
 
-typedef void* System_IParsable_A1_t;
+typedef void* System_IComparable_A1_t;
+
+typedef void* System_IEquatable_A1_t;
+
 
 
 
@@ -4277,17 +4134,6 @@ typedef void* System_Runtime_CompilerServices_YieldAwaitable_YieldAwaiter_t;
 
 typedef void* System_TimeProvider_t;
 
-typedef void* System_DateTimeOffset_t;
-
-typedef void* System_IComparable_A1_t;
-
-typedef void* System_IEquatable_A1_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
 typedef void* System_TimeZoneInfo_t;
 
 typedef void* System_IEquatable_A1_t;
@@ -4385,6 +4231,13 @@ typedef void* System_Runtime_CompilerServices_ConfiguredTaskAwaitable_A1_t;
 // Type "TaskFactory`1" was skipped. Reason: It has no full name.
 // Type "TaskAwaiter`1" was skipped. Reason: It has no full name.
 // Type "ConfiguredTaskAwaitable`1" was skipped. Reason: It has no full name.
+// Type "Task`1" was skipped. Reason: It has no full name.
+// Type "TResult[]" was skipped. Reason: It has no full name.
+// Type "TResult" was skipped. Reason: It has no full name.
+
+// Type "TaskFactory`1" was skipped. Reason: It has no full name.
+// Type "TaskAwaiter`1" was skipped. Reason: It has no full name.
+// Type "ConfiguredTaskAwaitable`1" was skipped. Reason: It has no full name.
 typedef void* System_Threading_Tasks_Task_A1_t;
 
 typedef void* System_Threading_Tasks_TaskFactory_A1_t;
@@ -4392,6 +4245,15 @@ typedef void* System_Threading_Tasks_TaskFactory_A1_t;
 typedef void* System_Runtime_CompilerServices_TaskAwaiter_A1_t;
 
 typedef void* System_Runtime_CompilerServices_ConfiguredTaskAwaitable_A1_t;
+
+typedef void* System_Collections_Generic_IAsyncEnumerable_A1_t;
+
+typedef void* System_Collections_Generic_IAsyncEnumerable_A1_t;
+
+typedef void* System_Collections_Generic_IAsyncEnumerator_A1_t;
+
+// Type "T" was skipped. Reason: It has no full name.
+typedef void* System_Collections_Generic_IAsyncEnumerator_A1_t;
 
 typedef void* System_Runtime_CompilerServices_ValueTaskAwaiter_t;
 
@@ -4537,10 +4399,6 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
 // Type "TState" was skipped. Reason: It has no full name.
 typedef void* System_Char_Array_t;
 
@@ -4623,47 +4481,7 @@ typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
 
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
 typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-typedef void* System_Numerics_ISignedNumber_A1_t;
 
 // Type "TOther" was skipped. Reason: It has no full name.
 // Type "TOther" was skipped. Reason: It has no full name.
@@ -4671,10 +4489,6 @@ typedef void* System_Numerics_ISignedNumber_A1_t;
 typedef void* System_IComparable_A1_t;
 
 typedef void* System_IEquatable_A1_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
 
 // Type "T[]" was skipped. Reason: It has no full name.
 // Type "T" was skipped. Reason: It has no full name.
@@ -4964,58 +4778,6 @@ typedef void* System_PlatformNotSupportedException_t;
 
 typedef void* System_NotSupportedException_t;
 
-typedef void* System_UIntPtr_t;
-
-typedef void* System_IEquatable_A1_t;
-
-typedef void* System_IComparable_A1_t;
-
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
-typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-typedef void* System_Numerics_IUnsignedNumber_A1_t;
-
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
 typedef void* System_AppContext_t;
 
 typedef void* System_Runtime_InteropServices_GCHandle_t;
@@ -5183,13 +4945,23 @@ typedef void* System_IO_StreamWriter_t;
 
 typedef void* System_IO_TextWriter_t;
 
-typedef void* System_Collections_Generic_IAsyncEnumerable_A1_t;
+typedef void* System_IO_TextWriter_Array_t;
+
+typedef void* System_Collections_Generic_IList_A1_t;
+
+typedef void* System_Collections_Generic_ICollection_A1_t;
+
+typedef void* System_Collections_Generic_IEnumerable_A1_t;
+
+typedef void* System_Collections_Generic_IEnumerator_A1_t;
+
+typedef void* System_Collections_Generic_IReadOnlyList_A1_t;
+
+typedef void* System_Collections_Generic_IReadOnlyCollection_A1_t;
+
 
 typedef void* System_Collections_Generic_IAsyncEnumerable_A1_t;
 
-typedef void* System_Collections_Generic_IAsyncEnumerator_A1_t;
-
-// Type "T" was skipped. Reason: It has no full name.
 typedef void* System_Collections_Generic_IAsyncEnumerator_A1_t;
 
 typedef void* System_Threading_Tasks_Task_A1_t;
@@ -5265,180 +5037,6 @@ typedef void* System_IO_Directory_t;
 
 typedef void* System_Buffers_Binary_BinaryPrimitives_t;
 
-typedef void* System_Half_t;
-
-typedef void* System_IComparable_A1_t;
-
-typedef void* System_IEquatable_A1_t;
-
-typedef void* System_Numerics_IBinaryFloatingPointIeee754_A1_t;
-
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
-typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IFloatingPointIeee754_A1_t;
-
-typedef void* System_Numerics_IExponentialFunctions_A1_t;
-
-typedef void* System_Numerics_IFloatingPointConstants_A1_t;
-
-typedef void* System_Numerics_IFloatingPoint_A1_t;
-
-typedef void* System_Numerics_ISignedNumber_A1_t;
-
-typedef void* System_Numerics_IHyperbolicFunctions_A1_t;
-
-typedef void* System_Numerics_ILogarithmicFunctions_A1_t;
-
-typedef void* System_Numerics_IPowerFunctions_A1_t;
-
-typedef void* System_Numerics_IRootFunctions_A1_t;
-
-typedef void* System_Numerics_ITrigonometricFunctions_A1_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-typedef void* System_Int128_t;
-
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
-typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_IComparable_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_IEquatable_A1_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-typedef void* System_Numerics_ISignedNumber_A1_t;
-
-typedef void* System_UInt128_t;
-
-typedef void* System_Numerics_IBinaryNumber_A1_t;
-
-typedef void* System_Numerics_IBitwiseOperators_A3_t;
-
-typedef void* System_Numerics_INumber_A1_t;
-
-typedef void* System_IComparable_A1_t;
-
-typedef void* System_Numerics_IComparisonOperators_A3_t;
-
-typedef void* System_Numerics_IEqualityOperators_A3_t;
-
-typedef void* System_Numerics_IModulusOperators_A3_t;
-
-typedef void* System_Numerics_IAdditionOperators_A3_t;
-
-typedef void* System_Numerics_IAdditiveIdentity_A2_t;
-
-typedef void* System_Numerics_IDecrementOperators_A1_t;
-
-typedef void* System_Numerics_IDivisionOperators_A3_t;
-
-typedef void* System_IEquatable_A1_t;
-
-typedef void* System_Numerics_IIncrementOperators_A1_t;
-
-typedef void* System_Numerics_IMultiplicativeIdentity_A2_t;
-
-typedef void* System_Numerics_IMultiplyOperators_A3_t;
-
-typedef void* System_ISpanParsable_A1_t;
-
-typedef void* System_IParsable_A1_t;
-
-
-typedef void* System_Numerics_ISubtractionOperators_A3_t;
-
-typedef void* System_Numerics_IUnaryPlusOperators_A2_t;
-
-typedef void* System_Numerics_IUnaryNegationOperators_A2_t;
-
-typedef void* System_Numerics_IShiftOperators_A3_t;
-
-typedef void* System_Numerics_IMinMaxValue_A1_t;
-
-typedef void* System_Numerics_IUnsignedNumber_A1_t;
-
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
-// Type "TOther" was skipped. Reason: It has no full name.
 typedef void* System_WeakReference_A1_t;
 
 // Type "T" was skipped. Reason: It has no full name.
@@ -5556,6 +5154,20 @@ typedef void* System_Collections_Generic_IReadOnlyList_A1_t;
 
 typedef void* System_Collections_Generic_IReadOnlyCollection_A1_t;
 
+typedef void* System_SByte_Array_t;
+
+typedef void* System_Collections_Generic_IList_A1_t;
+
+typedef void* System_Collections_Generic_ICollection_A1_t;
+
+typedef void* System_Collections_Generic_IEnumerable_A1_t;
+
+typedef void* System_Collections_Generic_IEnumerator_A1_t;
+
+typedef void* System_Collections_Generic_IReadOnlyList_A1_t;
+
+typedef void* System_Collections_Generic_IReadOnlyCollection_A1_t;
+
 typedef void* Beyond_NET_Sample_AsyncTests_t;
 
 typedef void* Beyond_NET_Sample_Point_t;
@@ -5620,6 +5232,28 @@ typedef void* Beyond_NET_Sample_GenericTests_SimpleKeyValuePair_t;
 
 typedef void* Beyond_NET_Sample_IndexerTests_t;
 
+typedef void* Beyond_NET_Sample_IInterface1_t;
+
+typedef void* Beyond_NET_Sample_IInterface1_DelegateAdapter_t;
+
+typedef void* Beyond_NET_Sample_IInterface2_t;
+
+typedef void* Beyond_NET_Sample_IInterface3_t;
+
+typedef void* Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_t;
+
+typedef void* Beyond_NET_Sample_TypeThatUsesInterfaces_t;
+
+
+
+typedef void* Beyond_NET_Sample_BaseRegistrationData_t;
+
+typedef void* Beyond_NET_Sample_DataType_t;
+
+typedef void* Beyond_NET_Sample_RegistrationData1_t;
+
+typedef void* Beyond_NET_Sample_RegistrationData2_t;
+
 typedef void* Beyond_NET_Sample_NullabilityTests_t;
 
 typedef void* Beyond_NET_Sample_OverloadTests_t;
@@ -5627,6 +5261,8 @@ typedef void* Beyond_NET_Sample_OverloadTests_t;
 typedef void* Beyond_NET_Sample_Person_t;
 
 typedef void* System_Uri_t;
+
+typedef void* System_IEquatable_A1_t;
 
 
 typedef void* System_UriCreationOptions_t;
@@ -5649,6 +5285,8 @@ typedef void* System_Collections_Generic_IReadOnlyCollection_A1_t;
 
 typedef void* Beyond_NET_Sample_Person_Extensions_t;
 
+
+typedef void* Beyond_NET_Sample_PrimitiveTests_t;
 
 typedef void* Beyond_NET_Sample_PropertyTests_t;
 
@@ -5684,6 +5322,8 @@ typedef void* Beyond_NET_Sample_Transformer_t;
 typedef void* Beyond_NET_Sample_SubclassingTests_MyBaseClass_t;
 
 typedef void* Beyond_NET_Sample_SubclassingTests_MySubClass_t;
+
+typedef void* Beyond_NET_Sample_Source_CharTests_t;
 
 typedef void* Beyond_NET_Sample_Source_DontStrip_t;
 
@@ -5743,6 +5383,24 @@ typedef void* System_Security_Cryptography_Oid_t;
 typedef void* System_Security_Cryptography_ECDiffieHellman_t;
 
 typedef void* System_Security_Cryptography_ECDiffieHellmanPublicKey_t;
+
+typedef void* Beyond_NET_Sample_Source_EnumTests_t;
+
+typedef void* Beyond_NET_Sample_Source_ManagedUnhandledExceptionHandler_t;
+
+typedef void* Beyond_NET_Sample_Source_OutParameterTests_t;
+
+
+
+
+
+typedef void* Beyond_NET_Sample_Source_IOverrideTestsInterface_t;
+
+typedef void* Beyond_NET_Sample_Source_OverrideTestsInterfaceImpl_t;
+
+typedef void* Beyond_NET_Sample_Source_OverrideTestsBaseClass_t;
+
+typedef void* Beyond_NET_Sample_Source_OverrideTestsDerivedClass_t;
 
 typedef void* Beyond_NET_Sample_Transformer_BuiltInTransformers_t;
 
@@ -5940,6 +5598,31 @@ typedef void (*Beyond_NET_Sample_EventTests_ValueChangedDelegate_CFunction_t)(
 	void* context,
 	System_Object_t _Nonnull sender,
 	int32_t newValue
+);
+
+
+typedef void* Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_t;
+typedef void (*Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_CDestructorFunction_t)(void* context);
+
+typedef void (*Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_CFunction_t)(
+	void* context
+);
+
+
+typedef void* Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_t;
+typedef void (*Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_CDestructorFunction_t)(void* context);
+
+typedef void (*Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_CFunction_t)(
+	void* context,
+	Beyond_NET_Sample_IInterface1_t _Nonnull interface1
+);
+
+
+typedef void* Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_t;
+typedef void (*Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_CDestructorFunction_t)(void* context);
+
+typedef Beyond_NET_Sample_IInterface1_t _Nullable (*Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_CFunction_t)(
+	void* context
 );
 
 
@@ -6678,6 +6361,14 @@ System_Security_Cryptography_ECCurve_ECCurveType_TypeOf(
 
 #pragma mark - END APIs of System.Security.Cryptography.ECCurve.ECCurveType
 
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.EnumWithUnfavorableNames
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_Source_EnumWithUnfavorableNames_TypeOf(
+	void
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.Source.EnumWithUnfavorableNames
+
 #pragma mark - BEGIN APIs of System.Object
 System_Type_t _Nonnull /* System.Type */
 System_Object_GetType(
@@ -7074,6 +6765,16 @@ System_Type_GetMethod_9(
 	System_String_t _Nonnull /* System.String */ name,
 	int32_t /* System.Int32 */ genericParameterCount,
 	System_Reflection_BindingFlags_t /* System.Reflection.BindingFlags */ bindingAttr,
+	System_Type_Array_t _Nonnull /* System.Type[] */ types,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Reflection_MethodInfo_t _Nullable /* System.Reflection.MethodInfo */
+System_Type_GetMethod_10(
+	System_Type_t _Nullable /* System.Type */ self,
+	System_String_t _Nonnull /* System.String */ name,
+	int32_t /* System.Int32 */ genericParameterCount,
+	System_Reflection_BindingFlags_t /* System.Reflection.BindingFlags */ bindingAttr,
 	System_Reflection_Binder_t _Nullable /* System.Reflection.Binder */ binder,
 	System_Type_Array_t _Nonnull /* System.Type[] */ types,
 	System_Reflection_ParameterModifier_Array_t _Nullable /* System.Reflection.ParameterModifier[] */ modifiers,
@@ -7081,7 +6782,7 @@ System_Type_GetMethod_9(
 );
 
 System_Reflection_MethodInfo_t _Nullable /* System.Reflection.MethodInfo */
-System_Type_GetMethod_10(
+System_Type_GetMethod_11(
 	System_Type_t _Nullable /* System.Type */ self,
 	System_String_t _Nonnull /* System.String */ name,
 	int32_t /* System.Int32 */ genericParameterCount,
@@ -7517,13 +7218,6 @@ System_Type_IsAssignableFrom(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-bool /* System.Boolean */
-System_Type_IsInterface_Get(
-	System_Type_t _Nullable /* System.Type */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
 System_Reflection_MemberTypes_t /* System.Reflection.MemberTypes */
 System_Type_MemberType_Get(
 	System_Type_t _Nullable /* System.Type */ self,
@@ -7561,6 +7255,13 @@ System_Type_Assembly_Get(
 
 System_Reflection_Module_t _Nonnull /* System.Reflection.Module */
 System_Type_Module_Get(
+	System_Type_t _Nullable /* System.Type */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+bool /* System.Boolean */
+System_Type_IsInterface_Get(
 	System_Type_t _Nullable /* System.Type */ self,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
@@ -8306,6 +8007,28 @@ System_Array_t _Nonnull /* System.Array */
 System_Array_CreateInstance_5(
 	System_Type_t _Nonnull /* System.Type */ elementType,
 	System_Int64_Array_t _Nonnull /* System.Int64[] */ lengths,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Array_t _Nonnull /* System.Array */
+System_Array_CreateInstanceFromArrayType(
+	System_Type_t _Nonnull /* System.Type */ arrayType,
+	int32_t /* System.Int32 */ length,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Array_t _Nonnull /* System.Array */
+System_Array_CreateInstanceFromArrayType_1(
+	System_Type_t _Nonnull /* System.Type */ arrayType,
+	System_Int32_Array_t _Nonnull /* System.Int32[] */ lengths,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Array_t _Nonnull /* System.Array */
+System_Array_CreateInstanceFromArrayType_2(
+	System_Type_t _Nonnull /* System.Type */ arrayType,
+	System_Int32_Array_t _Nonnull /* System.Int32[] */ lengths,
+	System_Int32_Array_t _Nonnull /* System.Int32[] */ lowerBounds,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
@@ -10882,93 +10605,6 @@ System_IEquatable_A1_Destroy(
 
 
 
-#pragma mark - BEGIN APIs of System.Numerics.IBinaryNumber<>
-bool /* System.Boolean */
-System_Numerics_IBinaryNumber_A1_IsPow2(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nonnull /* System.Object */
-System_Numerics_IBinaryNumber_A1_Log2(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nonnull /* System.Object */
-System_Numerics_IBinaryNumber_A1_AllBitsSet_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IBinaryNumber_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IBinaryNumber_A1_Destroy(
-	System_Numerics_IBinaryNumber_A1_t _Nullable /* System.Numerics.IBinaryNumber<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IBinaryNumber<>
-
-#pragma mark - BEGIN APIs of System.IUtf8SpanFormattable
-System_Type_t _Nonnull /* System.Type */
-System_IUtf8SpanFormattable_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_IUtf8SpanFormattable_Destroy(
-	System_IUtf8SpanFormattable_t _Nullable /* System.IUtf8SpanFormattable */ self
-);
-
-#pragma mark - END APIs of System.IUtf8SpanFormattable
-
-
-#pragma mark - BEGIN APIs of System.IFormatProvider
-System_Object_t _Nullable /* System.Object */
-System_IFormatProvider_GetFormat(
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ self,
-	System_Type_t _Nullable /* System.Type */ formatType,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_IFormatProvider_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_IFormatProvider_Destroy(
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ self
-);
-
-#pragma mark - END APIs of System.IFormatProvider
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IBitwiseOperators<,,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IBitwiseOperators_A3_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IBitwiseOperators_A3_Destroy(
-	System_Numerics_IBitwiseOperators_A3_t _Nullable /* System.Numerics.IBitwiseOperators<,,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IBitwiseOperators<,,>
-
-
-
-
-
 #pragma mark - BEGIN APIs of System.Numerics.INumber<>
 System_Object_t _Nullable /* System.Object */
 System_Numerics_INumber_A1_Clamp(
@@ -11038,327 +10674,39 @@ System_Numerics_INumber_A1_Destroy(
 
 #pragma mark - END APIs of System.Numerics.INumber<>
 
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IComparisonOperators<,,>
+#pragma mark - BEGIN APIs of System.IUtf8SpanFormattable
 System_Type_t _Nonnull /* System.Type */
-System_Numerics_IComparisonOperators_A3_TypeOf(
+System_IUtf8SpanFormattable_TypeOf(
 	void
 );
 
 void /* System.Void */
-System_Numerics_IComparisonOperators_A3_Destroy(
-	System_Numerics_IComparisonOperators_A3_t _Nullable /* System.Numerics.IComparisonOperators<,,> */ self
+System_IUtf8SpanFormattable_Destroy(
+	System_IUtf8SpanFormattable_t _Nullable /* System.IUtf8SpanFormattable */ self
 );
 
-#pragma mark - END APIs of System.Numerics.IComparisonOperators<,,>
+#pragma mark - END APIs of System.IUtf8SpanFormattable
 
 
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IEqualityOperators<,,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IEqualityOperators_A3_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IEqualityOperators_A3_Destroy(
-	System_Numerics_IEqualityOperators_A3_t _Nullable /* System.Numerics.IEqualityOperators<,,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IEqualityOperators<,,>
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IModulusOperators<,,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IModulusOperators_A3_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IModulusOperators_A3_Destroy(
-	System_Numerics_IModulusOperators_A3_t _Nullable /* System.Numerics.IModulusOperators<,,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IModulusOperators<,,>
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IAdditionOperators<,,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IAdditionOperators_A3_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IAdditionOperators_A3_Destroy(
-	System_Numerics_IAdditionOperators_A3_t _Nullable /* System.Numerics.IAdditionOperators<,,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IAdditionOperators<,,>
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IAdditiveIdentity<,>
+#pragma mark - BEGIN APIs of System.IFormatProvider
 System_Object_t _Nullable /* System.Object */
-System_Numerics_IAdditiveIdentity_A2_AdditiveIdentity_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Type_t _Nullable /* System.Type */ TResult,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IAdditiveIdentity_A2_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IAdditiveIdentity_A2_Destroy(
-	System_Numerics_IAdditiveIdentity_A2_t _Nullable /* System.Numerics.IAdditiveIdentity<,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IAdditiveIdentity<,>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IDecrementOperators<>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IDecrementOperators_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IDecrementOperators_A1_Destroy(
-	System_Numerics_IDecrementOperators_A1_t _Nullable /* System.Numerics.IDecrementOperators<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IDecrementOperators<>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IDivisionOperators<,,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IDivisionOperators_A3_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IDivisionOperators_A3_Destroy(
-	System_Numerics_IDivisionOperators_A3_t _Nullable /* System.Numerics.IDivisionOperators<,,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IDivisionOperators<,,>
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IIncrementOperators<>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IIncrementOperators_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IIncrementOperators_A1_Destroy(
-	System_Numerics_IIncrementOperators_A1_t _Nullable /* System.Numerics.IIncrementOperators<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IIncrementOperators<>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IMultiplicativeIdentity<,>
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IMultiplicativeIdentity_A2_MultiplicativeIdentity_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Type_t _Nullable /* System.Type */ TResult,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IMultiplicativeIdentity_A2_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IMultiplicativeIdentity_A2_Destroy(
-	System_Numerics_IMultiplicativeIdentity_A2_t _Nullable /* System.Numerics.IMultiplicativeIdentity<,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IMultiplicativeIdentity<,>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IMultiplyOperators<,,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IMultiplyOperators_A3_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IMultiplyOperators_A3_Destroy(
-	System_Numerics_IMultiplyOperators_A3_t _Nullable /* System.Numerics.IMultiplyOperators<,,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IMultiplyOperators<,,>
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.ISpanParsable<>
-System_Type_t _Nonnull /* System.Type */
-System_ISpanParsable_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_ISpanParsable_A1_Destroy(
-	System_ISpanParsable_A1_t _Nullable /* System.ISpanParsable<> */ self
-);
-
-#pragma mark - END APIs of System.ISpanParsable<>
-
-
-
-
-#pragma mark - BEGIN APIs of System.IParsable<>
-System_Object_t _Nonnull /* System.Object */
-System_IParsable_A1_Parse(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_String_t _Nullable /* System.String */ s,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_IParsable_A1_TryParse(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_String_t _Nullable /* System.String */ s,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Object_t _Nullable* _Nullable /* System.Object */ result,
+System_IFormatProvider_GetFormat(
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ self,
+	System_Type_t _Nullable /* System.Type */ formatType,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 System_Type_t _Nonnull /* System.Type */
-System_IParsable_A1_TypeOf(
+System_IFormatProvider_TypeOf(
 	void
 );
 
 void /* System.Void */
-System_IParsable_A1_Destroy(
-	System_IParsable_A1_t _Nullable /* System.IParsable<> */ self
+System_IFormatProvider_Destroy(
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ self
 );
 
-#pragma mark - END APIs of System.IParsable<>
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.ISubtractionOperators<,,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_ISubtractionOperators_A3_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_ISubtractionOperators_A3_Destroy(
-	System_Numerics_ISubtractionOperators_A3_t _Nullable /* System.Numerics.ISubtractionOperators<,,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.ISubtractionOperators<,,>
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IUnaryPlusOperators<,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IUnaryPlusOperators_A2_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IUnaryPlusOperators_A2_Destroy(
-	System_Numerics_IUnaryPlusOperators_A2_t _Nullable /* System.Numerics.IUnaryPlusOperators<,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IUnaryPlusOperators<,>
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IUnaryNegationOperators<,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IUnaryNegationOperators_A2_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IUnaryNegationOperators_A2_Destroy(
-	System_Numerics_IUnaryNegationOperators_A2_t _Nullable /* System.Numerics.IUnaryNegationOperators<,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IUnaryNegationOperators<,>
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IShiftOperators<,,>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IShiftOperators_A3_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IShiftOperators_A3_Destroy(
-	System_Numerics_IShiftOperators_A3_t _Nullable /* System.Numerics.IShiftOperators<,,> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IShiftOperators<,,>
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IMinMaxValue<>
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IMinMaxValue_A1_MinValue_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IMinMaxValue_A1_MaxValue_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IMinMaxValue_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IMinMaxValue_A1_Destroy(
-	System_Numerics_IMinMaxValue_A1_t _Nullable /* System.Numerics.IMinMaxValue<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IMinMaxValue<>
+#pragma mark - END APIs of System.IFormatProvider
 
 
 
@@ -13456,47 +12804,6 @@ System_SByte_TypeOf(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.ISignedNumber<>
-System_Object_t _Nonnull /* System.Object */
-System_Numerics_ISignedNumber_A1_NegativeOne_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_ISignedNumber_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_ISignedNumber_A1_Destroy(
-	System_Numerics_ISignedNumber_A1_t _Nullable /* System.Numerics.ISignedNumber<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.ISignedNumber<>
-
-
-
-
 #pragma mark - BEGIN APIs of System.Byte
 System_Type_t _Nonnull /* System.Type */
 System_Byte_TypeOf(
@@ -13504,25 +12811,6 @@ System_Byte_TypeOf(
 );
 
 #pragma mark - END APIs of System.Byte
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -13559,26 +12847,6 @@ System_Int16_TypeOf(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma mark - BEGIN APIs of System.UInt16
 System_Type_t _Nonnull /* System.Type */
 System_UInt16_TypeOf(
@@ -13586,25 +12854,6 @@ System_UInt16_TypeOf(
 );
 
 #pragma mark - END APIs of System.UInt16
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -13626,64 +12875,6 @@ System_UInt32_TypeOf(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Int64
-System_Type_t _Nonnull /* System.Type */
-System_Int64_TypeOf(
-	void
-);
-
-#pragma mark - END APIs of System.Int64
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma mark - BEGIN APIs of System.UInt64
 System_Type_t _Nonnull /* System.Type */
 System_UInt64_TypeOf(
@@ -13696,810 +12887,312 @@ System_UInt64_TypeOf(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Single
-System_Type_t _Nonnull /* System.Type */
-System_Single_TypeOf(
-	void
-);
-
-#pragma mark - END APIs of System.Single
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IBinaryFloatingPointIeee754<>
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IBinaryFloatingPointIeee754_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IBinaryFloatingPointIeee754_A1_Destroy(
-	System_Numerics_IBinaryFloatingPointIeee754_A1_t _Nullable /* System.Numerics.IBinaryFloatingPointIeee754<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IBinaryFloatingPointIeee754<>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IFloatingPointIeee754<>
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_Atan2(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ y,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_Atan2Pi(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ y,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_BitDecrement(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_BitIncrement(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_FusedMultiplyAdd(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ left,
-	System_Object_t _Nullable /* System.Object */ right,
-	System_Object_t _Nullable /* System.Object */ addend,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_Ieee754Remainder(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ left,
-	System_Object_t _Nullable /* System.Object */ right,
+#pragma mark - BEGIN APIs of System.UInt128
+int32_t /* System.Int32 */
+System_UInt128_CompareTo(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self,
+	System_Object_t _Nullable /* System.Object */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 int32_t /* System.Int32 */
-System_Numerics_IFloatingPointIeee754_A1_ILogB(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
+System_UInt128_CompareTo_1(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self,
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_Lerp(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ value1,
-	System_Object_t _Nullable /* System.Object */ value2,
-	System_Object_t _Nullable /* System.Object */ amount,
+bool /* System.Boolean */
+System_UInt128_Equals(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self,
+	System_Object_t _Nullable /* System.Object */ obj,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_ReciprocalEstimate(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_ReciprocalSqrtEstimate(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_ScaleB(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	int32_t /* System.Int32 */ n,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_Epsilon_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_NaN_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_NegativeInfinity_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_NegativeZero_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointIeee754_A1_PositiveInfinity_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IFloatingPointIeee754_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IFloatingPointIeee754_A1_Destroy(
-	System_Numerics_IFloatingPointIeee754_A1_t _Nullable /* System.Numerics.IFloatingPointIeee754<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IFloatingPointIeee754<>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IExponentialFunctions<>
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IExponentialFunctions_A1_Exp(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IExponentialFunctions_A1_ExpM1(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IExponentialFunctions_A1_Exp2(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IExponentialFunctions_A1_Exp2M1(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IExponentialFunctions_A1_Exp10(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IExponentialFunctions_A1_Exp10M1(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IExponentialFunctions_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IExponentialFunctions_A1_Destroy(
-	System_Numerics_IExponentialFunctions_A1_t _Nullable /* System.Numerics.IExponentialFunctions<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IExponentialFunctions<>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IFloatingPointConstants<>
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointConstants_A1_E_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointConstants_A1_Pi_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPointConstants_A1_Tau_Get(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IFloatingPointConstants_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IFloatingPointConstants_A1_Destroy(
-	System_Numerics_IFloatingPointConstants_A1_t _Nullable /* System.Numerics.IFloatingPointConstants<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IFloatingPointConstants<>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IFloatingPoint<>
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPoint_A1_Ceiling(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPoint_A1_Floor(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPoint_A1_Round(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPoint_A1_Round_1(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	int32_t /* System.Int32 */ digits,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPoint_A1_Round_2(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_MidpointRounding_t /* System.MidpointRounding */ mode,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPoint_A1_Round_3(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	int32_t /* System.Int32 */ digits,
-	System_MidpointRounding_t /* System.MidpointRounding */ mode,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IFloatingPoint_A1_Truncate(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
+bool /* System.Boolean */
+System_UInt128_Equals_1(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self,
+	System_UInt128_t _Nonnull /* System.UInt128 */ other,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_GetExponentByteCount(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
+System_UInt128_GetHashCode(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_UInt128_ToString(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_UInt128_ToString_1(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_UInt128_ToString_2(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self,
+	System_String_t _Nullable /* System.String */ format,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_UInt128_ToString_3(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self,
+	System_String_t _Nullable /* System.String */ format,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Parse(
+	System_String_t _Nonnull /* System.String */ s,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Parse_1(
+	System_String_t _Nonnull /* System.String */ s,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Parse_2(
+	System_String_t _Nonnull /* System.String */ s,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Parse_3(
+	System_String_t _Nonnull /* System.String */ s,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_UInt128_TryParse(
+	System_String_t _Nullable /* System.String */ s,
+	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_UInt128_TryParse_1(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_UInt128_TryParse_2(
+	System_String_t _Nullable /* System.String */ s,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_LeadingZeroCount(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_PopCount(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_RotateLeft(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
+	int32_t /* System.Int32 */ rotateAmount,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_RotateRight(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
+	int32_t /* System.Int32 */ rotateAmount,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_TrailingZeroCount(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_UInt128_IsPow2(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Log2(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Clamp(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
+	System_UInt128_t _Nonnull /* System.UInt128 */ min,
+	System_UInt128_t _Nonnull /* System.UInt128 */ max,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Max(
+	System_UInt128_t _Nonnull /* System.UInt128 */ x,
+	System_UInt128_t _Nonnull /* System.UInt128 */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Min(
+	System_UInt128_t _Nonnull /* System.UInt128 */ x,
+	System_UInt128_t _Nonnull /* System.UInt128 */ y,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_GetExponentShortestBitLength(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
+System_UInt128_Sign(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_GetSignificandBitLength(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_CreateChecked_A1(
+	System_Type_t _Nullable /* System.Type */ TOther,
+	System_Object_t _Nullable /* System.Object */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_GetSignificandByteCount(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_CreateSaturating_A1(
+	System_Type_t _Nullable /* System.Type */ TOther,
+	System_Object_t _Nullable /* System.Object */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_WriteExponentBigEndian(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Byte_Array_t _Nullable /* System.Byte[] */ destination,
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_CreateTruncating_A1(
+	System_Type_t _Nullable /* System.Type */ TOther,
+	System_Object_t _Nullable /* System.Object */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_WriteExponentBigEndian_1(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Byte_Array_t _Nullable /* System.Byte[] */ destination,
-	int32_t /* System.Int32 */ startIndex,
+bool /* System.Boolean */
+System_UInt128_IsEvenInteger(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_WriteExponentLittleEndian(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Byte_Array_t _Nullable /* System.Byte[] */ destination,
+bool /* System.Boolean */
+System_UInt128_IsOddInteger(
+	System_UInt128_t _Nonnull /* System.UInt128 */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_WriteExponentLittleEndian_1(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Byte_Array_t _Nullable /* System.Byte[] */ destination,
-	int32_t /* System.Int32 */ startIndex,
+bool /* System.Boolean */
+System_UInt128_TryParse_3(
+	System_String_t _Nullable /* System.String */ s,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_WriteSignificandBigEndian(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Byte_Array_t _Nullable /* System.Byte[] */ destination,
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Parse_4(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_WriteSignificandBigEndian_1(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Byte_Array_t _Nullable /* System.Byte[] */ destination,
-	int32_t /* System.Int32 */ startIndex,
+bool /* System.Boolean */
+System_UInt128_TryParse_4(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_WriteSignificandLittleEndian(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Byte_Array_t _Nullable /* System.Byte[] */ destination,
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Parse_5(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int32_t /* System.Int32 */
-System_Numerics_IFloatingPoint_A1_WriteSignificandLittleEndian_1(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self,
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Byte_Array_t _Nullable /* System.Byte[] */ destination,
-	int32_t /* System.Int32 */ startIndex,
+bool /* System.Boolean */
+System_UInt128_TryParse_5(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Create_1(
+	uint64_t /* System.UInt64 */ upper,
+	uint64_t /* System.UInt64 */ lower,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_MinValue_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_MaxValue_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_One_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Zero_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_UInt128_Create_2(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 System_Type_t _Nonnull /* System.Type */
-System_Numerics_IFloatingPoint_A1_TypeOf(
+System_UInt128_TypeOf(
 	void
 );
 
 void /* System.Void */
-System_Numerics_IFloatingPoint_A1_Destroy(
-	System_Numerics_IFloatingPoint_A1_t _Nullable /* System.Numerics.IFloatingPoint<> */ self
+System_UInt128_Destroy(
+	System_UInt128_t _Nonnull /* System.UInt128 */ self
 );
 
-#pragma mark - END APIs of System.Numerics.IFloatingPoint<>
-
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IHyperbolicFunctions<>
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IHyperbolicFunctions_A1_Acosh(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IHyperbolicFunctions_A1_Asinh(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IHyperbolicFunctions_A1_Atanh(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IHyperbolicFunctions_A1_Cosh(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IHyperbolicFunctions_A1_Sinh(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_IHyperbolicFunctions_A1_Tanh(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IHyperbolicFunctions_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IHyperbolicFunctions_A1_Destroy(
-	System_Numerics_IHyperbolicFunctions_A1_t _Nullable /* System.Numerics.IHyperbolicFunctions<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IHyperbolicFunctions<>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.ILogarithmicFunctions<>
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ILogarithmicFunctions_A1_Log(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ILogarithmicFunctions_A1_Log_1(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Object_t _Nullable /* System.Object */ newBase,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ILogarithmicFunctions_A1_LogP1(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ILogarithmicFunctions_A1_Log2(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ILogarithmicFunctions_A1_Log2P1(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ILogarithmicFunctions_A1_Log10(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ILogarithmicFunctions_A1_Log10P1(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_ILogarithmicFunctions_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_ILogarithmicFunctions_A1_Destroy(
-	System_Numerics_ILogarithmicFunctions_A1_t _Nullable /* System.Numerics.ILogarithmicFunctions<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.ILogarithmicFunctions<>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IPowerFunctions<>
-System_Object_t _Nonnull /* System.Object */
-System_Numerics_IPowerFunctions_A1_Pow(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Object_t _Nullable /* System.Object */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IPowerFunctions_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IPowerFunctions_A1_Destroy(
-	System_Numerics_IPowerFunctions_A1_t _Nullable /* System.Numerics.IPowerFunctions<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IPowerFunctions<>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.IRootFunctions<>
-System_Object_t _Nonnull /* System.Object */
-System_Numerics_IRootFunctions_A1_Cbrt(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nonnull /* System.Object */
-System_Numerics_IRootFunctions_A1_Hypot(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Object_t _Nullable /* System.Object */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nonnull /* System.Object */
-System_Numerics_IRootFunctions_A1_RootN(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	int32_t /* System.Int32 */ n,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nonnull /* System.Object */
-System_Numerics_IRootFunctions_A1_Sqrt(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_IRootFunctions_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_IRootFunctions_A1_Destroy(
-	System_Numerics_IRootFunctions_A1_t _Nullable /* System.Numerics.IRootFunctions<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.IRootFunctions<>
-
-
-
-#pragma mark - BEGIN APIs of System.Numerics.ITrigonometricFunctions<>
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_Acos(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_AcosPi(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_Asin(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_AsinPi(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_Atan(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_AtanPi(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_Cos(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_CosPi(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_DegreesToRadians(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ degrees,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_RadiansToDegrees(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ radians,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_Sin(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_SinPi(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_Tan(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Object_t _Nullable /* System.Object */
-System_Numerics_ITrigonometricFunctions_A1_TanPi(
-	System_Type_t _Nullable /* System.Type */ TSelf,
-	System_Object_t _Nullable /* System.Object */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_Numerics_ITrigonometricFunctions_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Numerics_ITrigonometricFunctions_A1_Destroy(
-	System_Numerics_ITrigonometricFunctions_A1_t _Nullable /* System.Numerics.ITrigonometricFunctions<> */ self
-);
-
-#pragma mark - END APIs of System.Numerics.ITrigonometricFunctions<>
-
-
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Double
-System_Type_t _Nonnull /* System.Type */
-System_Double_TypeOf(
-	void
-);
-
-#pragma mark - END APIs of System.Double
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#pragma mark - END APIs of System.UInt128
 
 
 
@@ -14805,6 +13498,20 @@ System_Decimal_GetTypeCode(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
+System_Object_t _Nullable /* System.Object */
+System_Decimal_ConvertToInteger_A1(
+	System_Type_t _Nullable /* System.Type */ TInteger,
+	System_Decimal_t _Nonnull /* System.Decimal */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Object_t _Nullable /* System.Object */
+System_Decimal_ConvertToIntegerNative_A1(
+	System_Type_t _Nullable /* System.Type */ TInteger,
+	System_Decimal_t _Nonnull /* System.Decimal */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
 System_Decimal_t _Nonnull /* System.Decimal */
 System_Decimal_Clamp(
 	System_Decimal_t _Nonnull /* System.Decimal */ value,
@@ -15066,6 +13773,1268 @@ System_Decimal_Destroy(
 
 
 
+#pragma mark - BEGIN APIs of System.Int64
+System_Type_t _Nonnull /* System.Type */
+System_Int64_TypeOf(
+	void
+);
+
+#pragma mark - END APIs of System.Int64
+
+
+
+
+#pragma mark - BEGIN APIs of System.Int128
+int32_t /* System.Int32 */
+System_Int128_CompareTo(
+	System_Int128_t _Nonnull /* System.Int128 */ self,
+	System_Object_t _Nullable /* System.Object */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_Int128_CompareTo_1(
+	System_Int128_t _Nonnull /* System.Int128 */ self,
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_Equals(
+	System_Int128_t _Nonnull /* System.Int128 */ self,
+	System_Object_t _Nullable /* System.Object */ obj,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_Equals_1(
+	System_Int128_t _Nonnull /* System.Int128 */ self,
+	System_Int128_t _Nonnull /* System.Int128 */ other,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_Int128_GetHashCode(
+	System_Int128_t _Nonnull /* System.Int128 */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Int128_ToString(
+	System_Int128_t _Nonnull /* System.Int128 */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Int128_ToString_1(
+	System_Int128_t _Nonnull /* System.Int128 */ self,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Int128_ToString_2(
+	System_Int128_t _Nonnull /* System.Int128 */ self,
+	System_String_t _Nullable /* System.String */ format,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Int128_ToString_3(
+	System_Int128_t _Nonnull /* System.Int128 */ self,
+	System_String_t _Nullable /* System.String */ format,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Parse(
+	System_String_t _Nonnull /* System.String */ s,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Parse_1(
+	System_String_t _Nonnull /* System.String */ s,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Parse_2(
+	System_String_t _Nonnull /* System.String */ s,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Parse_3(
+	System_String_t _Nonnull /* System.String */ s,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_TryParse(
+	System_String_t _Nullable /* System.String */ s,
+	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_TryParse_1(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_TryParse_2(
+	System_String_t _Nullable /* System.String */ s,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_LeadingZeroCount(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_PopCount(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_RotateLeft(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	int32_t /* System.Int32 */ rotateAmount,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_RotateRight(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	int32_t /* System.Int32 */ rotateAmount,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_TrailingZeroCount(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_IsPow2(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Log2(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Clamp(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Int128_t _Nonnull /* System.Int128 */ min,
+	System_Int128_t _Nonnull /* System.Int128 */ max,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_CopySign(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Int128_t _Nonnull /* System.Int128 */ sign,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Max(
+	System_Int128_t _Nonnull /* System.Int128 */ x,
+	System_Int128_t _Nonnull /* System.Int128 */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Min(
+	System_Int128_t _Nonnull /* System.Int128 */ x,
+	System_Int128_t _Nonnull /* System.Int128 */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_Int128_Sign(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Abs(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_CreateChecked_A1(
+	System_Type_t _Nullable /* System.Type */ TOther,
+	System_Object_t _Nullable /* System.Object */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_CreateSaturating_A1(
+	System_Type_t _Nullable /* System.Type */ TOther,
+	System_Object_t _Nullable /* System.Object */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_CreateTruncating_A1(
+	System_Type_t _Nullable /* System.Type */ TOther,
+	System_Object_t _Nullable /* System.Object */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_IsEvenInteger(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_IsNegative(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_IsOddInteger(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_IsPositive(
+	System_Int128_t _Nonnull /* System.Int128 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_MaxMagnitude(
+	System_Int128_t _Nonnull /* System.Int128 */ x,
+	System_Int128_t _Nonnull /* System.Int128 */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_MinMagnitude(
+	System_Int128_t _Nonnull /* System.Int128 */ x,
+	System_Int128_t _Nonnull /* System.Int128 */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_TryParse_3(
+	System_String_t _Nullable /* System.String */ s,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Parse_4(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_TryParse_4(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Parse_5(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Int128_TryParse_5(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Create_1(
+	uint64_t /* System.UInt64 */ upper,
+	uint64_t /* System.UInt64 */ lower,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_MinValue_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_MaxValue_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_One_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Zero_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_NegativeOne_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Int128_Create_2(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+System_Int128_TypeOf(
+	void
+);
+
+void /* System.Void */
+System_Int128_Destroy(
+	System_Int128_t _Nonnull /* System.Int128 */ self
+);
+
+#pragma mark - END APIs of System.Int128
+
+
+
+
+
+#pragma mark - BEGIN APIs of System.Double
+System_Type_t _Nonnull /* System.Type */
+System_Double_TypeOf(
+	void
+);
+
+#pragma mark - END APIs of System.Double
+
+
+
+#pragma mark - BEGIN APIs of System.Numerics.IBinaryFloatingPointIeee754<>
+System_Type_t _Nonnull /* System.Type */
+System_Numerics_IBinaryFloatingPointIeee754_A1_TypeOf(
+	void
+);
+
+void /* System.Void */
+System_Numerics_IBinaryFloatingPointIeee754_A1_Destroy(
+	System_Numerics_IBinaryFloatingPointIeee754_A1_t _Nullable /* System.Numerics.IBinaryFloatingPointIeee754<> */ self
+);
+
+#pragma mark - END APIs of System.Numerics.IBinaryFloatingPointIeee754<>
+
+
+
+
+
+
+
+
+
+#pragma mark - BEGIN APIs of System.Half
+bool /* System.Boolean */
+System_Half_IsFinite(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsInfinity(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsNaN(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsNegative(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsNegativeInfinity(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsNormal(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsPositiveInfinity(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsSubnormal(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Parse(
+	System_String_t _Nonnull /* System.String */ s,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Parse_1(
+	System_String_t _Nonnull /* System.String */ s,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Parse_2(
+	System_String_t _Nonnull /* System.String */ s,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Parse_3(
+	System_String_t _Nonnull /* System.String */ s,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_TryParse(
+	System_String_t _Nullable /* System.String */ s,
+	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_TryParse_1(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_TryParse_2(
+	System_String_t _Nullable /* System.String */ s,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_Half_CompareTo(
+	System_Half_t _Nonnull /* System.Half */ self,
+	System_Object_t _Nullable /* System.Object */ obj,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_Half_CompareTo_1(
+	System_Half_t _Nonnull /* System.Half */ self,
+	System_Half_t _Nonnull /* System.Half */ other,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_Equals(
+	System_Half_t _Nonnull /* System.Half */ self,
+	System_Object_t _Nullable /* System.Object */ obj,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_Equals_1(
+	System_Half_t _Nonnull /* System.Half */ self,
+	System_Half_t _Nonnull /* System.Half */ other,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_Half_GetHashCode(
+	System_Half_t _Nonnull /* System.Half */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Half_ToString(
+	System_Half_t _Nonnull /* System.Half */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Half_ToString_1(
+	System_Half_t _Nonnull /* System.Half */ self,
+	System_String_t _Nullable /* System.String */ format,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Half_ToString_2(
+	System_Half_t _Nonnull /* System.Half */ self,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Half_ToString_3(
+	System_Half_t _Nonnull /* System.Half */ self,
+	System_String_t _Nullable /* System.String */ format,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsPow2(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Log2(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Exp(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_ExpM1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Exp2(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Exp2M1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Exp10(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Exp10M1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Ceiling(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Object_t _Nullable /* System.Object */
+System_Half_ConvertToInteger_A1(
+	System_Type_t _Nullable /* System.Type */ TInteger,
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Object_t _Nullable /* System.Object */
+System_Half_ConvertToIntegerNative_A1(
+	System_Type_t _Nullable /* System.Type */ TInteger,
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Floor(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Round(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Round_1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	int32_t /* System.Int32 */ digits,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Round_2(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_MidpointRounding_t /* System.MidpointRounding */ mode,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Round_3(
+	System_Half_t _Nonnull /* System.Half */ x,
+	int32_t /* System.Int32 */ digits,
+	System_MidpointRounding_t /* System.MidpointRounding */ mode,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Truncate(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Atan2(
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Atan2Pi(
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_BitDecrement(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_BitIncrement(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_FusedMultiplyAdd(
+	System_Half_t _Nonnull /* System.Half */ left,
+	System_Half_t _Nonnull /* System.Half */ right,
+	System_Half_t _Nonnull /* System.Half */ addend,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Ieee754Remainder(
+	System_Half_t _Nonnull /* System.Half */ left,
+	System_Half_t _Nonnull /* System.Half */ right,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_Half_ILogB(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Lerp(
+	System_Half_t _Nonnull /* System.Half */ value1,
+	System_Half_t _Nonnull /* System.Half */ value2,
+	System_Half_t _Nonnull /* System.Half */ amount,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_ReciprocalEstimate(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_ReciprocalSqrtEstimate(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_ScaleB(
+	System_Half_t _Nonnull /* System.Half */ x,
+	int32_t /* System.Int32 */ n,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Acosh(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Asinh(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Atanh(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Cosh(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Sinh(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Tanh(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Log_1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Log_2(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ newBase,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Log10(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_LogP1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Log2P1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Log10P1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Clamp(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Half_t _Nonnull /* System.Half */ min,
+	System_Half_t _Nonnull /* System.Half */ max,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_CopySign(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Half_t _Nonnull /* System.Half */ sign,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Max(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MaxNumber(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Min(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MinNumber(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_Half_Sign(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Abs(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_CreateChecked_A1(
+	System_Type_t _Nullable /* System.Type */ TOther,
+	System_Object_t _Nullable /* System.Object */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_CreateSaturating_A1(
+	System_Type_t _Nullable /* System.Type */ TOther,
+	System_Object_t _Nullable /* System.Object */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_CreateTruncating_A1(
+	System_Type_t _Nullable /* System.Type */ TOther,
+	System_Object_t _Nullable /* System.Object */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsEvenInteger(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsInteger(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsOddInteger(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsPositive_1(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_IsRealNumber(
+	System_Half_t _Nonnull /* System.Half */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MaxMagnitude(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MaxMagnitudeNumber(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MinMagnitude(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MinMagnitudeNumber(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MultiplyAddEstimate(
+	System_Half_t _Nonnull /* System.Half */ left,
+	System_Half_t _Nonnull /* System.Half */ right,
+	System_Half_t _Nonnull /* System.Half */ addend,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_TryParse_3(
+	System_String_t _Nullable /* System.String */ s,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Pow(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Cbrt(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Hypot(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Half_t _Nonnull /* System.Half */ y,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_RootN(
+	System_Half_t _Nonnull /* System.Half */ x,
+	int32_t /* System.Int32 */ n,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Sqrt(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Acos_1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_AcosPi(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Asin_1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_AsinPi(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Atan_1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_AtanPi(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Cos_1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_CosPi(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_DegreesToRadians(
+	System_Half_t _Nonnull /* System.Half */ degrees,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_RadiansToDegrees(
+	System_Half_t _Nonnull /* System.Half */ radians,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Sin_1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_SinPi(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Tan_1(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_TanPi(
+	System_Half_t _Nonnull /* System.Half */ x,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Parse_4(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_TryParse_4(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Parse_5(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Half_TryParse_5(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Epsilon_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_PositiveInfinity_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_NegativeInfinity_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_NaN_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MinValue_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MaxValue_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_E_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Pi_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Tau_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_NegativeZero_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_MultiplicativeIdentity_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_One_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Zero_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_NegativeOne_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Half_t _Nonnull /* System.Half */
+System_Half_Create_1(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+System_Half_TypeOf(
+	void
+);
+
+void /* System.Void */
+System_Half_Destroy(
+	System_Half_t _Nonnull /* System.Half */ self
+);
+
+#pragma mark - END APIs of System.Half
+
+
+
+
+
+
+#pragma mark - BEGIN APIs of System.IntPtr
+System_Type_t _Nonnull /* System.Type */
+System_IntPtr_TypeOf(
+	void
+);
+
+#pragma mark - END APIs of System.IntPtr
+
+
+
+
+
+
+
+
+#pragma mark - BEGIN APIs of System.Single
+System_Type_t _Nonnull /* System.Type */
+System_Single_TypeOf(
+	void
+);
+
+#pragma mark - END APIs of System.Single
+
+
+
+
+
+
+
+
+
+
+
+#pragma mark - BEGIN APIs of System.UIntPtr
+System_Type_t _Nonnull /* System.Type */
+System_UIntPtr_TypeOf(
+	void
+);
+
+#pragma mark - END APIs of System.UIntPtr
+
+
 
 
 
@@ -15088,6 +15057,19 @@ System_Decimal_Destroy(
 
 #pragma mark - BEGIN APIs of System.Int32[]
 #pragma mark - END APIs of System.Int32[]
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -15859,9 +15841,6 @@ System_DateTime_Destroy(
 
 
 
-
-
-
 #pragma mark - BEGIN APIs of System.TimeSpan
 System_TimeSpan_t _Nonnull /* System.TimeSpan */
 System_TimeSpan_Add(
@@ -15931,25 +15910,100 @@ System_TimeSpan_GetHashCode(
 );
 
 System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromDays_1(
+	int32_t /* System.Int32 */ days,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromDays_2(
+	int32_t /* System.Int32 */ days,
+	int32_t /* System.Int32 */ hours,
+	int64_t /* System.Int64 */ minutes,
+	int64_t /* System.Int64 */ seconds,
+	int64_t /* System.Int64 */ milliseconds,
+	int64_t /* System.Int64 */ microseconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
 System_TimeSpan_FromHours(
-	double /* System.Double */ value,
+	int32_t /* System.Int32 */ hours,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 System_TimeSpan_t _Nonnull /* System.TimeSpan */
-System_TimeSpan_FromMilliseconds(
-	double /* System.Double */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_TimeSpan_t _Nonnull /* System.TimeSpan */
-System_TimeSpan_FromMicroseconds(
-	double /* System.Double */ value,
+System_TimeSpan_FromHours_1(
+	int32_t /* System.Int32 */ hours,
+	int64_t /* System.Int64 */ minutes,
+	int64_t /* System.Int64 */ seconds,
+	int64_t /* System.Int64 */ milliseconds,
+	int64_t /* System.Int64 */ microseconds,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 System_TimeSpan_t _Nonnull /* System.TimeSpan */
 System_TimeSpan_FromMinutes(
+	int64_t /* System.Int64 */ minutes,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromMinutes_1(
+	int64_t /* System.Int64 */ minutes,
+	int64_t /* System.Int64 */ seconds,
+	int64_t /* System.Int64 */ milliseconds,
+	int64_t /* System.Int64 */ microseconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromSeconds(
+	int64_t /* System.Int64 */ seconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromSeconds_1(
+	int64_t /* System.Int64 */ seconds,
+	int64_t /* System.Int64 */ milliseconds,
+	int64_t /* System.Int64 */ microseconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromMilliseconds(
+	int64_t /* System.Int64 */ milliseconds,
+	int64_t /* System.Int64 */ microseconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromMicroseconds(
+	int64_t /* System.Int64 */ microseconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromHours_2(
+	double /* System.Double */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromMilliseconds_1(
+	double /* System.Double */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromMicroseconds_1(
+	double /* System.Double */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_TimeSpan_FromMinutes_2(
 	double /* System.Double */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
@@ -15961,7 +16015,7 @@ System_TimeSpan_Negate(
 );
 
 System_TimeSpan_t _Nonnull /* System.TimeSpan */
-System_TimeSpan_FromSeconds(
+System_TimeSpan_FromSeconds_2(
 	double /* System.Double */ value,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
@@ -16330,6 +16384,96 @@ System_TimeSpan_TicksPerDay_Get(
 );
 
 
+int64_t /* System.Int64 */
+System_TimeSpan_MicrosecondsPerMillisecond_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MicrosecondsPerSecond_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MicrosecondsPerMinute_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MicrosecondsPerHour_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MicrosecondsPerDay_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MillisecondsPerSecond_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MillisecondsPerMinute_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MillisecondsPerHour_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MillisecondsPerDay_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_SecondsPerMinute_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_SecondsPerHour_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_SecondsPerDay_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MinutesPerHour_Get(
+	void
+);
+
+
+int64_t /* System.Int64 */
+System_TimeSpan_MinutesPerDay_Get(
+	void
+);
+
+
+int32_t /* System.Int32 */
+System_TimeSpan_HoursPerDay_Get(
+	void
+);
+
+
 System_TimeSpan_t _Nonnull /* System.TimeSpan */
 System_TimeSpan_Create_5(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
@@ -16349,11 +16493,10 @@ System_TimeSpan_Destroy(
 
 
 
-
-
-
 #pragma mark - BEGIN APIs of System.String[]
 #pragma mark - END APIs of System.String[]
+
+
 
 
 
@@ -16694,9 +16837,6 @@ System_DateOnly_Destroy(
 );
 
 #pragma mark - END APIs of System.DateOnly
-
-
-
 
 
 
@@ -17114,7 +17254,6 @@ System_TimeOnly_Destroy(
 );
 
 #pragma mark - END APIs of System.TimeOnly
-
 
 
 
@@ -19294,41 +19433,6 @@ System_Threading_WaitHandle_Destroy(
 
 #pragma mark - END APIs of System.Threading.WaitHandle
 
-#pragma mark - BEGIN APIs of System.IntPtr
-System_Type_t _Nonnull /* System.Type */
-System_IntPtr_TypeOf(
-	void
-);
-
-#pragma mark - END APIs of System.IntPtr
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma mark - BEGIN APIs of Microsoft.Win32.SafeHandles.SafeWaitHandle
 Microsoft_Win32_SafeHandles_SafeWaitHandle_t _Nonnull /* Microsoft.Win32.SafeHandles.SafeWaitHandle */
 Microsoft_Win32_SafeHandles_SafeWaitHandle_Create(
@@ -20899,6 +21003,17 @@ System_Reflection_Module_Destroy(
 
 #pragma mark - BEGIN APIs of System.Guid
 System_Guid_t _Nonnull /* System.Guid */
+System_Guid_CreateVersion7(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Guid_t _Nonnull /* System.Guid */
+System_Guid_CreateVersion7_1(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ timestamp,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Guid_t _Nonnull /* System.Guid */
 System_Guid_Parse(
 	System_String_t _Nonnull /* System.String */ input,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
@@ -21015,26 +21130,26 @@ System_Guid_NewGuid(
 );
 
 System_Guid_t _Nonnull /* System.Guid */
-System_Guid_Create(
-	System_Byte_Array_t _Nonnull /* System.Byte[] */ b,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Guid_t _Nonnull /* System.Guid */
 System_Guid_Create_1(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ b,
+	System_Byte_Array_t _Nonnull /* System.Byte[] */ b,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 System_Guid_t _Nonnull /* System.Guid */
 System_Guid_Create_2(
 	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ b,
-	bool /* System.Boolean */ bigEndian,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 System_Guid_t _Nonnull /* System.Guid */
 System_Guid_Create_3(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ b,
+	bool /* System.Boolean */ bigEndian,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Guid_t _Nonnull /* System.Guid */
+System_Guid_Create_4(
 	uint32_t /* System.UInt32 */ a,
 	uint16_t /* System.UInt16 */ b,
 	uint16_t /* System.UInt16 */ c,
@@ -21050,7 +21165,7 @@ System_Guid_Create_3(
 );
 
 System_Guid_t _Nonnull /* System.Guid */
-System_Guid_Create_4(
+System_Guid_Create_5(
 	int32_t /* System.Int32 */ a,
 	int16_t /* System.Int16 */ b,
 	int16_t /* System.Int16 */ c,
@@ -21059,7 +21174,7 @@ System_Guid_Create_4(
 );
 
 System_Guid_t _Nonnull /* System.Guid */
-System_Guid_Create_5(
+System_Guid_Create_6(
 	int32_t /* System.Int32 */ a,
 	int16_t /* System.Int16 */ b,
 	int16_t /* System.Int16 */ c,
@@ -21075,10 +21190,30 @@ System_Guid_Create_5(
 );
 
 System_Guid_t _Nonnull /* System.Guid */
-System_Guid_Create_6(
+System_Guid_Create_7(
 	System_String_t _Nonnull /* System.String */ g,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
+
+System_Guid_t _Nonnull /* System.Guid */
+System_Guid_AllBitsSet_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_Guid_Variant_Get(
+	System_Guid_t _Nonnull /* System.Guid */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_Guid_Version_Get(
+	System_Guid_t _Nonnull /* System.Guid */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
 
 System_Guid_t _Nonnull /* System.Guid */
 System_Guid_Empty_Get(
@@ -21087,7 +21222,7 @@ System_Guid_Empty_Get(
 
 
 System_Guid_t _Nonnull /* System.Guid */
-System_Guid_Create_7(
+System_Guid_Create_8(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
@@ -21103,6 +21238,606 @@ System_Guid_Destroy(
 
 #pragma mark - END APIs of System.Guid
 
+
+
+#pragma mark - BEGIN APIs of System.DateTimeOffset
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_ToOffset(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Add(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ timeSpan,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_AddDays(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	double /* System.Double */ days,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_AddHours(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	double /* System.Double */ hours,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_AddMilliseconds(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	double /* System.Double */ milliseconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_AddMicroseconds(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	double /* System.Double */ microseconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_AddMinutes(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	double /* System.Double */ minutes,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_AddMonths(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	int32_t /* System.Int32 */ months,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_AddSeconds(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	double /* System.Double */ seconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_AddTicks(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	int64_t /* System.Int64 */ ticks,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_AddYears(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	int32_t /* System.Int32 */ years,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Compare(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ first,
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ second,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_CompareTo(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ other,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_DateTimeOffset_Equals(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Object_t _Nullable /* System.Object */ obj,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_DateTimeOffset_Equals_1(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ other,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_DateTimeOffset_EqualsExact(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ other,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_DateTimeOffset_Equals_2(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ first,
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ second,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_FromFileTime(
+	int64_t /* System.Int64 */ fileTime,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_FromUnixTimeSeconds(
+	int64_t /* System.Int64 */ seconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_FromUnixTimeMilliseconds(
+	int64_t /* System.Int64 */ milliseconds,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_GetHashCode(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Parse(
+	System_String_t _Nonnull /* System.String */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Parse_1(
+	System_String_t _Nonnull /* System.String */ input,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Parse_2(
+	System_String_t _Nonnull /* System.String */ input,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_ParseExact(
+	System_String_t _Nonnull /* System.String */ input,
+	System_String_t _Nonnull /* System.String */ format,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_ParseExact_1(
+	System_String_t _Nonnull /* System.String */ input,
+	System_String_t _Nonnull /* System.String */ format,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_ParseExact_2(
+	System_String_t _Nonnull /* System.String */ input,
+	System_String_Array_t _Nonnull /* System.String[] */ formats,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_DateTimeOffset_Subtract(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Subtract_1(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int64_t /* System.Int64 */
+System_DateTimeOffset_ToFileTime(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int64_t /* System.Int64 */
+System_DateTimeOffset_ToUnixTimeSeconds(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int64_t /* System.Int64 */
+System_DateTimeOffset_ToUnixTimeMilliseconds(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_ToLocalTime(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_DateTimeOffset_ToString(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_DateTimeOffset_ToString_1(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_String_t _Nullable /* System.String */ format,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_DateTimeOffset_ToString_2(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_DateTimeOffset_ToString_3(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_String_t _Nullable /* System.String */ format,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_ToUniversalTime(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_DateTimeOffset_TryParse(
+	System_String_t _Nullable /* System.String */ input,
+	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_DateTimeOffset_TryParse_1(
+	System_String_t _Nullable /* System.String */ input,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
+	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_DateTimeOffset_TryParseExact(
+	System_String_t _Nullable /* System.String */ input,
+	System_String_t _Nullable /* System.String */ format,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
+	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_DateTimeOffset_TryParseExact_1(
+	System_String_t _Nullable /* System.String */ input,
+	System_String_Array_t _Nullable /* System.String[] */ formats,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
+	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
+	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+System_DateTimeOffset_Deconstruct(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_DateOnly_t _Nonnull* _Nonnull /* System.DateOnly */ date,
+	System_TimeOnly_t _Nonnull* _Nonnull /* System.TimeOnly */ time,
+	System_TimeSpan_t _Nonnull* _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_DateTimeOffset_TryParse_2(
+	System_String_t _Nullable /* System.String */ s,
+	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
+	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create(
+	int64_t /* System.Int64 */ ticks,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create_1(
+	System_DateTime_t _Nonnull /* System.DateTime */ dateTime,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create_2(
+	System_DateTime_t _Nonnull /* System.DateTime */ dateTime,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create_3(
+	System_DateOnly_t _Nonnull /* System.DateOnly */ date,
+	System_TimeOnly_t _Nonnull /* System.TimeOnly */ time,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create_4(
+	int32_t /* System.Int32 */ year,
+	int32_t /* System.Int32 */ month,
+	int32_t /* System.Int32 */ day,
+	int32_t /* System.Int32 */ hour,
+	int32_t /* System.Int32 */ minute,
+	int32_t /* System.Int32 */ second,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create_5(
+	int32_t /* System.Int32 */ year,
+	int32_t /* System.Int32 */ month,
+	int32_t /* System.Int32 */ day,
+	int32_t /* System.Int32 */ hour,
+	int32_t /* System.Int32 */ minute,
+	int32_t /* System.Int32 */ second,
+	int32_t /* System.Int32 */ millisecond,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create_6(
+	int32_t /* System.Int32 */ year,
+	int32_t /* System.Int32 */ month,
+	int32_t /* System.Int32 */ day,
+	int32_t /* System.Int32 */ hour,
+	int32_t /* System.Int32 */ minute,
+	int32_t /* System.Int32 */ second,
+	int32_t /* System.Int32 */ millisecond,
+	System_Globalization_Calendar_t _Nonnull /* System.Globalization.Calendar */ calendar,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create_7(
+	int32_t /* System.Int32 */ year,
+	int32_t /* System.Int32 */ month,
+	int32_t /* System.Int32 */ day,
+	int32_t /* System.Int32 */ hour,
+	int32_t /* System.Int32 */ minute,
+	int32_t /* System.Int32 */ second,
+	int32_t /* System.Int32 */ millisecond,
+	int32_t /* System.Int32 */ microsecond,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create_8(
+	int32_t /* System.Int32 */ year,
+	int32_t /* System.Int32 */ month,
+	int32_t /* System.Int32 */ day,
+	int32_t /* System.Int32 */ hour,
+	int32_t /* System.Int32 */ minute,
+	int32_t /* System.Int32 */ second,
+	int32_t /* System.Int32 */ millisecond,
+	int32_t /* System.Int32 */ microsecond,
+	System_Globalization_Calendar_t _Nonnull /* System.Globalization.Calendar */ calendar,
+	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_UtcNow_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_DateTime_t _Nonnull /* System.DateTime */
+System_DateTimeOffset_DateTime_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_DateTime_t _Nonnull /* System.DateTime */
+System_DateTimeOffset_UtcDateTime_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_DateTime_t _Nonnull /* System.DateTime */
+System_DateTimeOffset_LocalDateTime_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_DateTime_t _Nonnull /* System.DateTime */
+System_DateTimeOffset_Date_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Day_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_DayOfWeek_t /* System.DayOfWeek */
+System_DateTimeOffset_DayOfWeek_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_DayOfYear_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Hour_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Millisecond_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Microsecond_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Nanosecond_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Minute_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Month_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_DateTimeOffset_Offset_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_TotalOffsetMinutes_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Second_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int64_t /* System.Int64 */
+System_DateTimeOffset_Ticks_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int64_t /* System.Int64 */
+System_DateTimeOffset_UtcTicks_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_TimeSpan_t _Nonnull /* System.TimeSpan */
+System_DateTimeOffset_TimeOfDay_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_DateTimeOffset_Year_Get(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Now_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_MinValue_Get(
+	void
+);
+
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_MaxValue_Get(
+	void
+);
+
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_UnixEpoch_Get(
+	void
+);
+
+
+System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
+System_DateTimeOffset_Create_9(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+System_DateTimeOffset_TypeOf(
+	void
+);
+
+void /* System.Void */
+System_DateTimeOffset_Destroy(
+	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self
+);
+
+#pragma mark - END APIs of System.DateTimeOffset
 
 
 
@@ -22622,6 +23357,13 @@ System_Threading_Tasks_Task_WaitAll_4(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
+void /* System.Void */
+System_Threading_Tasks_Task_WaitAll_5(
+	System_Collections_Generic_IEnumerable_A1_t _Nonnull /* System.Collections.Generic.IEnumerable<System.Threading.Tasks.Task> */ tasks,
+	System_Threading_CancellationToken_t _Nonnull /* System.Threading.CancellationToken */ cancellationToken,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
 int32_t /* System.Int32 */
 System_Threading_Tasks_Task_WaitAny(
 	System_Threading_Tasks_Task_Array_t _Nonnull /* System.Threading.Tasks.Task[] */ tasks,
@@ -22750,6 +23492,18 @@ System_Threading_Tasks_Task_WhenAny_1(
 
 System_Threading_Tasks_Task_A1_t _Nonnull /* System.Threading.Tasks.Task<System.Threading.Tasks.Task> */
 System_Threading_Tasks_Task_WhenAny_2(
+	System_Collections_Generic_IEnumerable_A1_t _Nonnull /* System.Collections.Generic.IEnumerable<System.Threading.Tasks.Task> */ tasks,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Collections_Generic_IAsyncEnumerable_A1_t _Nonnull /* System.Collections.Generic.IAsyncEnumerable<System.Threading.Tasks.Task> */
+System_Threading_Tasks_Task_WhenEach(
+	System_Threading_Tasks_Task_Array_t _Nonnull /* System.Threading.Tasks.Task[] */ tasks,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Collections_Generic_IAsyncEnumerable_A1_t _Nonnull /* System.Collections.Generic.IAsyncEnumerable<System.Threading.Tasks.Task> */
+System_Threading_Tasks_Task_WhenEach_1(
 	System_Collections_Generic_IEnumerable_A1_t _Nonnull /* System.Collections.Generic.IEnumerable<System.Threading.Tasks.Task> */ tasks,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
@@ -23568,610 +24322,6 @@ System_TimeProvider_Destroy(
 );
 
 #pragma mark - END APIs of System.TimeProvider
-
-#pragma mark - BEGIN APIs of System.DateTimeOffset
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_ToOffset(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Add(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ timeSpan,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_AddDays(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	double /* System.Double */ days,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_AddHours(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	double /* System.Double */ hours,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_AddMilliseconds(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	double /* System.Double */ milliseconds,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_AddMicroseconds(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	double /* System.Double */ microseconds,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_AddMinutes(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	double /* System.Double */ minutes,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_AddMonths(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	int32_t /* System.Int32 */ months,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_AddSeconds(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	double /* System.Double */ seconds,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_AddTicks(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	int64_t /* System.Int64 */ ticks,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_AddYears(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	int32_t /* System.Int32 */ years,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Compare(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ first,
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ second,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_CompareTo(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ other,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_DateTimeOffset_Equals(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Object_t _Nullable /* System.Object */ obj,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_DateTimeOffset_Equals_1(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ other,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_DateTimeOffset_EqualsExact(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ other,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_DateTimeOffset_Equals_2(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ first,
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ second,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_FromFileTime(
-	int64_t /* System.Int64 */ fileTime,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_FromUnixTimeSeconds(
-	int64_t /* System.Int64 */ seconds,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_FromUnixTimeMilliseconds(
-	int64_t /* System.Int64 */ milliseconds,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_GetHashCode(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Parse(
-	System_String_t _Nonnull /* System.String */ input,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Parse_1(
-	System_String_t _Nonnull /* System.String */ input,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Parse_2(
-	System_String_t _Nonnull /* System.String */ input,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_ParseExact(
-	System_String_t _Nonnull /* System.String */ input,
-	System_String_t _Nonnull /* System.String */ format,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_ParseExact_1(
-	System_String_t _Nonnull /* System.String */ input,
-	System_String_t _Nonnull /* System.String */ format,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_ParseExact_2(
-	System_String_t _Nonnull /* System.String */ input,
-	System_String_Array_t _Nonnull /* System.String[] */ formats,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_TimeSpan_t _Nonnull /* System.TimeSpan */
-System_DateTimeOffset_Subtract(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Subtract_1(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int64_t /* System.Int64 */
-System_DateTimeOffset_ToFileTime(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int64_t /* System.Int64 */
-System_DateTimeOffset_ToUnixTimeSeconds(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int64_t /* System.Int64 */
-System_DateTimeOffset_ToUnixTimeMilliseconds(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_ToLocalTime(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_DateTimeOffset_ToString(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_DateTimeOffset_ToString_1(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_String_t _Nullable /* System.String */ format,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_DateTimeOffset_ToString_2(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_DateTimeOffset_ToString_3(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_String_t _Nullable /* System.String */ format,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_ToUniversalTime(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_DateTimeOffset_TryParse(
-	System_String_t _Nullable /* System.String */ input,
-	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_DateTimeOffset_TryParse_1(
-	System_String_t _Nullable /* System.String */ input,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
-	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_DateTimeOffset_TryParseExact(
-	System_String_t _Nullable /* System.String */ input,
-	System_String_t _Nullable /* System.String */ format,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
-	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_DateTimeOffset_TryParseExact_1(
-	System_String_t _Nullable /* System.String */ input,
-	System_String_Array_t _Nullable /* System.String[] */ formats,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ formatProvider,
-	System_Globalization_DateTimeStyles_t /* System.Globalization.DateTimeStyles */ styles,
-	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-void /* System.Void */
-System_DateTimeOffset_Deconstruct(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_DateOnly_t _Nonnull* _Nonnull /* System.DateOnly */ date,
-	System_TimeOnly_t _Nonnull* _Nonnull /* System.TimeOnly */ time,
-	System_TimeSpan_t _Nonnull* _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_DateTimeOffset_TryParse_2(
-	System_String_t _Nullable /* System.String */ s,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_DateTimeOffset_t _Nonnull* _Nonnull /* System.DateTimeOffset */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create(
-	int64_t /* System.Int64 */ ticks,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create_1(
-	System_DateTime_t _Nonnull /* System.DateTime */ dateTime,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create_2(
-	System_DateTime_t _Nonnull /* System.DateTime */ dateTime,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create_3(
-	System_DateOnly_t _Nonnull /* System.DateOnly */ date,
-	System_TimeOnly_t _Nonnull /* System.TimeOnly */ time,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create_4(
-	int32_t /* System.Int32 */ year,
-	int32_t /* System.Int32 */ month,
-	int32_t /* System.Int32 */ day,
-	int32_t /* System.Int32 */ hour,
-	int32_t /* System.Int32 */ minute,
-	int32_t /* System.Int32 */ second,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create_5(
-	int32_t /* System.Int32 */ year,
-	int32_t /* System.Int32 */ month,
-	int32_t /* System.Int32 */ day,
-	int32_t /* System.Int32 */ hour,
-	int32_t /* System.Int32 */ minute,
-	int32_t /* System.Int32 */ second,
-	int32_t /* System.Int32 */ millisecond,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create_6(
-	int32_t /* System.Int32 */ year,
-	int32_t /* System.Int32 */ month,
-	int32_t /* System.Int32 */ day,
-	int32_t /* System.Int32 */ hour,
-	int32_t /* System.Int32 */ minute,
-	int32_t /* System.Int32 */ second,
-	int32_t /* System.Int32 */ millisecond,
-	System_Globalization_Calendar_t _Nonnull /* System.Globalization.Calendar */ calendar,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create_7(
-	int32_t /* System.Int32 */ year,
-	int32_t /* System.Int32 */ month,
-	int32_t /* System.Int32 */ day,
-	int32_t /* System.Int32 */ hour,
-	int32_t /* System.Int32 */ minute,
-	int32_t /* System.Int32 */ second,
-	int32_t /* System.Int32 */ millisecond,
-	int32_t /* System.Int32 */ microsecond,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create_8(
-	int32_t /* System.Int32 */ year,
-	int32_t /* System.Int32 */ month,
-	int32_t /* System.Int32 */ day,
-	int32_t /* System.Int32 */ hour,
-	int32_t /* System.Int32 */ minute,
-	int32_t /* System.Int32 */ second,
-	int32_t /* System.Int32 */ millisecond,
-	int32_t /* System.Int32 */ microsecond,
-	System_Globalization_Calendar_t _Nonnull /* System.Globalization.Calendar */ calendar,
-	System_TimeSpan_t _Nonnull /* System.TimeSpan */ offset,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_UtcNow_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_DateTime_t _Nonnull /* System.DateTime */
-System_DateTimeOffset_DateTime_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_DateTime_t _Nonnull /* System.DateTime */
-System_DateTimeOffset_UtcDateTime_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_DateTime_t _Nonnull /* System.DateTime */
-System_DateTimeOffset_LocalDateTime_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_DateTime_t _Nonnull /* System.DateTime */
-System_DateTimeOffset_Date_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Day_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_DayOfWeek_t /* System.DayOfWeek */
-System_DateTimeOffset_DayOfWeek_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_DayOfYear_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Hour_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Millisecond_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Microsecond_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Nanosecond_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Minute_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Month_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_TimeSpan_t _Nonnull /* System.TimeSpan */
-System_DateTimeOffset_Offset_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_TotalOffsetMinutes_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Second_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int64_t /* System.Int64 */
-System_DateTimeOffset_Ticks_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int64_t /* System.Int64 */
-System_DateTimeOffset_UtcTicks_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_TimeSpan_t _Nonnull /* System.TimeSpan */
-System_DateTimeOffset_TimeOfDay_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-int32_t /* System.Int32 */
-System_DateTimeOffset_Year_Get(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Now_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_MinValue_Get(
-	void
-);
-
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_MaxValue_Get(
-	void
-);
-
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_UnixEpoch_Get(
-	void
-);
-
-
-System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */
-System_DateTimeOffset_Create_9(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_DateTimeOffset_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_DateTimeOffset_Destroy(
-	System_DateTimeOffset_t _Nonnull /* System.DateTimeOffset */ self
-);
-
-#pragma mark - END APIs of System.DateTimeOffset
-
-
-
-
-
 
 #pragma mark - BEGIN APIs of System.TimeZoneInfo
 System_TimeSpan_Array_t _Nonnull /* System.TimeSpan[] */
@@ -25006,6 +25156,52 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_A1_Destroy(
 
 
 
+#pragma mark - BEGIN APIs of TResult[]
+#pragma mark - END APIs of TResult[]
+
+
+
+
+
+
+
+
+
+
+#pragma mark - BEGIN APIs of System.Collections.Generic.IAsyncEnumerable<>
+System_Type_t _Nonnull /* System.Type */
+System_Collections_Generic_IAsyncEnumerable_A1_TypeOf(
+	void
+);
+
+void /* System.Void */
+System_Collections_Generic_IAsyncEnumerable_A1_Destroy(
+	System_Collections_Generic_IAsyncEnumerable_A1_t _Nullable /* System.Collections.Generic.IAsyncEnumerable<> */ self
+);
+
+#pragma mark - END APIs of System.Collections.Generic.IAsyncEnumerable<>
+
+
+#pragma mark - BEGIN APIs of System.Collections.Generic.IAsyncEnumerator<>
+System_Object_t _Nullable /* System.Object */
+System_Collections_Generic_IAsyncEnumerator_A1_Current_Get(
+	System_Collections_Generic_IAsyncEnumerator_A1_t _Nullable /* System.Collections.Generic.IAsyncEnumerator<> */ self,
+	System_Type_t _Nullable /* System.Type */ T,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Type_t _Nonnull /* System.Type */
+System_Collections_Generic_IAsyncEnumerator_A1_TypeOf(
+	void
+);
+
+void /* System.Void */
+System_Collections_Generic_IAsyncEnumerator_A1_Destroy(
+	System_Collections_Generic_IAsyncEnumerator_A1_t _Nullable /* System.Collections.Generic.IAsyncEnumerator<> */ self
+);
+
+#pragma mark - END APIs of System.Collections.Generic.IAsyncEnumerator<>
 
 
 
@@ -27338,8 +27534,6 @@ System_Globalization_DateTimeFormatInfo_Destroy(
 
 
 
-
-
 #pragma mark - BEGIN APIs of System.Char[]
 #pragma mark - END APIs of System.Char[]
 
@@ -28425,28 +28619,6 @@ System_Text_Encoder_Destroy(
 
 #pragma mark - BEGIN APIs of TEnum[]
 #pragma mark - END APIs of TEnum[]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -30486,41 +30658,6 @@ System_NotSupportedException_Destroy(
 
 #pragma mark - END APIs of System.NotSupportedException
 
-#pragma mark - BEGIN APIs of System.UIntPtr
-System_Type_t _Nonnull /* System.Type */
-System_UIntPtr_TypeOf(
-	void
-);
-
-#pragma mark - END APIs of System.UIntPtr
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma mark - BEGIN APIs of System.AppContext
 System_Object_t _Nullable /* System.Object */
 System_AppContext_GetData(
@@ -31420,15 +31557,22 @@ System_Math_Abs_7(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
-int64_t /* System.Int64 */
+uint64_t /* System.UInt64 */
 System_Math_BigMul(
+	uint32_t /* System.UInt32 */ a,
+	uint32_t /* System.UInt32 */ b,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int64_t /* System.Int64 */
+System_Math_BigMul_1(
 	int32_t /* System.Int32 */ a,
 	int32_t /* System.Int32 */ b,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 uint64_t /* System.UInt64 */
-System_Math_BigMul_1(
+System_Math_BigMul_2(
 	uint64_t /* System.UInt64 */ a,
 	uint64_t /* System.UInt64 */ b,
 	uint64_t* /* System.UInt64 */ low,
@@ -31436,10 +31580,24 @@ System_Math_BigMul_1(
 );
 
 int64_t /* System.Int64 */
-System_Math_BigMul_2(
+System_Math_BigMul_3(
 	int64_t /* System.Int64 */ a,
 	int64_t /* System.Int64 */ b,
 	int64_t* /* System.Int64 */ low,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_UInt128_t _Nonnull /* System.UInt128 */
+System_Math_BigMul_4(
+	uint64_t /* System.UInt64 */ a,
+	uint64_t /* System.UInt64 */ b,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Int128_t _Nonnull /* System.Int128 */
+System_Math_BigMul_5(
+	int64_t /* System.Int64 */ a,
+	int64_t /* System.Int64 */ b,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
@@ -33944,6 +34102,26 @@ System_Convert_ToHexString_1(
 
 System_String_t _Nonnull /* System.String */
 System_Convert_ToHexString_2(
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ bytes,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Convert_ToHexStringLower(
+	System_Byte_Array_t _Nonnull /* System.Byte[] */ inArray,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Convert_ToHexStringLower_1(
+	System_Byte_Array_t _Nonnull /* System.Byte[] */ inArray,
+	int32_t /* System.Int32 */ offset,
+	int32_t /* System.Int32 */ length,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_String_t _Nonnull /* System.String */
+System_Convert_ToHexStringLower_2(
 	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ bytes,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
@@ -38424,6 +38602,35 @@ System_IO_File_WriteAllBytes(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
+void /* System.Void */
+System_IO_File_WriteAllBytes_1(
+	System_String_t _Nonnull /* System.String */ path,
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ bytes,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+System_IO_File_AppendAllBytes(
+	System_String_t _Nonnull /* System.String */ path,
+	System_Byte_Array_t _Nonnull /* System.Byte[] */ bytes,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+System_IO_File_AppendAllBytes_1(
+	System_String_t _Nonnull /* System.String */ path,
+	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ bytes,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Threading_Tasks_Task_t _Nonnull /* System.Threading.Tasks.Task */
+System_IO_File_AppendAllBytesAsync(
+	System_String_t _Nonnull /* System.String */ path,
+	System_Byte_Array_t _Nonnull /* System.Byte[] */ bytes,
+	System_Threading_CancellationToken_t _Nonnull /* System.Threading.CancellationToken */ cancellationToken,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
 System_String_Array_t _Nonnull /* System.String[] */
 System_IO_File_ReadAllLines(
 	System_String_t _Nonnull /* System.String */ path,
@@ -39773,6 +39980,12 @@ System_IO_TextWriter_Synchronized(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
+System_IO_TextWriter_t _Nonnull /* System.IO.TextWriter */
+System_IO_TextWriter_CreateBroadcasting(
+	System_IO_TextWriter_Array_t _Nonnull /* System.IO.TextWriter[] */ writers,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
 System_IFormatProvider_t _Nonnull /* System.IFormatProvider */
 System_IO_TextWriter_FormatProvider_Get(
 	System_IO_TextWriter_t _Nullable /* System.IO.TextWriter */ self,
@@ -39819,40 +40032,15 @@ System_IO_TextWriter_Destroy(
 
 #pragma mark - END APIs of System.IO.TextWriter
 
-#pragma mark - BEGIN APIs of System.Collections.Generic.IAsyncEnumerable<>
-System_Type_t _Nonnull /* System.Type */
-System_Collections_Generic_IAsyncEnumerable_A1_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Collections_Generic_IAsyncEnumerable_A1_Destroy(
-	System_Collections_Generic_IAsyncEnumerable_A1_t _Nullable /* System.Collections.Generic.IAsyncEnumerable<> */ self
-);
-
-#pragma mark - END APIs of System.Collections.Generic.IAsyncEnumerable<>
+#pragma mark - BEGIN APIs of System.IO.TextWriter[]
+#pragma mark - END APIs of System.IO.TextWriter[]
 
 
-#pragma mark - BEGIN APIs of System.Collections.Generic.IAsyncEnumerator<>
-System_Object_t _Nullable /* System.Object */
-System_Collections_Generic_IAsyncEnumerator_A1_Current_Get(
-	System_Collections_Generic_IAsyncEnumerator_A1_t _Nullable /* System.Collections.Generic.IAsyncEnumerator<> */ self,
-	System_Type_t _Nullable /* System.Type */ T,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
 
 
-System_Type_t _Nonnull /* System.Type */
-System_Collections_Generic_IAsyncEnumerator_A1_TypeOf(
-	void
-);
 
-void /* System.Void */
-System_Collections_Generic_IAsyncEnumerator_A1_Destroy(
-	System_Collections_Generic_IAsyncEnumerator_A1_t _Nullable /* System.Collections.Generic.IAsyncEnumerator<> */ self
-);
 
-#pragma mark - END APIs of System.Collections.Generic.IAsyncEnumerator<>
+
 
 
 
@@ -41453,1550 +41641,6 @@ System_Buffers_Binary_BinaryPrimitives_Destroy(
 
 #pragma mark - END APIs of System.Buffers.Binary.BinaryPrimitives
 
-#pragma mark - BEGIN APIs of System.Half
-bool /* System.Boolean */
-System_Half_IsFinite(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsInfinity(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsNaN(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsNegative(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsNegativeInfinity(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsNormal(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsPositiveInfinity(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsSubnormal(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Parse(
-	System_String_t _Nonnull /* System.String */ s,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Parse_1(
-	System_String_t _Nonnull /* System.String */ s,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Parse_2(
-	System_String_t _Nonnull /* System.String */ s,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Parse_3(
-	System_String_t _Nonnull /* System.String */ s,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_TryParse(
-	System_String_t _Nullable /* System.String */ s,
-	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_TryParse_1(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_TryParse_2(
-	System_String_t _Nullable /* System.String */ s,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_Half_CompareTo(
-	System_Half_t _Nonnull /* System.Half */ self,
-	System_Object_t _Nullable /* System.Object */ obj,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_Half_CompareTo_1(
-	System_Half_t _Nonnull /* System.Half */ self,
-	System_Half_t _Nonnull /* System.Half */ other,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_Equals(
-	System_Half_t _Nonnull /* System.Half */ self,
-	System_Object_t _Nullable /* System.Object */ obj,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_Equals_1(
-	System_Half_t _Nonnull /* System.Half */ self,
-	System_Half_t _Nonnull /* System.Half */ other,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_Half_GetHashCode(
-	System_Half_t _Nonnull /* System.Half */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_Half_ToString(
-	System_Half_t _Nonnull /* System.Half */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_Half_ToString_1(
-	System_Half_t _Nonnull /* System.Half */ self,
-	System_String_t _Nullable /* System.String */ format,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_Half_ToString_2(
-	System_Half_t _Nonnull /* System.Half */ self,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_Half_ToString_3(
-	System_Half_t _Nonnull /* System.Half */ self,
-	System_String_t _Nullable /* System.String */ format,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsPow2(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Log2(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Exp(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_ExpM1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Exp2(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Exp2M1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Exp10(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Exp10M1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Ceiling(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Floor(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Round(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Round_1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	int32_t /* System.Int32 */ digits,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Round_2(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_MidpointRounding_t /* System.MidpointRounding */ mode,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Round_3(
-	System_Half_t _Nonnull /* System.Half */ x,
-	int32_t /* System.Int32 */ digits,
-	System_MidpointRounding_t /* System.MidpointRounding */ mode,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Truncate(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Atan2(
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Atan2Pi(
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_BitDecrement(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_BitIncrement(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_FusedMultiplyAdd(
-	System_Half_t _Nonnull /* System.Half */ left,
-	System_Half_t _Nonnull /* System.Half */ right,
-	System_Half_t _Nonnull /* System.Half */ addend,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Ieee754Remainder(
-	System_Half_t _Nonnull /* System.Half */ left,
-	System_Half_t _Nonnull /* System.Half */ right,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_Half_ILogB(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Lerp(
-	System_Half_t _Nonnull /* System.Half */ value1,
-	System_Half_t _Nonnull /* System.Half */ value2,
-	System_Half_t _Nonnull /* System.Half */ amount,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_ReciprocalEstimate(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_ReciprocalSqrtEstimate(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_ScaleB(
-	System_Half_t _Nonnull /* System.Half */ x,
-	int32_t /* System.Int32 */ n,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Acosh(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Asinh(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Atanh(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Cosh(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Sinh(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Tanh(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Log_1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Log_2(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ newBase,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Log10(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_LogP1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Log2P1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Log10P1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Clamp(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Half_t _Nonnull /* System.Half */ min,
-	System_Half_t _Nonnull /* System.Half */ max,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_CopySign(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Half_t _Nonnull /* System.Half */ sign,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Max(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_MaxNumber(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Min(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_MinNumber(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_Half_Sign(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Abs(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_CreateChecked_A1(
-	System_Type_t _Nullable /* System.Type */ TOther,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_CreateSaturating_A1(
-	System_Type_t _Nullable /* System.Type */ TOther,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_CreateTruncating_A1(
-	System_Type_t _Nullable /* System.Type */ TOther,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsEvenInteger(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsInteger(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsOddInteger(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsPositive_1(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_IsRealNumber(
-	System_Half_t _Nonnull /* System.Half */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_MaxMagnitude(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_MaxMagnitudeNumber(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_MinMagnitude(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_MinMagnitudeNumber(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_TryParse_3(
-	System_String_t _Nullable /* System.String */ s,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Pow(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Cbrt(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Hypot(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Half_t _Nonnull /* System.Half */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_RootN(
-	System_Half_t _Nonnull /* System.Half */ x,
-	int32_t /* System.Int32 */ n,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Sqrt(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Acos_1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_AcosPi(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Asin_1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_AsinPi(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Atan_1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_AtanPi(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Cos_1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_CosPi(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_DegreesToRadians(
-	System_Half_t _Nonnull /* System.Half */ degrees,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_RadiansToDegrees(
-	System_Half_t _Nonnull /* System.Half */ radians,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Sin_1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_SinPi(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Tan_1(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_TanPi(
-	System_Half_t _Nonnull /* System.Half */ x,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Parse_4(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_TryParse_4(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Parse_5(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Half_TryParse_5(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Half_t _Nonnull* _Nonnull /* System.Half */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Epsilon_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_PositiveInfinity_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_NegativeInfinity_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_NaN_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_MinValue_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_MaxValue_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_E_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Pi_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Tau_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_NegativeZero_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_MultiplicativeIdentity_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_One_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Zero_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_NegativeOne_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Half_t _Nonnull /* System.Half */
-System_Half_Create_1(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_Half_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Half_Destroy(
-	System_Half_t _Nonnull /* System.Half */ self
-);
-
-#pragma mark - END APIs of System.Half
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.Int128
-int32_t /* System.Int32 */
-System_Int128_CompareTo(
-	System_Int128_t _Nonnull /* System.Int128 */ self,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_Int128_CompareTo_1(
-	System_Int128_t _Nonnull /* System.Int128 */ self,
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_Equals(
-	System_Int128_t _Nonnull /* System.Int128 */ self,
-	System_Object_t _Nullable /* System.Object */ obj,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_Equals_1(
-	System_Int128_t _Nonnull /* System.Int128 */ self,
-	System_Int128_t _Nonnull /* System.Int128 */ other,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_Int128_GetHashCode(
-	System_Int128_t _Nonnull /* System.Int128 */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_Int128_ToString(
-	System_Int128_t _Nonnull /* System.Int128 */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_Int128_ToString_1(
-	System_Int128_t _Nonnull /* System.Int128 */ self,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_Int128_ToString_2(
-	System_Int128_t _Nonnull /* System.Int128 */ self,
-	System_String_t _Nullable /* System.String */ format,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_Int128_ToString_3(
-	System_Int128_t _Nonnull /* System.Int128 */ self,
-	System_String_t _Nullable /* System.String */ format,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Parse(
-	System_String_t _Nonnull /* System.String */ s,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Parse_1(
-	System_String_t _Nonnull /* System.String */ s,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Parse_2(
-	System_String_t _Nonnull /* System.String */ s,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Parse_3(
-	System_String_t _Nonnull /* System.String */ s,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_TryParse(
-	System_String_t _Nullable /* System.String */ s,
-	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_TryParse_1(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_TryParse_2(
-	System_String_t _Nullable /* System.String */ s,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_LeadingZeroCount(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_PopCount(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_RotateLeft(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	int32_t /* System.Int32 */ rotateAmount,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_RotateRight(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	int32_t /* System.Int32 */ rotateAmount,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_TrailingZeroCount(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_IsPow2(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Log2(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Clamp(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Int128_t _Nonnull /* System.Int128 */ min,
-	System_Int128_t _Nonnull /* System.Int128 */ max,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_CopySign(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Int128_t _Nonnull /* System.Int128 */ sign,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Max(
-	System_Int128_t _Nonnull /* System.Int128 */ x,
-	System_Int128_t _Nonnull /* System.Int128 */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Min(
-	System_Int128_t _Nonnull /* System.Int128 */ x,
-	System_Int128_t _Nonnull /* System.Int128 */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_Int128_Sign(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Abs(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_CreateChecked_A1(
-	System_Type_t _Nullable /* System.Type */ TOther,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_CreateSaturating_A1(
-	System_Type_t _Nullable /* System.Type */ TOther,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_CreateTruncating_A1(
-	System_Type_t _Nullable /* System.Type */ TOther,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_IsEvenInteger(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_IsNegative(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_IsOddInteger(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_IsPositive(
-	System_Int128_t _Nonnull /* System.Int128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_MaxMagnitude(
-	System_Int128_t _Nonnull /* System.Int128 */ x,
-	System_Int128_t _Nonnull /* System.Int128 */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_MinMagnitude(
-	System_Int128_t _Nonnull /* System.Int128 */ x,
-	System_Int128_t _Nonnull /* System.Int128 */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_TryParse_3(
-	System_String_t _Nullable /* System.String */ s,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Parse_4(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_TryParse_4(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Parse_5(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_Int128_TryParse_5(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Int128_t _Nonnull* _Nonnull /* System.Int128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Create_1(
-	uint64_t /* System.UInt64 */ upper,
-	uint64_t /* System.UInt64 */ lower,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_MinValue_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_MaxValue_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_One_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Zero_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_NegativeOne_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_Int128_t _Nonnull /* System.Int128 */
-System_Int128_Create_2(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_Int128_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_Int128_Destroy(
-	System_Int128_t _Nonnull /* System.Int128 */ self
-);
-
-#pragma mark - END APIs of System.Int128
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma mark - BEGIN APIs of System.UInt128
-int32_t /* System.Int32 */
-System_UInt128_CompareTo(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_UInt128_CompareTo_1(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self,
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_Equals(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self,
-	System_Object_t _Nullable /* System.Object */ obj,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_Equals_1(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self,
-	System_UInt128_t _Nonnull /* System.UInt128 */ other,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_UInt128_GetHashCode(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_UInt128_ToString(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_UInt128_ToString_1(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_UInt128_ToString_2(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self,
-	System_String_t _Nullable /* System.String */ format,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_String_t _Nonnull /* System.String */
-System_UInt128_ToString_3(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self,
-	System_String_t _Nullable /* System.String */ format,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Parse(
-	System_String_t _Nonnull /* System.String */ s,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Parse_1(
-	System_String_t _Nonnull /* System.String */ s,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Parse_2(
-	System_String_t _Nonnull /* System.String */ s,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Parse_3(
-	System_String_t _Nonnull /* System.String */ s,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_TryParse(
-	System_String_t _Nullable /* System.String */ s,
-	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_TryParse_1(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_TryParse_2(
-	System_String_t _Nullable /* System.String */ s,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_LeadingZeroCount(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_PopCount(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_RotateLeft(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	int32_t /* System.Int32 */ rotateAmount,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_RotateRight(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	int32_t /* System.Int32 */ rotateAmount,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_TrailingZeroCount(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_IsPow2(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Log2(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Clamp(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_UInt128_t _Nonnull /* System.UInt128 */ min,
-	System_UInt128_t _Nonnull /* System.UInt128 */ max,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Max(
-	System_UInt128_t _Nonnull /* System.UInt128 */ x,
-	System_UInt128_t _Nonnull /* System.UInt128 */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Min(
-	System_UInt128_t _Nonnull /* System.UInt128 */ x,
-	System_UInt128_t _Nonnull /* System.UInt128 */ y,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-int32_t /* System.Int32 */
-System_UInt128_Sign(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_CreateChecked_A1(
-	System_Type_t _Nullable /* System.Type */ TOther,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_CreateSaturating_A1(
-	System_Type_t _Nullable /* System.Type */ TOther,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_CreateTruncating_A1(
-	System_Type_t _Nullable /* System.Type */ TOther,
-	System_Object_t _Nullable /* System.Object */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_IsEvenInteger(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_IsOddInteger(
-	System_UInt128_t _Nonnull /* System.UInt128 */ value,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_TryParse_3(
-	System_String_t _Nullable /* System.String */ s,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Parse_4(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_TryParse_4(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_Globalization_NumberStyles_t /* System.Globalization.NumberStyles */ style,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Parse_5(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-bool /* System.Boolean */
-System_UInt128_TryParse_5(
-	DNReadOnlySpanOfByte /* System.ReadOnlySpan<System.Byte> */ utf8Text,
-	System_IFormatProvider_t _Nullable /* System.IFormatProvider */ provider,
-	System_UInt128_t _Nonnull* _Nonnull /* System.UInt128 */ result,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Create_1(
-	uint64_t /* System.UInt64 */ upper,
-	uint64_t /* System.UInt64 */ lower,
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_MinValue_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_MaxValue_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_One_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Zero_Get(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-
-System_UInt128_t _Nonnull /* System.UInt128 */
-System_UInt128_Create_2(
-	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
-);
-
-System_Type_t _Nonnull /* System.Type */
-System_UInt128_TypeOf(
-	void
-);
-
-void /* System.Void */
-System_UInt128_Destroy(
-	System_UInt128_t _Nonnull /* System.UInt128 */ self
-);
-
-#pragma mark - END APIs of System.UInt128
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma mark - BEGIN APIs of System.WeakReference<>
 bool /* System.Boolean */
 System_WeakReference_A1_TryGetTarget(
@@ -43562,6 +42206,15 @@ System_Collections_Generic_Dictionary_A2_Create_1(
 
 int32_t /* System.Int32 */
 System_Collections_Generic_Dictionary_A2_Count_Get(
+	System_Collections_Generic_Dictionary_A2_t _Nullable /* System.Collections.Generic.Dictionary<,> */ self,
+	System_Type_t _Nullable /* System.Type */ TKey,
+	System_Type_t _Nullable /* System.Type */ TValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+System_Collections_Generic_Dictionary_A2_Capacity_Get(
 	System_Collections_Generic_Dictionary_A2_t _Nullable /* System.Collections.Generic.Dictionary<,> */ self,
 	System_Type_t _Nullable /* System.Type */ TKey,
 	System_Type_t _Nullable /* System.Type */ TValue,
@@ -44845,6 +43498,12 @@ Beyond_NET_Sample_Dog_Name_Get(
 
 
 System_String_t _Nonnull /* System.String */
+Beyond_NET_Sample_Dog_StaticName_Get(
+	void
+);
+
+
+System_String_t _Nonnull /* System.String */
 Beyond_NET_Sample_Dog_DogName_Get(
 	void
 );
@@ -44898,6 +43557,12 @@ System_String_t _Nonnull /* System.String */
 Beyond_NET_Sample_Labrador_Name_Get(
 	Beyond_NET_Sample_Labrador_t _Nullable /* Beyond.NET.Sample.Labrador */ self,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_String_t _Nonnull /* System.String */
+Beyond_NET_Sample_Labrador_StaticName_Get(
+	void
 );
 
 
@@ -45049,6 +43714,34 @@ Beyond_NET_Sample_ArrayTests_ArrayOfCharacters_Set(
 );
 
 
+System_Byte_Array_t _Nonnull /* System.Byte[] */
+Beyond_NET_Sample_ArrayTests_ArrayOfBytes_Get(
+	Beyond_NET_Sample_ArrayTests_t _Nullable /* Beyond.NET.Sample.ArrayTests */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_ArrayTests_ArrayOfBytes_Set(
+	Beyond_NET_Sample_ArrayTests_t _Nullable /* Beyond.NET.Sample.ArrayTests */ self,
+	System_Byte_Array_t _Nonnull /* System.Byte[] */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_SByte_Array_t _Nonnull /* System.SByte[] */
+Beyond_NET_Sample_ArrayTests_ArrayOfSBytes_Get(
+	Beyond_NET_Sample_ArrayTests_t _Nullable /* Beyond.NET.Sample.ArrayTests */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_ArrayTests_ArrayOfSBytes_Set(
+	Beyond_NET_Sample_ArrayTests_t _Nullable /* Beyond.NET.Sample.ArrayTests */ self,
+	System_SByte_Array_t _Nonnull /* System.SByte[] */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
 System_Type_t _Nonnull /* System.Type */
 Beyond_NET_Sample_ArrayTests_TypeOf(
 	void
@@ -45071,6 +43764,15 @@ Beyond_NET_Sample_ArrayTests_Destroy(
 
 #pragma mark - BEGIN APIs of System.Guid[]
 #pragma mark - END APIs of System.Guid[]
+
+
+
+
+
+
+
+#pragma mark - BEGIN APIs of System.SByte[]
+#pragma mark - END APIs of System.SByte[]
 
 
 
@@ -45689,7 +44391,344 @@ Beyond_NET_Sample_IndexerTests_Destroy(
 
 #pragma mark - END APIs of Beyond.NET.Sample.IndexerTests
 
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.IInterface1
+void /* System.Void */
+Beyond_NET_Sample_IInterface1_MethodInIInterface1(
+	Beyond_NET_Sample_IInterface1_t _Nullable /* Beyond.NET.Sample.IInterface1 */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_IInterface1_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_IInterface1_Destroy(
+	Beyond_NET_Sample_IInterface1_t _Nullable /* Beyond.NET.Sample.IInterface1 */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.IInterface1
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.IInterface1_DelegateAdapter
+void /* System.Void */
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1(
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_t _Nonnull /* Beyond.NET.Sample.IInterface1_DelegateAdapter */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_IInterface1_DelegateAdapter_t _Nonnull /* Beyond.NET.Sample.IInterface1_DelegateAdapter */
+Beyond_NET_Sample_IInterface1_DelegateAdapter_Create(
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_t _Nonnull /* Beyond.NET.Sample.IInterface1_DelegateAdapter.MethodInIInterface1_Delegate */ methodInIInterface1_Adapter,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_IInterface1_DelegateAdapter_t _Nonnull /* Beyond.NET.Sample.IInterface1_DelegateAdapter */
+Beyond_NET_Sample_IInterface1_DelegateAdapter_Create_1(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_IInterface1_DelegateAdapter_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_IInterface1_DelegateAdapter_Destroy(
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_t _Nonnull /* Beyond.NET.Sample.IInterface1_DelegateAdapter */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.IInterface1_DelegateAdapter
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.IInterface2
+int32_t /* System.Int32 */
+Beyond_NET_Sample_IInterface2_PropertyInIInterface2_Get(
+	Beyond_NET_Sample_IInterface2_t _Nullable /* Beyond.NET.Sample.IInterface2 */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_IInterface2_PropertyInIInterface2_Set(
+	Beyond_NET_Sample_IInterface2_t _Nullable /* Beyond.NET.Sample.IInterface2 */ self,
+	int32_t /* System.Int32 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_IInterface2_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_IInterface2_Destroy(
+	Beyond_NET_Sample_IInterface2_t _Nullable /* Beyond.NET.Sample.IInterface2 */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.IInterface2
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.IInterface3
+void /* System.Void */
+Beyond_NET_Sample_IInterface3_MethodInIInterface3(
+	Beyond_NET_Sample_IInterface3_t _Nullable /* Beyond.NET.Sample.IInterface3 */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_IInterface3_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_IInterface3_Destroy(
+	Beyond_NET_Sample_IInterface3_t _Nullable /* Beyond.NET.Sample.IInterface3 */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.IInterface3
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.TypeThatImplementsMultipleInterfaces
+void /* System.Void */
+Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_MethodInIInterface1(
+	Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatImplementsMultipleInterfaces */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_MethodInIInterface3(
+	Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatImplementsMultipleInterfaces */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_t _Nonnull /* Beyond.NET.Sample.TypeThatImplementsMultipleInterfaces */
+Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_PropertyInIInterface2_Get(
+	Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatImplementsMultipleInterfaces */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_PropertyInIInterface2_Set(
+	Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatImplementsMultipleInterfaces */ self,
+	int32_t /* System.Int32 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_Destroy(
+	Beyond_NET_Sample_TypeThatImplementsMultipleInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatImplementsMultipleInterfaces */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.TypeThatImplementsMultipleInterfaces
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.TypeThatUsesInterfaces
+void /* System.Void */
+Beyond_NET_Sample_TypeThatUsesInterfaces_CallMethod1InIInterface1(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	Beyond_NET_Sample_IInterface1_t _Nonnull /* Beyond.NET.Sample.IInterface1 */ interface1,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesInterfaceTest(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_t _Nonnull /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReceivesIInterface1 */ del,
+	Beyond_NET_Sample_IInterface1_t _Nonnull /* Beyond.NET.Sample.IInterface1 */ interface1,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_IInterface1_t _Nonnull /* Beyond.NET.Sample.IInterface1 */
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsInterfaceTest(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_t _Nonnull /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReturnsIInterface1 */ del,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatUsesInterfaces_SetPropertyInIInterface2(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	Beyond_NET_Sample_IInterface2_t _Nonnull /* Beyond.NET.Sample.IInterface2 */ interface2,
+	int32_t /* System.Int32 */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+Beyond_NET_Sample_TypeThatUsesInterfaces_GetPropertyInIInterface2(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	Beyond_NET_Sample_IInterface2_t _Nonnull /* Beyond.NET.Sample.IInterface2 */ interface2,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatUsesInterfaces_CallMethod1InIInterface3(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	Beyond_NET_Sample_IInterface3_t _Nonnull /* Beyond.NET.Sample.IInterface3 */ interface3,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_IInterface1_t _Nonnull /* Beyond.NET.Sample.IInterface1 */
+Beyond_NET_Sample_TypeThatUsesInterfaces_GetTypeThatImplementsIInterface1(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatUsesInterfaces_GetTypeThatImplementsIInterface1AsOutParam(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	Beyond_NET_Sample_IInterface1_t _Nonnull* _Nonnull /* Beyond.NET.Sample.IInterface1 */ interface1,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_IInterface2_t _Nonnull /* Beyond.NET.Sample.IInterface2 */
+Beyond_NET_Sample_TypeThatUsesInterfaces_GetTypeThatImplementsIInterface2(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatUsesInterfaces_GetTypeThatMaybeImplementsIInterface2AsOutParam(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	Beyond_NET_Sample_IInterface2_t _Nullable* _Nullable /* Beyond.NET.Sample.IInterface2 */ interface2,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_IInterface3_t _Nonnull /* Beyond.NET.Sample.IInterface3 */
+Beyond_NET_Sample_TypeThatUsesInterfaces_GetTypeThatImplementsIInterface3(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nonnull /* Beyond.NET.Sample.TypeThatUsesInterfaces */
+Beyond_NET_Sample_TypeThatUsesInterfaces_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_TypeThatUsesInterfaces_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatUsesInterfaces_Destroy(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.TypeThatUsesInterfaces
+
+
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.BaseRegistrationData
+Beyond_NET_Sample_DataType_t _Nonnull /* Beyond.NET.Sample.DataType */
+Beyond_NET_Sample_BaseRegistrationData_DataType_Get(
+	Beyond_NET_Sample_BaseRegistrationData_t _Nullable /* Beyond.NET.Sample.BaseRegistrationData */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_BaseRegistrationData_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_BaseRegistrationData_Destroy(
+	Beyond_NET_Sample_BaseRegistrationData_t _Nullable /* Beyond.NET.Sample.BaseRegistrationData */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.BaseRegistrationData
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.DataType
+Beyond_NET_Sample_DataType_t _Nonnull /* Beyond.NET.Sample.DataType */
+Beyond_NET_Sample_DataType_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_DataType_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_DataType_Destroy(
+	Beyond_NET_Sample_DataType_t _Nonnull /* Beyond.NET.Sample.DataType */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.DataType
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.RegistrationData1
+void /* System.Void */
+Beyond_NET_Sample_RegistrationData1_RegisterDataType(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_RegistrationData1_t _Nonnull /* Beyond.NET.Sample.RegistrationData1 */
+Beyond_NET_Sample_RegistrationData1_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_DataType_t _Nonnull /* Beyond.NET.Sample.DataType */
+Beyond_NET_Sample_RegistrationData1_RegisteredDataType_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_RegistrationData1_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_RegistrationData1_Destroy(
+	Beyond_NET_Sample_RegistrationData1_t _Nullable /* Beyond.NET.Sample.RegistrationData1 */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.RegistrationData1
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.RegistrationData2
+void /* System.Void */
+Beyond_NET_Sample_RegistrationData2_RegisterDataType(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_RegistrationData2_t _Nonnull /* Beyond.NET.Sample.RegistrationData2 */
+Beyond_NET_Sample_RegistrationData2_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_DataType_t _Nonnull /* Beyond.NET.Sample.DataType */
+Beyond_NET_Sample_RegistrationData2_RegisteredDataType_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_RegistrationData2_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_RegistrationData2_Destroy(
+	Beyond_NET_Sample_RegistrationData2_t _Nullable /* Beyond.NET.Sample.RegistrationData2 */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.RegistrationData2
+
 #pragma mark - BEGIN APIs of Beyond.NET.Sample.NullabilityTests
+Beyond_NET_Sample_NullabilityTests_t _Nonnull /* Beyond.NET.Sample.NullabilityTests */
+Beyond_NET_Sample_NullabilityTests_CreateInstance(
+	bool /* System.Boolean */ throwAnException,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
 System_String_t _Nonnull /* System.String */
 Beyond_NET_Sample_NullabilityTests_MethodWithNonNullableStringReturnValue(
 	Beyond_NET_Sample_NullabilityTests_t _Nullable /* Beyond.NET.Sample.NullabilityTests */ self,
@@ -45724,12 +44763,12 @@ Beyond_NET_Sample_NullabilityTests_MethodWithNullableStringParameter(
 );
 
 Beyond_NET_Sample_NullabilityTests_t _Nonnull /* Beyond.NET.Sample.NullabilityTests */
-Beyond_NET_Sample_NullabilityTests_Create(
+Beyond_NET_Sample_NullabilityTests_Create_1(
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
 Beyond_NET_Sample_NullabilityTests_t _Nonnull /* Beyond.NET.Sample.NullabilityTests */
-Beyond_NET_Sample_NullabilityTests_Create_1(
+Beyond_NET_Sample_NullabilityTests_Create_2(
 	bool /* System.Boolean */ throwAnException,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
@@ -45830,6 +44869,11 @@ Beyond_NET_Sample_OverloadTests_Destroy(
 #pragma mark - END APIs of Beyond.NET.Sample.OverloadTests
 
 #pragma mark - BEGIN APIs of Beyond.NET.Sample.Person
+Beyond_NET_Sample_Person_t _Nonnull /* Beyond.NET.Sample.Person */
+Beyond_NET_Sample_Person_MakeJohnDoe(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
 System_String_t _Nonnull /* System.String */
 Beyond_NET_Sample_Person_GetNiceLevelString(
 	Beyond_NET_Sample_Person_t _Nullable /* Beyond.NET.Sample.Person */ self,
@@ -45867,6 +44911,14 @@ Beyond_NET_Sample_Person_t _Nonnull /* Beyond.NET.Sample.Person */
 Beyond_NET_Sample_Person_ChildAt(
 	Beyond_NET_Sample_Person_t _Nullable /* Beyond.NET.Sample.Person */ self,
 	int32_t /* System.Int32 */ index,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+Beyond_NET_Sample_Person_TryGetChildAt(
+	Beyond_NET_Sample_Person_t _Nullable /* Beyond.NET.Sample.Person */ self,
+	int32_t /* System.Int32 */ index,
+	Beyond_NET_Sample_Person_t _Nullable* _Nullable /* Beyond.NET.Sample.Person */ child,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
@@ -46109,6 +45161,13 @@ bool /* System.Boolean */
 System_Uri_Equals(
 	System_Uri_t _Nullable /* System.Uri */ self,
 	System_Object_t _Nullable /* System.Object */ comparand,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+bool /* System.Boolean */
+System_Uri_Equals_1(
+	System_Uri_t _Nullable /* System.Uri */ self,
+	System_Uri_t _Nullable /* System.Uri */ other,
 	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
 );
 
@@ -46532,6 +45591,7 @@ System_Uri_Destroy(
 #pragma mark - END APIs of System.Uri
 
 
+
 #pragma mark - BEGIN APIs of System.UriCreationOptions
 bool /* System.Boolean */
 System_UriCreationOptions_DangerousDisablePathAndQueryCanonicalization_Get(
@@ -46602,6 +45662,235 @@ Beyond_NET_Sample_Person_Extensions_Destroy(
 
 #pragma mark - END APIs of Beyond.NET.Sample.Person_Extensions
 
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.PrimitiveTests
+int8_t /* System.SByte */
+Beyond_NET_Sample_PrimitiveTests_ReturnSByte(
+	int8_t /* System.SByte */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int16_t /* System.Int16 */
+Beyond_NET_Sample_PrimitiveTests_ReturnShort(
+	int16_t /* System.Int16 */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+Beyond_NET_Sample_PrimitiveTests_ReturnInt(
+	int32_t /* System.Int32 */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int64_t /* System.Int64 */
+Beyond_NET_Sample_PrimitiveTests_ReturnLong(
+	int64_t /* System.Int64 */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void* /* System.IntPtr */
+Beyond_NET_Sample_PrimitiveTests_ReturnNInt(
+	void* /* System.IntPtr */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+uint8_t /* System.Byte */
+Beyond_NET_Sample_PrimitiveTests_ReturnByte(
+	uint8_t /* System.Byte */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+uint16_t /* System.UInt16 */
+Beyond_NET_Sample_PrimitiveTests_ReturnUShort(
+	uint16_t /* System.UInt16 */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+uint32_t /* System.UInt32 */
+Beyond_NET_Sample_PrimitiveTests_ReturnUInt(
+	uint32_t /* System.UInt32 */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+uint64_t /* System.UInt64 */
+Beyond_NET_Sample_PrimitiveTests_ReturnULong(
+	uint64_t /* System.UInt64 */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+uintptr_t /* System.UIntPtr */
+Beyond_NET_Sample_PrimitiveTests_ReturnNUInt(
+	uintptr_t /* System.UIntPtr */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+float /* System.Single */
+Beyond_NET_Sample_PrimitiveTests_ReturnFloat(
+	float /* System.Single */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+double /* System.Double */
+Beyond_NET_Sample_PrimitiveTests_ReturnDouble(
+	double /* System.Double */ input,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int8_t /* System.SByte */
+Beyond_NET_Sample_PrimitiveTests_SByteMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int8_t /* System.SByte */
+Beyond_NET_Sample_PrimitiveTests_SByteMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int16_t /* System.Int16 */
+Beyond_NET_Sample_PrimitiveTests_ShortMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int16_t /* System.Int16 */
+Beyond_NET_Sample_PrimitiveTests_ShortMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+Beyond_NET_Sample_PrimitiveTests_IntMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int32_t /* System.Int32 */
+Beyond_NET_Sample_PrimitiveTests_IntMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int64_t /* System.Int64 */
+Beyond_NET_Sample_PrimitiveTests_LongMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+int64_t /* System.Int64 */
+Beyond_NET_Sample_PrimitiveTests_LongMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+void* /* System.IntPtr */
+Beyond_NET_Sample_PrimitiveTests_NIntMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+void* /* System.IntPtr */
+Beyond_NET_Sample_PrimitiveTests_NIntMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uint8_t /* System.Byte */
+Beyond_NET_Sample_PrimitiveTests_ByteMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uint8_t /* System.Byte */
+Beyond_NET_Sample_PrimitiveTests_ByteMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uint16_t /* System.UInt16 */
+Beyond_NET_Sample_PrimitiveTests_UShortMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uint16_t /* System.UInt16 */
+Beyond_NET_Sample_PrimitiveTests_UShortMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uint32_t /* System.UInt32 */
+Beyond_NET_Sample_PrimitiveTests_UIntMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uint32_t /* System.UInt32 */
+Beyond_NET_Sample_PrimitiveTests_UIntMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uint64_t /* System.UInt64 */
+Beyond_NET_Sample_PrimitiveTests_ULongMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uint64_t /* System.UInt64 */
+Beyond_NET_Sample_PrimitiveTests_ULongMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uintptr_t /* System.UIntPtr */
+Beyond_NET_Sample_PrimitiveTests_NUIntMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+uintptr_t /* System.UIntPtr */
+Beyond_NET_Sample_PrimitiveTests_NUIntMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+float /* System.Single */
+Beyond_NET_Sample_PrimitiveTests_FloatMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+float /* System.Single */
+Beyond_NET_Sample_PrimitiveTests_FloatMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+double /* System.Double */
+Beyond_NET_Sample_PrimitiveTests_DoubleMin_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+double /* System.Double */
+Beyond_NET_Sample_PrimitiveTests_DoubleMax_Get(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_PrimitiveTests_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_PrimitiveTests_Destroy(
+	Beyond_NET_Sample_PrimitiveTests_t _Nullable /* Beyond.NET.Sample.PrimitiveTests */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.PrimitiveTests
 
 #pragma mark - BEGIN APIs of Beyond.NET.Sample.PropertyTests
 Beyond_NET_Sample_PropertyTests_t _Nonnull /* Beyond.NET.Sample.PropertyTests */
@@ -47322,6 +46611,67 @@ Beyond_NET_Sample_SubclassingTests_MySubClass_Destroy(
 );
 
 #pragma mark - END APIs of Beyond.NET.Sample.SubclassingTests.MySubClass
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.CharTests
+void /* System.Void */
+Beyond_NET_Sample_Source_CharTests_PassInLowercaseAOrThrow(
+	wchar_t /* System.Char */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_CharTests_PassInUppercaseAOrThrow(
+	wchar_t /* System.Char */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_CharTests_PassInOneOrThrow(
+	wchar_t /* System.Char */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_CharTests_PassInLowercaseUmlautAOrThrow(
+	wchar_t /* System.Char */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+wchar_t /* System.Char */
+Beyond_NET_Sample_Source_CharTests_LowercaseA_Get(
+	void
+);
+
+
+wchar_t /* System.Char */
+Beyond_NET_Sample_Source_CharTests_UppercaseA_Get(
+	void
+);
+
+
+wchar_t /* System.Char */
+Beyond_NET_Sample_Source_CharTests_One_Get(
+	void
+);
+
+
+wchar_t /* System.Char */
+Beyond_NET_Sample_Source_CharTests_LowercaseUmlautA_Get(
+	void
+);
+
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_Source_CharTests_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_CharTests_Destroy(
+	Beyond_NET_Sample_Source_CharTests_t _Nullable /* Beyond.NET.Sample.Source.CharTests */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.Source.CharTests
 
 #pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.DontStrip
 System_IO_MemoryStream_t _Nonnull /* System.IO.MemoryStream */
@@ -49973,6 +49323,298 @@ System_Security_Cryptography_ECDiffieHellmanPublicKey_Destroy(
 
 #pragma mark - END APIs of System.Security.Cryptography.ECDiffieHellmanPublicKey
 
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.EnumTests
+System_String_t _Nonnull /* System.String */
+Beyond_NET_Sample_Source_EnumTests_GetEnumName(
+	Beyond_NET_Sample_Source_EnumTests_t _Nullable /* Beyond.NET.Sample.Source.EnumTests */ self,
+	Beyond_NET_Sample_Source_EnumWithUnfavorableNames_t /* Beyond.NET.Sample.Source.EnumWithUnfavorableNames */ value,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_Source_EnumTests_t _Nonnull /* Beyond.NET.Sample.Source.EnumTests */
+Beyond_NET_Sample_Source_EnumTests_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_Source_EnumTests_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_EnumTests_Destroy(
+	Beyond_NET_Sample_Source_EnumTests_t _Nullable /* Beyond.NET.Sample.Source.EnumTests */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.Source.EnumTests
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.ManagedUnhandledExceptionHandler
+void /* System.Void */
+Beyond_NET_Sample_Source_ManagedUnhandledExceptionHandler_Install(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_ManagedUnhandledExceptionHandler_Uninstall(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_Source_ManagedUnhandledExceptionHandler_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_ManagedUnhandledExceptionHandler_Destroy(
+	Beyond_NET_Sample_Source_ManagedUnhandledExceptionHandler_t _Nullable /* Beyond.NET.Sample.Source.ManagedUnhandledExceptionHandler */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.Source.ManagedUnhandledExceptionHandler
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.OutParameterTests
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_Int_1_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	int32_t* /* System.Int32 */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_Byte_1_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	uint8_t* /* System.Byte */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_SByte_1_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	int8_t* /* System.SByte */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_UShort_1_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	uint16_t* /* System.UInt16 */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_UInt_1_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	uint32_t* /* System.UInt32 */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_ULong_1_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	uint64_t* /* System.UInt64 */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_Bool_true_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	bool* /* System.Boolean */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_DateTimeKind_Utc_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_DateTimeKind_t* /* System.DateTimeKind */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_DateTime_MaxValue_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_DateTime_t _Nonnull* _Nonnull /* System.DateTime */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_DateTime_MaxValue_Optional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_DateTime_t _Nullable* _Nullable /* System.Nullable<System.DateTime> */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_DateTime_Null(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_DateTime_t _Nullable* _Nullable /* System.Nullable<System.DateTime> */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_String_Abc_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_String_t _Nonnull* _Nonnull /* System.String */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_String_Abc_Optional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_String_t _Nullable* _Nullable /* System.String */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_String_Null(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_String_t _Nullable* _Nullable /* System.String */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_IEnumerable_String_Abc_NonOptional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_Collections_IEnumerable_t _Nonnull* _Nonnull /* System.Collections.IEnumerable */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_IEnumerable_String_Abc_Optional(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_Collections_IEnumerable_t _Nullable* _Nullable /* System.Collections.IEnumerable */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Return_IEnumerable_Null(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self,
+	System_Collections_IEnumerable_t _Nullable* _Nullable /* System.Collections.IEnumerable */ returnValue,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_Source_OutParameterTests_t _Nonnull /* Beyond.NET.Sample.Source.OutParameterTests */
+Beyond_NET_Sample_Source_OutParameterTests_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_Source_OutParameterTests_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OutParameterTests_Destroy(
+	Beyond_NET_Sample_Source_OutParameterTests_t _Nullable /* Beyond.NET.Sample.Source.OutParameterTests */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.Source.OutParameterTests
+
+
+
+
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.IOverrideTestsInterface
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_Source_IOverrideTestsInterface_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_IOverrideTestsInterface_Destroy(
+	Beyond_NET_Sample_Source_IOverrideTestsInterface_t _Nullable /* Beyond.NET.Sample.Source.IOverrideTestsInterface */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.Source.IOverrideTestsInterface
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.OverrideTestsInterfaceImpl
+Beyond_NET_Sample_Source_OverrideTestsInterfaceImpl_t _Nonnull /* Beyond.NET.Sample.Source.OverrideTestsInterfaceImpl */
+Beyond_NET_Sample_Source_OverrideTestsInterfaceImpl_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_Source_OverrideTestsInterfaceImpl_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OverrideTestsInterfaceImpl_Destroy(
+	Beyond_NET_Sample_Source_OverrideTestsInterfaceImpl_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsInterfaceImpl */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.Source.OverrideTestsInterfaceImpl
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.OverrideTestsBaseClass
+Beyond_NET_Sample_Source_IOverrideTestsInterface_t _Nullable /* Beyond.NET.Sample.Source.IOverrideTestsInterface */
+Beyond_NET_Sample_Source_OverrideTestsBaseClass_ReturnInterfaceOrImpl(
+	Beyond_NET_Sample_Source_OverrideTestsBaseClass_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsBaseClass */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_Source_IOverrideTestsInterface_t _Nullable /* Beyond.NET.Sample.Source.IOverrideTestsInterface */
+Beyond_NET_Sample_Source_OverrideTestsBaseClass_ReturnInterface_1(
+	Beyond_NET_Sample_Source_OverrideTestsBaseClass_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsBaseClass */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+Beyond_NET_Sample_Source_OverrideTestsBaseClass_GetInt(
+	Beyond_NET_Sample_Source_OverrideTestsBaseClass_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsBaseClass */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_Source_OverrideTestsBaseClass_t _Nonnull /* Beyond.NET.Sample.Source.OverrideTestsBaseClass */
+Beyond_NET_Sample_Source_OverrideTestsBaseClass_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_Source_OverrideTestsBaseClass_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OverrideTestsBaseClass_Destroy(
+	Beyond_NET_Sample_Source_OverrideTestsBaseClass_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsBaseClass */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.Source.OverrideTestsBaseClass
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.Source.OverrideTestsDerivedClass
+Beyond_NET_Sample_Source_OverrideTestsInterfaceImpl_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsInterfaceImpl */
+Beyond_NET_Sample_Source_OverrideTestsDerivedClass_ReturnInterfaceOrImpl(
+	Beyond_NET_Sample_Source_OverrideTestsDerivedClass_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsDerivedClass */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_Source_IOverrideTestsInterface_t _Nullable /* Beyond.NET.Sample.Source.IOverrideTestsInterface */
+Beyond_NET_Sample_Source_OverrideTestsDerivedClass_ReturnInterface_1(
+	Beyond_NET_Sample_Source_OverrideTestsDerivedClass_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsDerivedClass */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+int32_t /* System.Int32 */
+Beyond_NET_Sample_Source_OverrideTestsDerivedClass_GetInt(
+	Beyond_NET_Sample_Source_OverrideTestsDerivedClass_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsDerivedClass */ self,
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+Beyond_NET_Sample_Source_OverrideTestsDerivedClass_t _Nonnull /* Beyond.NET.Sample.Source.OverrideTestsDerivedClass */
+Beyond_NET_Sample_Source_OverrideTestsDerivedClass_Create(
+	System_Exception_t _Nullable* _Nullable /* System.Exception */ outException
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_Source_OverrideTestsDerivedClass_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_Source_OverrideTestsDerivedClass_Destroy(
+	Beyond_NET_Sample_Source_OverrideTestsDerivedClass_t _Nullable /* Beyond.NET.Sample.Source.OverrideTestsDerivedClass */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.Source.OverrideTestsDerivedClass
+
 #pragma mark - BEGIN APIs of Beyond.NET.Sample.Transformer.BuiltInTransformers
 Beyond_NET_Sample_Transformer_StringTransformerDelegate_t _Nonnull /* Beyond.NET.Sample.Transformer.StringTransformerDelegate */
 Beyond_NET_Sample_Transformer_BuiltInTransformers_UppercaseStringTransformer_Get(
@@ -50849,6 +50491,126 @@ Beyond_NET_Sample_EventTests_ValueChangedDelegate_Destroy(
 );
 
 #pragma mark - END APIs of Beyond.NET.Sample.EventTests.ValueChangedDelegate
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.IInterface1_DelegateAdapter.MethodInIInterface1_Delegate
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_t _Nonnull /* Beyond.NET.Sample.IInterface1_DelegateAdapter.MethodInIInterface1_Delegate */
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_Create(
+	const void* context,
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_CFunction_t function,
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_CDestructorFunction_t destructorFunction
+);
+
+void
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_Invoke(
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_t /* Beyond.NET.Sample.IInterface1_DelegateAdapter.MethodInIInterface1_Delegate */ self, System_Exception_t* /* System.Exception */ outException
+);
+
+const void*
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_Context_Get(
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_t /* Beyond.NET.Sample.IInterface1_DelegateAdapter.MethodInIInterface1_Delegate */ self
+);
+
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_CFunction_t
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_CFunction_Get(
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_t /* Beyond.NET.Sample.IInterface1_DelegateAdapter.MethodInIInterface1_Delegate */ self
+);
+
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_CDestructorFunction_t
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_CDestructorFunction_Get(
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_t /* Beyond.NET.Sample.IInterface1_DelegateAdapter.MethodInIInterface1_Delegate */ self
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_Destroy(
+	Beyond_NET_Sample_IInterface1_DelegateAdapter_MethodInIInterface1_Delegate_t _Nullable /* Beyond.NET.Sample.IInterface1_DelegateAdapter.MethodInIInterface1_Delegate */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.IInterface1_DelegateAdapter.MethodInIInterface1_Delegate
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReceivesIInterface1
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_t _Nonnull /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReceivesIInterface1 */
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_Create(
+	const void* context,
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_CFunction_t function,
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_CDestructorFunction_t destructorFunction
+);
+
+void
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_Invoke(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_t /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReceivesIInterface1 */ self, Beyond_NET_Sample_IInterface1_t _Nonnull /* Beyond.NET.Sample.IInterface1 */ interface1, System_Exception_t* /* System.Exception */ outException
+);
+
+const void*
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_Context_Get(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_t /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReceivesIInterface1 */ self
+);
+
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_CFunction_t
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_CFunction_Get(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_t /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReceivesIInterface1 */ self
+);
+
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_CDestructorFunction_t
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_CDestructorFunction_Get(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_t /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReceivesIInterface1 */ self
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_Destroy(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReceivesIInterface1_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReceivesIInterface1 */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReceivesIInterface1
+
+#pragma mark - BEGIN APIs of Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReturnsIInterface1
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_t _Nonnull /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReturnsIInterface1 */
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_Create(
+	const void* context,
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_CFunction_t function,
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_CDestructorFunction_t destructorFunction
+);
+
+Beyond_NET_Sample_IInterface1_t _Nullable
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_Invoke(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_t /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReturnsIInterface1 */ self, System_Exception_t* /* System.Exception */ outException
+);
+
+const void*
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_Context_Get(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_t /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReturnsIInterface1 */ self
+);
+
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_CFunction_t
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_CFunction_Get(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_t /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReturnsIInterface1 */ self
+);
+
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_CDestructorFunction_t
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_CDestructorFunction_Get(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_t /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReturnsIInterface1 */ self
+);
+
+System_Type_t _Nonnull /* System.Type */
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_TypeOf(
+	void
+);
+
+void /* System.Void */
+Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_Destroy(
+	Beyond_NET_Sample_TypeThatUsesInterfaces_DelegateThatReturnsIInterface1_t _Nullable /* Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReturnsIInterface1 */ self
+);
+
+#pragma mark - END APIs of Beyond.NET.Sample.TypeThatUsesInterfaces.DelegateThatReturnsIInterface1
 
 #pragma mark - BEGIN APIs of Beyond.NET.Sample.Person.NumberOfChildrenChangedDelegate
 Beyond_NET_Sample_Person_NumberOfChildrenChangedDelegate_t _Nonnull /* Beyond.NET.Sample.Person.NumberOfChildrenChangedDelegate */

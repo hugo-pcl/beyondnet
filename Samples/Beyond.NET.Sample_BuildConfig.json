@@ -1,5 +1,5 @@
 {
-	"AssemblyPath": "Beyond.NET.Sample.Managed/bin/Release/net8.0/publish/Beyond.NET.Sample.Managed.dll",
+	"AssemblyPath": "Beyond.NET.Sample.Managed/bin/Release/net9.0/publish/Beyond.NET.Sample.Managed.dll",
 	
 	"Build": {
 		"Target": "apple-universal",
@@ -11,6 +11,10 @@
 	"CSharpUnmanagedOutputPath": "Generated/Generated_CS.cs",
 	"COutputPath": "Generated/Generated_C.h",
 	"SwiftOutputPath": "Generated/Generated_Swift.swift",
+	"KotlinOutputPath": "Generated/Generated_Kotlin.kt",
+	
+	"KotlinPackageName": "com.example.beyondnetsampleandroid.dn",
+	"KotlinNativeLibraryName": "BeyondDotNETSampleNative",
 	
 	"EmitUnsupported": true,
 	"GenerateTypeCheckedDestroyMethods": false,

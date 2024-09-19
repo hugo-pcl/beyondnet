@@ -1,8 +1,8 @@
 using System.Reflection;
-using System.Text;
 
 using Beyond.NET.CodeGenerator.Extensions;
 using Beyond.NET.CodeGenerator.Generator;
+using Beyond.NET.CodeGenerator.Generator.Swift;
 using Beyond.NET.CodeGenerator.Types;
 using Beyond.NET.Core;
 
@@ -61,7 +61,7 @@ public partial class SwiftTypeSyntaxWriter: ISwiftSyntaxWriter, ITypeSyntaxWrite
             return Builder.SingleLineComment($"Type \"{type.Name}\" was skipped. Reason: It has no full name.").ToString();
         }
         
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
 
         bool writeMembers = true;
         bool writeTypeDefinition = true;
@@ -81,12 +81,9 @@ public partial class SwiftTypeSyntaxWriter: ISwiftSyntaxWriter, ITypeSyntaxWrite
             writeTypeDefinition = false;
             writeMembers = false;
             
-            var delegateInvokeMethod = type.GetDelegateInvokeMethod();
-
             string delegateTypedefCode = WriteDelegateTypeDefs(
                 configuration,
                 type,
-                delegateInvokeMethod,
                 state
             );
     
@@ -125,12 +122,13 @@ public partial class SwiftTypeSyntaxWriter: ISwiftSyntaxWriter, ITypeSyntaxWrite
         return sb.ToString();
     }
 
+    #region Enum
     private string WriteEnumDef(
         Type type,
         TypeDescriptorRegistry typeDescriptorRegistry
     )
     {
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
 
         TypeDescriptor typeDescriptor = type.GetTypeDescriptor(typeDescriptorRegistry);
 
@@ -309,7 +307,9 @@ public partial class SwiftTypeSyntaxWriter: ISwiftSyntaxWriter, ITypeSyntaxWrite
         
         return sb.ToString();
     }
+    #endregion Enum
 
+    #region Members
     public string WriteMembers(
         ISyntaxWriterConfiguration? configuration,
         Type type,
@@ -333,18 +333,18 @@ public partial class SwiftTypeSyntaxWriter: ISwiftSyntaxWriter, ITypeSyntaxWrite
             return string.Empty;
         }
         
-        bool onlyWriteSignatureForProtocol = (configuration as SwiftSyntaxWriterConfiguration)?.OnlyWriteSignatureForProtocol ?? false;
+        var interfaceGenerationPhase = (configuration as SwiftSyntaxWriterConfiguration)?.InterfaceGenerationPhase ?? SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.NoInterface;
 
         // bool isAbstract = type.IsAbstract;
         
         var cSharpMembers = cSharpUnmanagedResult.GeneratedTypes[type];
         // var cMembers = cResult.GeneratedTypes[type];
 
-        // bool isInterface = type.IsInterface;
+        bool isInterface = type.IsInterface;
         bool isPrimitive = type.IsPrimitive;
         bool isArray = type.IsArray;
         
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
 
         string typeName = type.Name;
         string fullTypeName = type.GetFullNameOrName();
@@ -367,10 +367,10 @@ public partial class SwiftTypeSyntaxWriter: ISwiftSyntaxWriter, ITypeSyntaxWrite
             string swiftBaseTypeName = baseTypeDescriptor?.GetTypeName(CodeLanguage.Swift, false)
                                        ?? "DNObject";
 
-            /* List<Type> interfaceTypes = new();
+            List<Type> interfaceTypes = new();
 
             if (isInterface &&
-                !onlyWriteSignatureForProtocol) {
+                interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ImplementationClass) {
                 interfaceTypes.Add(type);
             }
             
@@ -383,36 +383,55 @@ public partial class SwiftTypeSyntaxWriter: ISwiftSyntaxWriter, ITypeSyntaxWrite
                     !cResult.GeneratedTypes.ContainsKey(interfaceType)) {
                     continue;
                 }
+
+                if (!type.IsInterface) {
+                    if (type.DoesAnyBaseTypeImplementInterface(interfaceType)) {
+                        continue;
+                    }
+                }
                 
                 TypeDescriptor interfaceTypeDescriptor = interfaceType.GetTypeDescriptor(typeDescriptorRegistry);
 
                 string swiftProtocolTypeName = interfaceTypeDescriptor.GetTypeName(
                     CodeLanguage.Swift, 
                     false
-                ) + "_Protocol";
+                );
                 
                 swiftProtocolTypeNames.Add(swiftProtocolTypeName);
             }
 
-            string protocolConformancesString = string.Join(", ", swiftProtocolTypeNames); */
+            string protocolConformancesString = string.Join(", ", swiftProtocolTypeNames);
 
             string typeDecl;
 
-            if (onlyWriteSignatureForProtocol) {
-                string todoProtocolName = $"{swiftTypeName}_Protocol";
-                string todoFullProtocolName = $"{todoProtocolName} /* {fullTypeName} */";
+            if (interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.Protocol) {
+                string protocolName = $"{swiftTypeName}";
+                string fullProtocolName = $"{protocolName} /* {fullTypeName} */";
 
-                typeDecl = Builder.Protocol(todoFullProtocolName)
+                typeDecl = Builder.Protocol(fullProtocolName)
                     .BaseTypeName("DNObject")
-                    // .ProtocolConformance(protocolConformancesString)
+                    .ProtocolConformance(protocolConformancesString)
                     .Public()
+                    .ToString();
+            } else if (interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ImplementationClass) {
+                string fullSwiftTypeName = $"{swiftTypeName}{TypeDescriptor.SwiftDotNETInterfaceImplementationSuffix} /* {fullTypeName} */";
+                
+                typeDecl = Builder.Class(fullSwiftTypeName)
+                    .BaseTypeName(swiftBaseTypeName)
+                    .ProtocolConformance(protocolConformancesString)
+                    .Public()
+                    .ToString();
+            } else if (interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ProtocolExtensionForDefaultImplementations) {
+                string fullSwiftTypeName = $"{swiftTypeName} /* {fullTypeName} */";
+
+                typeDecl = Builder.Extension(fullSwiftTypeName)
                     .ToString();
             } else {
                 string fullSwiftTypeName = $"{swiftTypeName} /* {fullTypeName} */";
                 
                 typeDecl = Builder.Class(fullSwiftTypeName)
                     .BaseTypeName(swiftBaseTypeName)
-                    // .ProtocolConformance(protocolConformancesString)
+                    .ProtocolConformance(protocolConformancesString)
                     .Public()
                     .ToString();
             }
@@ -426,7 +445,8 @@ public partial class SwiftTypeSyntaxWriter: ISwiftSyntaxWriter, ITypeSyntaxWrite
 
             sb.AppendLine($"{typeDecl} {{");
 
-            if (!onlyWriteSignatureForProtocol) {
+            if (interfaceGenerationPhase != SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.Protocol &&
+                interfaceGenerationPhase != SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ProtocolExtensionForDefaultImplementations) {
                 string typeNameDecl = Builder.GetOnlyProperty("typeName", "String")
                     .Public()
                     .Class()
@@ -569,7 +589,7 @@ public subscript(position: Index) -> Element {
 
         HashSet<MemberInfo> generatedMembers = new();
 
-        StringBuilder sbMembers = new();
+        SwiftCodeBuilder sbMembers = new();
 
         foreach (var cSharpMember in cSharpMembers) {
             var member = cSharpMember.Member;
@@ -609,8 +629,14 @@ public subscript(position: Index) -> Element {
                 throw new Exception("No target");
             }
 
-            if (onlyWriteSignatureForProtocol &&
+            if ((interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.Protocol || interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ProtocolExtensionForDefaultImplementations) &&
                 (syntaxWriter is IDestructorSyntaxWriter || syntaxWriter is ITypeOfSyntaxWriter)) {
+                continue;
+            }
+
+            if (interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ImplementationClass &&
+                syntaxWriter is not IDestructorSyntaxWriter &&
+                syntaxWriter is not ITypeOfSyntaxWriter) {
                 continue;
             }
 
@@ -647,7 +673,9 @@ public subscript(position: Index) -> Element {
 
         return sb.ToString();
     }
+    #endregion Members
 
+    #region Type Extensions
     public string WriteTypeExtensionMethods(
         Type extendedType,
         List<GeneratedMember> generatedMembers
@@ -676,7 +704,7 @@ public subscript(position: Index) -> Element {
             typeDescriptorRegistry
         );
 
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
 
         if (codeForOptional is not null) {
             sb.AppendLine(codeForOptional);
@@ -708,7 +736,7 @@ public subscript(position: Index) -> Element {
             ? "?"
             : string.Empty;
 
-        StringBuilder sbMembers = new();
+        SwiftCodeBuilder sbMembers = new();
         
         foreach (GeneratedMember swiftGeneratedMember in generatedMembers) {
             string extensionMethod = SwiftMethodSyntaxWriter.WriteExtensionMethod(
@@ -727,7 +755,9 @@ public subscript(position: Index) -> Element {
         
         return code;
     }
+    #endregion Type Extensions
 
+    #region Syntax Writers
     private ISwiftSyntaxWriter? GetSyntaxWriter(
         MemberKind memberKind,
         MemberTypes memberType
@@ -746,4 +776,5 @@ public subscript(position: Index) -> Element {
 
         return syntaxWriter;
     }
+    #endregion Syntax Writers
 }

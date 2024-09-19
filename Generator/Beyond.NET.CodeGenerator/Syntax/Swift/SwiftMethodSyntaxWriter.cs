@@ -1,8 +1,9 @@
 using System.Reflection;
-using System.Text;
+
 using Beyond.NET.CodeGenerator.Collectors;
 using Beyond.NET.CodeGenerator.Extensions;
 using Beyond.NET.CodeGenerator.Generator;
+using Beyond.NET.CodeGenerator.Generator.Swift;
 using Beyond.NET.CodeGenerator.Syntax.Swift.Declaration;
 using Beyond.NET.CodeGenerator.Types;
 
@@ -88,7 +89,7 @@ public class SwiftMethodSyntaxWriter: ISwiftSyntaxWriter, IMethodSyntaxWriter
         }
         #endregion TODO: Unsupported Stuff
 
-        bool onlyWriteSignatureForProtocol = (syntaxWriterConfiguration as SwiftSyntaxWriterConfiguration)?.OnlyWriteSignatureForProtocol ?? false;
+        var interfaceGenerationPhase = (syntaxWriterConfiguration as SwiftSyntaxWriterConfiguration)?.InterfaceGenerationPhase ?? SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.NoInterface;
         
         MethodBase? methodBase = memberInfo as MethodBase;
         MethodInfo? methodInfo = methodBase as MethodInfo;
@@ -185,7 +186,10 @@ public class SwiftMethodSyntaxWriter: ISwiftSyntaxWriter, IMethodSyntaxWriter
                     treatAsOverridden = true;
                 }
             } else {
-                bool isShadowed = methodInfo.IsShadowed(out bool shadowNullabilityIsCompatible);
+                bool isShadowed = methodInfo.IsShadowed(
+                    CodeLanguage.Swift,
+                    out bool shadowNullabilityIsCompatible
+                );
 
                 if (isShadowed) {
                     if (shadowNullabilityIsCompatible) {
@@ -389,8 +393,18 @@ public class SwiftMethodSyntaxWriter: ISwiftSyntaxWriter, IMethodSyntaxWriter
 
         #region Func Declaration
         string? memberImpl;
+
+        bool needImpl;
+
+        if (interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.Protocol ||
+            interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ImplementationClass) {
+            needImpl = memberKind == MemberKind.Destructor ||
+                       memberKind == MemberKind.TypeOf;
+        } else {
+            needImpl = true;
+        }
         
-        if (onlyWriteSignatureForProtocol) {
+        if (!needImpl) {
             memberImpl = null;
         } else {
             memberImpl = WriteMethodImplementation(
@@ -432,21 +446,29 @@ public class SwiftMethodSyntaxWriter: ISwiftSyntaxWriter, IMethodSyntaxWriter
 
         string declaration;
 
+        SwiftVisibilities memberVisibility;
+
+        if (interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.Protocol) {
+            memberVisibility = SwiftVisibilities.None;
+        } else {
+            if (memberKind == MemberKind.Destructor) {
+                memberVisibility = SwiftVisibilities.Internal;
+            } else {
+                memberVisibility = SwiftVisibilities.Public;
+            }
+        }
+
         if (memberKind == MemberKind.Constructor) {
             declaration = Builder.Initializer()
                 .Convenience()
-                .Visibility(onlyWriteSignatureForProtocol 
-                    ? SwiftVisibilities.None
-                    : SwiftVisibilities.Public)
+                .Visibility(memberVisibility)
                 .Parameters(methodSignatureParameters)
                 .Throws(mayThrow)
                 .Implementation(memberImpl)
                 .ToString();
         } else if (memberKind == MemberKind.Destructor) {
             declaration = Builder.Func(methodNameSwift)
-                .Visibility(onlyWriteSignatureForProtocol
-                    ? SwiftVisibilities.None
-                    : SwiftVisibilities.Internal)
+                .Visibility(memberVisibility)
                 .Override()
                 .Parameters(methodSignatureParameters)
                 .Throws(mayThrow)
@@ -460,9 +482,7 @@ public class SwiftMethodSyntaxWriter: ISwiftSyntaxWriter, IMethodSyntaxWriter
                 : throw new Exception("A property must have a return type");
 
             declaration = Builder.GetOnlyProperty(methodNameSwift, propTypeName)
-                .Visibility(onlyWriteSignatureForProtocol 
-                    ? SwiftVisibilities.None
-                    : SwiftVisibilities.Public)
+                .Visibility(memberVisibility)
                 .TypeAttachmentKind(isEnum 
                     ? SwiftTypeAttachmentKinds.Static
                     : SwiftTypeAttachmentKinds.Class)
@@ -476,11 +496,9 @@ public class SwiftMethodSyntaxWriter: ISwiftSyntaxWriter, IMethodSyntaxWriter
                 : throw new Exception("A property must have a return type");
 
             declaration = Builder.GetOnlyProperty(methodNameSwift, propTypeName)
-                .Visibility(onlyWriteSignatureForProtocol
-                    ? SwiftVisibilities.None
-                    : SwiftVisibilities.Public)
+                .Visibility(memberVisibility)
                 .TypeAttachmentKind(isStaticMethod
-                    ? SwiftTypeAttachmentKinds.Class
+                    ? interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.Protocol || interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ProtocolExtensionForDefaultImplementations ? SwiftTypeAttachmentKinds.Static : SwiftTypeAttachmentKinds.Class
                     : SwiftTypeAttachmentKinds.Instance)
                 .Override(treatAsOverridden)
                 .Throws(mayThrow)
@@ -488,11 +506,9 @@ public class SwiftMethodSyntaxWriter: ISwiftSyntaxWriter, IMethodSyntaxWriter
                 .ToString();
         } else {
             declaration = Builder.Func(methodNameSwift)
-                .Visibility(onlyWriteSignatureForProtocol 
-                    ? SwiftVisibilities.None
-                    : SwiftVisibilities.Public)
+                .Visibility(memberVisibility)
                 .TypeAttachmentKind(isStaticMethod 
-                    ? SwiftTypeAttachmentKinds.Class
+                    ? interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.Protocol || interfaceGenerationPhase == SwiftSyntaxWriterConfiguration.InterfaceGenerationPhases.ProtocolExtensionForDefaultImplementations ? SwiftTypeAttachmentKinds.Static : SwiftTypeAttachmentKinds.Class
                     : SwiftTypeAttachmentKinds.Instance)
                 .Override(treatAsOverridden)
                 .Parameters(methodSignatureParameters)
@@ -575,7 +591,7 @@ public class SwiftMethodSyntaxWriter: ISwiftSyntaxWriter, IMethodSyntaxWriter
         TypeDescriptorRegistry typeDescriptorRegistry
     )
     {
-        StringBuilder sbImpl = new();
+        SwiftCodeBuilder sbImpl = new();
 
         bool needsRegularImpl = true;
 
@@ -690,7 +706,7 @@ public class SwiftMethodSyntaxWriter: ISwiftSyntaxWriter, IMethodSyntaxWriter
                 }
             }
 
-            StringBuilder sbByRefParameters = new();
+            SwiftCodeBuilder sbByRefParameters = new();
 
             foreach (var parameter in parameters) {
                 Type parameterType = parameter.ParameterType;
@@ -854,8 +870,10 @@ if let __exceptionC {
         );
 
         Type returnType = typeof(void);
+        
+        MethodInfo? methodInfo = methodBase as MethodInfo;
 
-        if (methodBase is MethodInfo methodInfo) {
+        if (methodInfo is not null) {
             returnType = methodInfo.ReturnType;
         }
         
@@ -867,12 +885,76 @@ if let __exceptionC {
         
         TypeDescriptor returnTypeDescriptor = returnType.GetTypeDescriptor(typeDescriptorRegistry);
         
+        var nullabilityInfoContext = new NullabilityInfoContext();
+        var returnTypeNullability = Nullability.NotSpecified;
+        var returnTypeArrayElementNullability = Nullability.NotSpecified; 
+        
+        if (returnType.IsNullableValueType(out _)) {
+            returnTypeNullability = Nullability.Nullable;
+        } else if (returnType.IsReferenceType() &&
+                   !returnType.IsByRefValueType(out bool nonByRefTypeIsStruct) &&
+                   !nonByRefTypeIsStruct) {
+            if (methodInfo is not null) {
+                ParameterInfo returnOrSetterValueParameter;
+
+                if (memberKind == MemberKind.PropertySetter ||
+                    memberKind == MemberKind.EventHandlerAdder ||
+                    memberKind == MemberKind.EventHandlerRemover) {
+                    returnOrSetterValueParameter = methodInfo.GetParameters().LastOrDefault() ?? methodInfo.ReturnParameter;
+                } else {
+                    returnOrSetterValueParameter = methodInfo.ReturnParameter;
+                }
+                
+                var nullabilityInfo = nullabilityInfoContext.Create(returnOrSetterValueParameter);
+
+                if (memberKind == MemberKind.PropertyGetter) {
+                    returnTypeNullability = nullabilityInfo.ReadState == NullabilityState.NotNull
+                        ? Nullability.NonNullable
+                        : Nullability.NotSpecified;
+
+                    returnTypeArrayElementNullability = nullabilityInfo.ElementType?.ReadState == NullabilityState.NotNull
+                        ? Nullability.NonNullable
+                        : Nullability.NotSpecified;
+                } else if (memberKind == MemberKind.PropertySetter) {
+                    returnTypeNullability = nullabilityInfo.WriteState == NullabilityState.NotNull
+                        ? Nullability.NonNullable
+                        : Nullability.NotSpecified;
+                    
+                    returnTypeArrayElementNullability = nullabilityInfo.ElementType?.WriteState == NullabilityState.NotNull
+                        ? Nullability.NonNullable
+                        : Nullability.NotSpecified;
+                } else if (memberKind == MemberKind.EventHandlerAdder ||
+                           memberKind == MemberKind.EventHandlerRemover) {
+                    if (nullabilityInfo.ReadState == nullabilityInfo.WriteState) {
+                        returnTypeNullability = nullabilityInfo.ReadState == NullabilityState.NotNull
+                            ? Nullability.NonNullable
+                            : Nullability.NotSpecified;
+                    }
+                } else { // Method
+                    if (nullabilityInfo.ReadState == nullabilityInfo.WriteState) {
+                        returnTypeNullability = nullabilityInfo.ReadState == NullabilityState.NotNull
+                            ? Nullability.NonNullable
+                            : Nullability.NotSpecified;
+                    }
+
+                    var elementTypeNullabilityInfo = nullabilityInfo.ElementType;
+
+                    if (elementTypeNullabilityInfo is not null &&
+                        elementTypeNullabilityInfo.ReadState == elementTypeNullabilityInfo.WriteState) {
+                        returnTypeArrayElementNullability = elementTypeNullabilityInfo.ReadState == NullabilityState.NotNull
+                            ? Nullability.NonNullable
+                            : Nullability.NotSpecified;
+                    }
+                }
+            }
+        }
+        
         // TODO: This generates inout TypeName if the return type is by ref
         string swiftReturnTypeName = returnTypeDescriptor.GetTypeName(
             CodeLanguage.Swift,
             true,
-            Nullability.NotSpecified,
-            Nullability.NotSpecified,
+            returnTypeNullability,
+            returnTypeArrayElementNullability,
             false,
             returnTypeIsByRef,
             false
@@ -1128,7 +1210,7 @@ if let __exceptionC {
             throw new Exception("Unknown language pair");
         }
         
-        StringBuilder sb = new();
+        SwiftCodeBuilder sb = new();
         
         convertedParameterNames = new();
         convertedGenericTypeArgumentNames = new();
@@ -1358,12 +1440,12 @@ if let __exceptionC {
             
             if (sourceLanguage == CodeLanguage.Swift &&
                 targetLanguage == CodeLanguage.C) {
-                bool isNotNull = false;
-
                 if (parameterInfo is not null &&
                     !isGeneric &&
                     !isGenericParameterType &&
                     parameterType.IsReferenceType()) {
+                    bool isNotNull = false;
+                    
                     var parameterNullabilityInfo = nullabilityContext.Create(parameterInfo);
 
                     if (parameterNullabilityInfo.ReadState == parameterNullabilityInfo.WriteState) {

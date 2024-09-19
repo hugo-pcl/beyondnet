@@ -1,7 +1,7 @@
 using System.Reflection;
-using System.Text;
 
 using Beyond.NET.CodeGenerator.Generator;
+using Beyond.NET.CodeGenerator.Generator.C;
 using Beyond.NET.CodeGenerator.Types;
 
 namespace Beyond.NET.CodeGenerator.Syntax.C;
@@ -37,12 +37,13 @@ public class CEventSyntaxWriter: CMethodSyntaxWriter, IEventSyntaxWriter
 
         IEnumerable<ParameterInfo> parameters = Array.Empty<ParameterInfo>();
 
-        StringBuilder sb = new();
+        CCodeBuilder sb = new();
 
         Type? eventHandlerType = @event.EventHandlerType;
         
         if (eventHandlerType is null) {
-            return $"// TODO: {eventName} - Event without Event Handler Type";
+            return Builder.SingleLineComment($"TODO: {eventName} - Event without Event Handler Type")
+                .ToString();
         }
 
         MethodInfo? adderMethod = @event.GetAddMethod(false);

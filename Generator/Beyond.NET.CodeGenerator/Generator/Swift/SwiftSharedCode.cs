@@ -2,7 +2,7 @@ namespace Beyond.NET.CodeGenerator.Generator.Swift;
 
 internal static class SwiftSharedCode
 {
-    internal const string SharedCode = """
+    internal const string SharedCode = /*lang=Swift*/"""
 public struct DNChar: Equatable {
     public let cValue: wchar_t
 
@@ -40,8 +40,16 @@ public struct DNChar: Equatable {
 /// It's not inteneded to be used directly.
 /// Instead, use one of the derived types, like `System_Object`.
 public class DNObject {
+    enum DestroyMode {
+        case normal
+        case deallocateHandle
+        case skip
+    }
+    
     let __handle: UnsafeMutableRawPointer
-    var __skipDestroy = false
+    var __destroyMode = DestroyMode.normal
+    
+    public private(set) var isOutParameterPlaceholder = false
 
     /// The .NET type name of this type.
     /// - Returns: The equivalent of calling `typeof(ADotNETType).Name` in C#.
@@ -58,6 +66,9 @@ public class DNObject {
     }
 
     required init(handle: UnsafeMutableRawPointer) {
+        // Enable for debugging
+        // print("[DEBUG] Initializing \(Self.fullTypeName) with handle \(handle)")
+        
 		self.__handle = handle
 	}
 
@@ -67,20 +78,56 @@ public class DNObject {
 		self.init(handle: handle)
 	}
 	
+	/// This returns a "placeholder" object for calling .NET APIs that return a non-optional value as `out` parameter. In this case, you can either provide a proper default value (which will never be used) or you can get an out parameter placeholder using this function.
+	/// Because Swift does not support `out` parameters like .NET does, you might run into situations where you need to provide a default value to satisfy the compiler but you don't want to or simply can't create an object of the `out` parameter's type.
+	/// Do NOT(!) call any APIs on this "placeholder" object as it will crash the program! Use it ONLY(!) to provide a "fake" default value for .NET APIs that receive a value via an `out` parameter. 
+	/// Do NOT(!) use this to pass a default value to .NET APIs that receive an optional(!) value as `out` parameter! In this case, just use a regular Swift optional. 
+	public static var outParameterPlaceholder: Self {
+        let byteCount = MemoryLayout<AnyObject>.stride
+        let alignment = MemoryLayout<AnyObject>.alignment
+        
+        let handle = UnsafeMutableRawPointer.allocate(byteCount: byteCount,
+                                                      alignment: alignment)
+        
+        handle.initializeMemory(as: Int.self, to: 0)
+        
+        let inst = self.init(handle: handle)
+        
+        // Mark this instance as being an out parameter placeholder. Makes debugging easier in case something goes wrong.
+        inst.isOutParameterPlaceholder = true
+        
+        inst.__destroyMode = .deallocateHandle
+        
+        return inst
+    }
+	
     internal func destroy() {
         // Override in subclass
     }
 
     deinit {
-        guard !__skipDestroy else { return }
+        switch __destroyMode {
+            case .normal:
+                // Enable for debugging
+                // print("[DEBUG] Will destroy \(Self.fullTypeName) with handle \(self.__handle)")
         
-        // Enable for debugging
-        // print("[DEBUG] Will destroy \(Self.fullTypeName)")
-
-		destroy()
-
-        // Enable for debugging
-        // print("[DEBUG] Did destroy \(Self.fullTypeName)")
+                destroy()
+        
+                // Enable for debugging
+                // print("[DEBUG] Did destroy \(Self.fullTypeName) with handle \(self.__handle)")
+            case .deallocateHandle:
+                // Enable for debugging
+                // print("[DEBUG] Will deallocate \(Self.fullTypeName) with handle \(self.__handle)")
+                
+                self.__handle.deallocate()
+                
+                // Enable for debugging
+                // print("[DEBUG] Did deallocate \(Self.fullTypeName) with handle \(self.__handle)")
+            case .skip:
+                // Enable for debugging
+                // print("[DEBUG] Skipping deallocate for \(Self.fullTypeName) with handle \(self.__handle)")
+                return
+        }
 	}
 }
 
@@ -1034,7 +1081,7 @@ extension System_UInt64 {
 }
 
 /// A Swift error type that wraps a .NET `System.Exception` object.
-public class DNError: LocalizedError {
+public class DNError: LocalizedError, CustomDebugStringConvertible {
     /// The underlying .NET `System.Exception` object.
     public let exception: System_Exception
     
@@ -1057,6 +1104,14 @@ public class DNError: LocalizedError {
             return try String(dotNETString: exception.message)
         } catch {
             return nil
+        }
+    }
+    
+    public var debugDescription: String {
+        do {
+            return try String(dotNETString: exception.toString())
+        } catch {
+            return errorDescription ?? localizedDescription
         }
     }
 }
@@ -1684,32 +1739,72 @@ public extension NativeBox {
 }
 """;
     
-    public const string GuidExtensions = """
+    public const string GuidExtensions = /*lang=Swift*/"""
 extension UUID {
     /// Tries to convert the targeted Swift `UUID` object to a .NET `System.Guid`.
     /// - Returns: nil if the conversion fails or an instance of `System.Guid` if it succeeds.
     public func dotNETGuid() -> System_Guid? {
-        let guidString = self.uuidString
-        let guidStringDN = guidString.dotNETString()
+        let uuidByteTuple = self.uuid
         
-        var guid = System_Guid.empty
+        let a: UInt32 = (UInt32(uuidByteTuple.0) << 24) | (UInt32(uuidByteTuple.1) << 16) | (UInt32(uuidByteTuple.2) << 8)  | UInt32(uuidByteTuple.3)
+        let b: UInt16 = (UInt16(uuidByteTuple.4) << 8) | UInt16(uuidByteTuple.5)
+        let c: UInt16 = (UInt16(uuidByteTuple.6) << 8) | UInt16(uuidByteTuple.7)
+        let d: UInt8 = uuidByteTuple.8
+        let e: UInt8 = uuidByteTuple.9
+        let f: UInt8 = uuidByteTuple.10
+        let g: UInt8 = uuidByteTuple.11
+        let h: UInt8 = uuidByteTuple.12
+        let i: UInt8 = uuidByteTuple.13
+        let j: UInt8 = uuidByteTuple.14
+        let k: UInt8 = uuidByteTuple.15
         
-        guard (try? System_Guid.tryParse(guidStringDN,
-                                         &guid)) ?? false else {
+        guard let systemGuid = try? System_Guid(a, b, c, d, e, f, g, h, i, j, k) else {
+            assertionFailure("System.Guid.ctor(uint, ushort, ushort, byte, byte, byte, byte, byte, byte, byte, byte) either threw an exception or returned null")
+            
             return nil
         }
         
-        return guid
+        return systemGuid
     }
     
     public init?(dotNETGuid: System_Guid) {
-        guard let uuidStringDN = try? dotNETGuid.toString() else {
+        // NOTE: See https://en.wikipedia.org/wiki/Universally_unique_identifier#Endianess
+        let bigEndian = true
+        
+        guard let uuidByteArray = try? dotNETGuid.toByteArray(bigEndian) else {
+            assertionFailure("System.Guid.ToByteArray either threw an error or returned null")
+            
             return nil
         }
         
-        let uuidString = uuidStringDN.string()
+        guard let uuidData = try? uuidByteArray.data(noCopy: true) else {
+            assertionFailure("Failed to convert .NET byte[] to Swift Data")
+            
+            return nil
+        }
         
-        self.init(uuidString: uuidString)
+        assert(uuidData.count == 16, "System.Guid.ToByteArray returned a byte array of length \(uuidData.count) (should be 16)")
+        
+        let cUUID: uuid_t = (
+            uuidData[0],
+            uuidData[1],
+            uuidData[2],
+            uuidData[3],
+            uuidData[4],
+            uuidData[5],
+            uuidData[6],
+            uuidData[7],
+            uuidData[8],
+            uuidData[9],
+            uuidData[10],
+            uuidData[11],
+            uuidData[12],
+            uuidData[13],
+            uuidData[14],
+            uuidData[15]
+        )
+        
+        self.init(uuid: cUUID)
     }
 }
 
@@ -1722,7 +1817,7 @@ extension System_Guid {
 }
 """;
     
-    public const string ArrayExtensions = """
+    public const string ArrayExtensions = /*lang=Swift*/"""
 extension System_Array {
     public typealias Index = Int32
     

@@ -60,6 +60,7 @@
 		E7A3E6EA29EEE4B100447BF2 /* SystemTupleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3E6E929EEE4B100447BF2 /* SystemTupleTests.swift */; };
 		E7A3E6EC29EEEB0800447BF2 /* TestClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3E6EB29EEEB0800447BF2 /* TestClassesTests.swift */; };
 		E7A3E6EE29EEEDB100447BF2 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3E6ED29EEEDB100447BF2 /* PersonTests.swift */; };
+		E7ABDE632C33E4F3004D3C08 /* InterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7ABDE622C33E4F3004D3C08 /* InterfaceTests.swift */; };
 		E7AC3D8C29E0391200C5609B /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC3D8A29E038E000C5609B /* XCTestCase+Extensions.swift */; };
 		E7AF01D92A5D6F9300A4C080 /* EventTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF01D82A5D6F9300A4C080 /* EventTestsTests.swift */; };
 		E7B905DA2A865C6000B5DC75 /* DelegateTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B905D92A865C6000B5DC75 /* DelegateTestTests.swift */; };
@@ -69,6 +70,7 @@
 		E7C16FCB2B21D2C10021DCB3 /* SystemSecurityCryptographyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C16FCA2B21D2C10021DCB3 /* SystemSecurityCryptographyTests.swift */; };
 		E7E5171A2AD9289200634B3E /* ComparisonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E517192AD9289200634B3E /* ComparisonTests.swift */; };
 		E7E517202AD9312700634B3E /* AsyncTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E5171F2AD9312700634B3E /* AsyncTestTests.swift */; };
+		E7F6044F2C3D5A6E00432278 /* OutParameterTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F6044E2C3D5A6E00432278 /* OutParameterTestTests.swift */; };
 		E7F90B6029F2A324005B0C67 /* GenericTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F90B5F29F2A324005B0C67 /* GenericTestsTests.swift */; };
 		E7F90B6229F2A340005B0C67 /* GenericTestClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F90B6129F2A340005B0C67 /* GenericTestClassTests.swift */; };
 		E7FBD6A52B0365A3006BDB53 /* SpanTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBD6A42B0365A3006BDB53 /* SpanTestTests.swift */; };
@@ -140,6 +142,7 @@
 		E7A3E6E929EEE4B100447BF2 /* SystemTupleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTupleTests.swift; sourceTree = "<group>"; };
 		E7A3E6EB29EEEB0800447BF2 /* TestClassesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClassesTests.swift; sourceTree = "<group>"; };
 		E7A3E6ED29EEEDB100447BF2 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		E7ABDE622C33E4F3004D3C08 /* InterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceTests.swift; sourceTree = "<group>"; };
 		E7AC3D8A29E038E000C5609B /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		E7AF01D82A5D6F9300A4C080 /* EventTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTestsTests.swift; sourceTree = "<group>"; };
 		E7B491E12A5FE3F300A7C75D /* BuildDotNETStuffOutputFiles.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = BuildDotNETStuffOutputFiles.xcfilelist; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 		E7C16FCA2B21D2C10021DCB3 /* SystemSecurityCryptographyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSecurityCryptographyTests.swift; sourceTree = "<group>"; };
 		E7E517192AD9289200634B3E /* ComparisonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonTests.swift; sourceTree = "<group>"; };
 		E7E5171F2AD9312700634B3E /* AsyncTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestTests.swift; sourceTree = "<group>"; };
+		E7F6044E2C3D5A6E00432278 /* OutParameterTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutParameterTestTests.swift; sourceTree = "<group>"; };
 		E7F90B5F29F2A324005B0C67 /* GenericTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTestsTests.swift; sourceTree = "<group>"; };
 		E7F90B6129F2A340005B0C67 /* GenericTestClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTestClassTests.swift; sourceTree = "<group>"; };
 		E7FBD6A42B0365A3006BDB53 /* SpanTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanTestTests.swift; sourceTree = "<group>"; };
@@ -279,6 +283,8 @@
 				E7FBD6A42B0365A3006BDB53 /* SpanTestTests.swift */,
 				E705F33A2B0E024A00230720 /* NullabilityTests.swift */,
 				E74001CF2B275A43008C70F6 /* ArrayTestsTests.swift */,
+				E7ABDE622C33E4F3004D3C08 /* InterfaceTests.swift */,
+				E7F6044E2C3D5A6E00432278 /* OutParameterTestTests.swift */,
 			);
 			path = TestClasses;
 			sourceTree = "<group>";
@@ -341,7 +347,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					E70D117129BF9FEC00B4E738 = {
 						CreatedOnToolsVersion = 14.2;
@@ -450,6 +456,7 @@
 				E7B905DA2A865C6000B5DC75 /* DelegateTestTests.swift in Sources */,
 				E7C16FCB2B21D2C10021DCB3 /* SystemSecurityCryptographyTests.swift in Sources */,
 				E790871E29EECA06001F776F /* SystemArrayTests.swift in Sources */,
+				E7ABDE632C33E4F3004D3C08 /* InterfaceTests.swift in Sources */,
 				E75BF1ED2AD93E840006E224 /* SystemRuntimeInteropServicesMarshalTests.swift in Sources */,
 				E790871C29EEC404001F776F /* SystemEnumTests.swift in Sources */,
 				E7977F842A73F16500493C61 /* SystemWeakReferenceTests.swift in Sources */,
@@ -467,6 +474,7 @@
 				E70361632A6A8126000EF63C /* TestRecordTests.swift in Sources */,
 				E7C0C4FD2AD94C9100A48301 /* Data+Extensions.swift in Sources */,
 				E756F71529F1826500CA039F /* AddressTests.swift in Sources */,
+				E7F6044F2C3D5A6E00432278 /* OutParameterTestTests.swift in Sources */,
 				E7A3E6DA29EEDA6900447BF2 /* SystemMathTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +528,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -585,6 +594,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -607,7 +617,6 @@
 		E70D117A29BF9FEC00B4E738 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -627,7 +636,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -635,7 +644,6 @@
 		E70D117B29BF9FEC00B4E738 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -655,7 +663,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -693,7 +701,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -730,7 +738,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

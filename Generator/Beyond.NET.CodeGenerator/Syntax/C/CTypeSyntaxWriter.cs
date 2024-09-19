@@ -1,8 +1,8 @@
 using System.Reflection;
-using System.Text;
 
 using Beyond.NET.CodeGenerator.Extensions;
 using Beyond.NET.CodeGenerator.Generator;
+using Beyond.NET.CodeGenerator.Generator.C;
 using Beyond.NET.CodeGenerator.Types;
 using Beyond.NET.Core;
 
@@ -52,12 +52,13 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
         string? fullTypeName = type.FullName;
 
         if (fullTypeName == null) {
-            return $"// Type \"{type.Name}\" was skipped. Reason: It has no full name.";
+            return Builder.SingleLineComment($"Type \"{type.Name}\" was skipped. Reason: It has no full name.")
+                .ToString();
         }
         
         string cTypeName = type.CTypeName();
 
-        StringBuilder sb = new();
+        CCodeBuilder sb = new();
 
         if (type.IsEnum) {
             string enumdefCode = WriteEnumDef(
@@ -87,7 +88,8 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
 
     private string WriteTypeDef(string cTypeName)
     {
-        return $"typedef void* {cTypeName}_t;";
+        return Builder.TypeAliasTypeDef($"{cTypeName}_t", "void*")
+            .ToString();
     }
 
     private string WriteDelegateTypeDefs(
@@ -102,7 +104,8 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
         string? fullTypeName = delegateType.FullName;
 
         if (fullTypeName == null) {
-            return $"// Type \"{delegateType.Name}\" was skipped. Reason: It has no full name.";
+            return Builder.SingleLineComment($"Type \"{delegateType.Name}\" was skipped. Reason: It has no full name.")
+                .ToString();
         }
         
         string cTypeName = delegateType.CTypeName();
@@ -111,28 +114,32 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
         var parameterInfos = delegateInvokeMethod?.GetParameters() ?? Array.Empty<ParameterInfo>();
         
         if (returnType.IsByRef) {
-            return $"// TODO: ({cTypeName}) Unsupported delegate type. Reason: Has by ref return type";
+            return Builder.SingleLineComment($"TODO: ({cTypeName}) Unsupported delegate type. Reason: Has by ref return type")
+                .ToString();
         }
         
         foreach (var parameter in parameterInfos) {
             if (parameter.IsOut) {
-                return $"// TODO: ({cTypeName}) Unsupported delegate type. Reason: Has out parameters";
+                return Builder.SingleLineComment($"TODO: ({cTypeName}) Unsupported delegate type. Reason: Has out parameters")
+                    .ToString();
             }
             
             if (parameter.IsIn) {
-                return $"// TODO: ({cTypeName}) Unsupported delegate type. Reason: Has in parameters";
+                return Builder.SingleLineComment($"TODO: ({cTypeName}) Unsupported delegate type. Reason: Has in parameters")
+                    .ToString();
             }
 
             if (!ExperimentalFeatureFlags.EnableByRefParametersInDelegates) {
                 Type parameterType = parameter.ParameterType;
                 
                 if (parameterType.IsByRef) {
-                    return $"// TODO: ({cTypeName}) Unsupported delegate type. Reason: Has by ref parameters";
+                    return Builder.SingleLineComment($"TODO: ({cTypeName}) Unsupported delegate type. Reason: Has by ref parameters")
+                        .ToString();
                 }
             }
         }
 
-        StringBuilder sb = new();
+        CCodeBuilder sb = new();
         
         sb.AppendLine(WriteTypeDef(cTypeName));
 
@@ -226,7 +233,7 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
         TypeDescriptorRegistry typeDescriptorRegistry
     )
     {
-        StringBuilder sb = new();
+        CCodeBuilder sb = new();
 
         TypeDescriptor typeDescriptor = type.GetTypeDescriptor(typeDescriptorRegistry);
 
@@ -295,13 +302,18 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
         
         var cSharpMembers = cSharpUnmanagedResult.GeneratedTypes[type];
 
-        StringBuilder sb = new();
+        CCodeBuilder sb = new();
 
         string fullTypeName = type.GetFullNameOrName();
 
         bool isDelegate = type.IsDelegate();
 
-        sb.AppendLine($"#pragma mark - BEGIN APIs of {fullTypeName}");
+        sb.AppendLine(
+            Builder.PragmaMark()
+                .Separator()
+                .Comment($"BEGIN APIs of {fullTypeName}")
+                .ToString()
+        );
 
         if (isDelegate) {
             TypeDescriptor typeDescriptor = type.GetTypeDescriptor(typeDescriptorRegistry);
@@ -339,7 +351,7 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
             
             if (syntaxWriter == null) {
                 if (Settings.EmitUnsupported) {
-                    sb.AppendLine($"// TODO: Unsupported Member Type \"{memberType}\"");
+                    sb.AppendLine(Builder.SingleLineComment($"TODO: Unsupported Member Type \"{memberType}\"").ToString());
                 }
                     
                 continue;
@@ -368,7 +380,12 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
             }
         }
 
-        sb.AppendLine($"#pragma mark - END APIs of {fullTypeName}");
+        sb.AppendLine(
+            Builder.PragmaMark()
+                .Separator()
+                .Comment($"END APIs of {fullTypeName}")
+                .ToString()
+        );
 
         return sb.ToString();
     }
@@ -378,7 +395,60 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
         string fullTypeName,
         string cTypeName,
         string cMemberNamePrefix,
-        StringBuilder sb,
+        CCodeBuilder sb,
+        State state,
+        TypeDescriptorRegistry typeDescriptorRegistry
+    )
+    {
+        var invokeMethod = typeDescriptor.ManagedType.GetDelegateInvokeMethod();
+
+        WriteDelegateTypeMembers(
+            typeDescriptor,
+            fullTypeName,
+            cTypeName,
+            cMemberNamePrefix,
+            invokeMethod,
+            sb,
+            state,
+            typeDescriptorRegistry
+        );
+    }
+
+    private void WriteDelegateTypeMembers(
+        TypeDescriptor typeDescriptor,
+        string fullTypeName,
+        string cTypeName,
+        string cMemberNamePrefix,
+        MethodInfo? invokeMethod,
+        CCodeBuilder sb,
+        State state,
+        TypeDescriptorRegistry typeDescriptorRegistry
+    )
+    {
+        var parameterInfos = invokeMethod?.GetParameters() ?? Array.Empty<ParameterInfo>();
+        var returnType = invokeMethod?.ReturnType ?? typeof(void);
+        
+        WriteDelegateTypeMembers(
+            typeDescriptor,
+            fullTypeName,
+            cTypeName,
+            cMemberNamePrefix,
+            parameterInfos,
+            returnType,
+            sb,
+            state,
+            typeDescriptorRegistry
+        );
+    }
+    
+    private void WriteDelegateTypeMembers(
+        TypeDescriptor typeDescriptor,
+        string fullTypeName,
+        string cTypeName,
+        string cMemberNamePrefix,
+        ParameterInfo[] parameterInfos,
+        Type returnType,
+        CCodeBuilder sb,
         State state,
         TypeDescriptorRegistry typeDescriptorRegistry
     )
@@ -386,28 +456,23 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
         // TODO: Generics
         
         Type type = typeDescriptor.ManagedType;
-        
-        MethodInfo? invokeMethod = typeDescriptor.ManagedType.GetDelegateInvokeMethod();
-        Type returnType = invokeMethod?.ReturnType ?? typeof(void);
         TypeDescriptor returnTypeDescriptor = returnType.GetTypeDescriptor(typeDescriptorRegistry);
-        
-        var parameterInfos = invokeMethod?.GetParameters() ?? Array.Empty<ParameterInfo>();
 
         if (returnType.IsByRef) {
-            sb.AppendLine($"// TODO: ({cTypeName}) Unsupported delegate type. Reason: Has by ref return type");
+            sb.AppendLine(Builder.SingleLineComment($"TODO: ({cTypeName}) Unsupported delegate type. Reason: Has by ref return type").ToString());
 
             return;
         }
         
         foreach (var parameter in parameterInfos) {
             if (parameter.IsOut) {
-                sb.AppendLine($"// TODO: ({cTypeName}) Unsupported delegate type. Reason: Has out parameters");
+                sb.AppendLine(Builder.SingleLineComment($"TODO: ({cTypeName}) Unsupported delegate type. Reason: Has out parameters").ToString());
                 
                 return;
             }
             
             if (parameter.IsIn) {
-                sb.AppendLine($"// TODO: ({cTypeName}) Unsupported delegate type. Reason: Has in parameters");
+                sb.AppendLine(Builder.SingleLineComment($"TODO: ({cTypeName}) Unsupported delegate type. Reason: Has in parameters").ToString());
                 
                 return;
             }
@@ -416,7 +481,7 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
 
             if (!ExperimentalFeatureFlags.EnableByRefParametersInDelegates) {
                 if (parameterType.IsByRef) {
-                    sb.AppendLine($"// TODO: ({cTypeName}) Unsupported delegate type. Reason: Has by ref parameters");
+                    sb.AppendLine(Builder.SingleLineComment($"TODO: ({cTypeName}) Unsupported delegate type. Reason: Has by ref parameters").ToString());
                     
                     return;
                 }
@@ -424,7 +489,7 @@ public class CTypeSyntaxWriter: ICSyntaxWriter, ITypeSyntaxWriter
             
             if (parameterType.IsGenericParameter ||
                 parameterType.IsGenericMethodParameter) {
-                sb.AppendLine($"// TODO: ({cTypeName}) Unsupported delegate type. Reason: Has generic parameters");
+                sb.AppendLine(Builder.SingleLineComment($"TODO: ({cTypeName}) Unsupported delegate type. Reason: Has generic parameters").ToString());
                 
                 return;
             }

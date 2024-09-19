@@ -25,7 +25,7 @@ The generated C# code can then be compiled with .NET NativeAOT which allows the 
 
 ### Prerequisites
 
-- Make sure [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0) is installed and on your path.
+- Make sure [.NET 9](https://dotnet.microsoft.com/download/dotnet/9.0) is installed and on your path.
 - On macOS, make sure [Xcode](https://developer.apple.com/xcode/), the macOS and iOS SDKs and the Command Line Tools (`xcode-select --install`) are installed.
 - On Linux, make sure clang and zlib are installed
 
@@ -33,7 +33,7 @@ The generated C# code can then be compiled with .NET NativeAOT which allows the 
 ### Generator Executable
 
 - Either clone the Beyond.NET repository or [download](https://github.com/royalapplications/beyondnet/releases/latest) one of the pre-built generator executables for your platform.
-- If you do not have a pre-compiled executable of the generator, compile it by either running `dotnet publish` within its directory or use one of our provided publish scripts like `publish_macos_universal` for compiling a universal macOS binary.
+- If you do not have a pre-compiled executable of the generator, compile it by either running `dotnet publish` within its [directory](https://github.com/royalapplications/beyondnet/tree/main/Generator/Beyond.NET.CodeGenerator.CLI) or use one of our provided publish scripts like `publish_macos_universal` for compiling a universal macOS binary.
 - Open a terminal, switch to the directory containing the built executable and execute the generator (`./beyondnetgen` or just `beyondnetgen` if you have it on your path).
 - Since you've provided no arguments, the generator should show its usage screen.
 - Optionally, symlink the generator executable to be somewhere on your path (ie. `ln -s ~/Path/To/beyondnetgen /usr/local/bin/beyondnetgen`) if you're not using a pre-built executable.
@@ -93,14 +93,14 @@ public class Hello
 ```
 
 - Compile the .NET class library: `dotnet publish`.
-- Note the published dll's output path (should be something like this `/Path/To/BeyondDemo/bin/Release/net8.0/publish/BeyondDemo.dll`).
+- Note the published dll's output path (should be something like this `/Path/To/BeyondDemo/bin/Release/net9.0/publish/BeyondDemo.dll`).
 - Create a config file for Beyond.NET: `touch Config.json`.
 - Open `Config.json` in a text editor.
 - Replace its contents with this:
 
 ```json
 {
-    "AssemblyPath": "bin/Release/net8.0/publish/BeyondDemo.dll",
+    "AssemblyPath": "bin/Release/net9.0/publish/BeyondDemo.dll",
 
     "Build": {
         "Target": "apple-universal"
@@ -113,8 +113,8 @@ public class Hello
 - Run the generator: `beyondnetgen Config.json`.
 - On a Mac Studio M2 Ultra, this takes a little more than a minute while on an 8-Core Intel Xeon iMac Pro, it takes around 3 minutes. So it might be worth getting some coffee depending on your hardware. (TODO: Outdated info, as now with parallel building support the times are way better)
 - The individual code generation and builds steps are shown in the terminal.
-- The last printed line should include the path where the build output has been written to (ie. `Build Output has been written to "/Path/To/BeyondDemo/bin/Release/net8.0/publish"`).
-- Check the contents of the build output path: `ls bin/Release/net8.0/publish`
+- The last printed line should include the path where the build output has been written to (ie. `Build Output has been written to "/Path/To/BeyondDemo/bin/Release/net9.0/publish"`).
+- Check the contents of the build output path: `ls bin/Release/net9.0/publish`
 - It should include an XCFramework bundle called `BeyondDemoKit.xcframework`.
 - Congratulations, you now have a fully functional native version of your .NET library that can be consumed by macOS and iOS Xcode projects.
 
@@ -134,7 +134,7 @@ Now that we have an XCFramework containing binaries for macOS and iOS, we can in
 - Select the `General` tab.
 - Under `Frameworks, Libraries and Embedded Content`, click the `+` button.
 - Select `Add Other... - Add Files...`.
-- Navigate one level up in the file picker, then go to `bin/Release/net8.0/publish` (depending on your output path).
+- Navigate one level up in the file picker, then go to `bin/Release/net9.0/publish` (depending on your output path).
 - Select `BeyondDemoKit.xcframework`.
 - The XCFramework should now show up and it should already be configured to `Embed & Sign`.
 - Select `ContentView.swift` in the project navigator.
@@ -211,6 +211,10 @@ The generator currently uses a configuration file where all of its options are s
   "CSharpUnmanagedOutputPath": "/Path/To/Generated/CSharpUnmanaged/Output_CS.cs",
   "COutputPath": "/Path/To/Generated/C/Output_C.h",
   "SwiftOutputPath": "/Path/To/Generated/Swift/Output_Swift.swift",
+  "KotlinOutputPath": "/Path/To/Generated/Kotlin/Output_Kotlin.kt",
+
+  "KotlinPackageName": "com.mycompany.mypackagename",
+  "KotlinNativeLibraryName": "NativeAssemblyName",
 
   "EmitUnsupported": false,
   "GenerateTypeCheckedDestroyMethods": false,
@@ -249,6 +253,9 @@ The generator currently uses a configuration file where all of its options are s
 - **`CSharpUnmanagedOutputPath`**: The generator will use this path to write the file containing the C# wrapper methods. (Required if `Build` is disabled; Optional if `Build` is enabled)
 - **`COutputPath`**: The generator will use this path to write the generated C bindings header file. (Required if `Build` is disabled; Optional if `Build` is enabled)
 - **`SwiftOutputPath`**: The generator will use this path to write the generated Swift bindings file. (Optional)
+- **`KotlinOutputPath`**: The generator will use this path to write the generated Kotlin bindings file. (Optional)
+- **`KotlinPackageName`**: When generating Kotlin code, this will be used as the package name for the generated code. (Optional, but highly recommended when targeting Kotlin. If not provided, a package name will be generated based on the assembly name)
+- **`KotlinNativeLibraryName`**: When generating Kotlin code, this will be used to load the native library. (Optional, only when not targeting Kotlin. When targeting Kotlin it must be provided unless automatic builds are enabled. In this case we can infer the native library name. That's an unsupported scenario at the moment though, so right now it IS required.)
 - **`EmitUnsupported`** (Boolean; `false` by default): If enabled (`true`), comments will be generated in the output files explaining why a binding for a certain type or API was not generated.
 - **`GenerateTypeCheckedDestroyMethods`** (Boolean; `false` by default): If enabled (`true`), the generated `*_Destroy` methods will check the type of the passed in object. If the type does not match, an unhandled(!) exception will be thrown. Use this to detect memory management bugs in your code. Since it introduces overhead, it's disabled by default. Also, there's no need for manual memory management in higher level languages like Swift so this is unnecessary.
 - **`EnableGenericsSupport`** (Boolean; `false` by default): Generics support is currently experimental and disabled by default. If you want to test the current state though or work on improving generics support, enable this by setting it to `true`.
@@ -592,6 +599,77 @@ let systemString = System.String.empty
 let swiftString = systemString.string()
 let systemStringRet = swiftString.dotNETString()
 ```
+
+
+
+## .NET Interfaces in Swift
+
+In Swift, .NET interfaces are exposed as protocols and .NET types that implement interfaces are generated as protocol conforming types.
+Since Swift doesn't allow extending protocol metatypes, if you want to get the .NET type of a particular interface, you'll have to use `IInterfaceName_DNInterface.typeOf` instead of just `IInterfaceName.typeOf`. Apart from that, the Swift bindings for .NET interfaces should act and feel very much like native Swift protocols.
+
+
+
+## C# `out` parameters in Swift
+
+C# methods that include parameters marked with the `out` keyword are converted to Swift functions with parameters marked with the `inout` keyword.
+
+This C# code...
+```csharp
+void ReturnIntAsOut(out int returnValue);
+```
+
+... is imported like this into Swift:
+```swift
+func returnIntAsOut(_ returnValue: inout Int32) throws
+```
+
+And to use it in Swift you'd do something like this:
+
+```swift
+var returnValue: Int32 = 0
+try target.returnIntAsOut(&returnValue)
+// returnValue now contains the value returned by .NET
+```
+
+The same concept applies to functions that return classes, structs, enums or any other type via C# `out` parameters.
+
+Unfortunately, there's a major difference between .NET's `out` and Swift's `inout` keywords. The difference is that, as the name implies a value goes in and another value might(!) come out of a function which includes Swift's `inout` parameters. In C# however, no value enters a function with `out` parameters. This in turn means that for non-optional values, a default value has to be provided in Swift to satisfy the compiler. In many cases this is not a big deal (ie. no harm in specifying an unused default value for primitives) but there are cases where it's undesirable or flat out impossible to provide a default value. Think about a function that returns an .NET interface via an `out` parameter. You could only provide a default value if you did have access to an implementation of that interface which might not be the case. Even if you had access to such an implementation, you might not want to create an instance because it's costly.
+
+Fortunately we can work around the limitation by letting you create "placeholder" objects explicitly for passing a temporary default value from Swift to .NET.
+
+Consider the following C# method:
+
+```csharp
+void ReturnIEnumerableAsOut(out IEnumerable returnValue) {
+    returnValue = "Abc";
+}
+```
+
+It's imported like this into Swift:
+
+```swift
+func returnIEnumerableAsOut(_ returnValue: inout System.Collections.IEnumerable) throws
+```
+
+To use it you would have to specify a default value that conforms to the `System.Collections.IEnumerable` protocol/interface like so:
+
+```swift
+// System.String implements System.Collections.IEnumerable
+var returnValue: System.Collections.IEnumerable = System.String.empty
+try target.returnIEnumerableAsOut(&returnValue)
+// returnValue now contains a .NET string with the following content: "Abc"
+```
+
+With out parameter placeholders however you can rewrite the code like this:
+
+```swift
+var returnValue = System.Collections.IEnumerable_DNInterface.outParameterPlaceholder
+try target.returnIEnumerableAsOut(&returnValue)
+```
+
+Please note that the **only** valid use case for out parameter placeholders is to pass them to .NET functions with `out` parameters.
+- **Do not(!)** call any APIs on the placeholder object as it will crash the program!
+- **Do not(!)** use out parameter placeholders to pass a default value to .NET APIs that receive an optional(!) value as `out` parameter! In this case, just use a regular Swift optional.
 
 
 

@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace Beyond.NET.Sample;
 
 public class Person
@@ -64,6 +66,8 @@ public class Person
     #endregion Constructors
 
     #region Methods
+    public static Person MakeJohnDoe() => new("John", "Doe", 50);
+    
     public string GetNiceLevelString()
     {
         switch (NiceLevel) {
@@ -130,6 +134,19 @@ public class Person
     public Person ChildAt(int index)
     {
         return Children[index];
+    }
+
+    public bool TryGetChildAt(int index, [MaybeNullWhen(false)] out Person child)
+    {
+        if (index < 0 || index >= Children.Length) {
+            child = null;
+            
+            return false;
+        }
+
+        child = Children[index];
+
+        return true;
     }
 
     public void ChangeAge(NewAgeProviderDelegate? newAgeProvider)
